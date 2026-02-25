@@ -39,6 +39,21 @@ features:
     details: Buttons, badges, forms and cards — consistently designed in the BAUER GROUP design system.
     link: /en/components/
     linkText: Open component library
+  - icon: 📷
+    title: Photography
+    details: Photo style, image composition and color treatment — authentic, professional and brand-compliant.
+    link: /en/photography/
+    linkText: View image guidelines
+  - icon: 🔊
+    title: Audio Identity
+    details: Sound logo, soundscape and acoustic guidelines for videos, presentations and phone systems.
+    link: /en/audio/
+    linkText: View audio guidelines
+  - icon: 📱
+    title: Digital Media
+    details: Social media templates, web banners, email signatures and newsletter layouts.
+    link: /en/digital/
+    linkText: View digital templates
   - icon: ♿
     title: Accessibility
     details: WCAG 2.1 AA/AAA compliance with verified contrast ratios and recommendations for all color combinations.
@@ -83,7 +98,7 @@ features:
 
 ## About This Brand Guide
 
-This guide defines the visual identity of BAUER GROUP and serves as the binding reference for all internal and external communications. It covers digital applications, print media and accessible design according to WCAG 2.1.
+This guide defines the complete corporate identity of BAUER GROUP — from visual identity through photography and audio identity to digital media and print production. It serves as the binding reference for all internal and external communications.
 
 <div class="note">
   <strong>Note:</strong> For questions about applying these guidelines or for approvals, please contact the brand team.

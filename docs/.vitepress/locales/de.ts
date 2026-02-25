@@ -16,14 +16,18 @@ export const de: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
           { text: 'Logo', link: '/de/logo/' },
           { text: 'Farben', link: '/de/farben/' },
           { text: 'Typografie', link: '/de/typografie/' },
+          { text: 'Bildsprache', link: '/de/bildsprache/' },
+          { text: 'Audioidentität', link: '/de/audio/' },
         ]
       },
       {
         text: 'Anwendung',
         items: [
+          { text: 'Digitale Medien', link: '/de/digital/' },
           { text: 'UI Komponenten', link: '/de/komponenten/' },
           { text: 'Barrierefreiheit', link: '/de/barrierefreiheit/' },
           { text: 'Print & CMYK', link: '/de/print/' },
+          { text: 'Werbemittel', link: '/de/werbemittel/' },
         ]
       },
       { text: 'Downloads', link: '/de/downloads/' },
@@ -83,10 +87,33 @@ export const de: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
           ]
         },
         {
+          text: 'Bildsprache',
+          collapsed: true,
+          items: [
+            { text: 'Fotostil & Richtlinien', link: '/de/bildsprache/' },
+          ]
+        },
+        {
+          text: 'Audioidentität',
+          collapsed: true,
+          items: [
+            { text: 'Sound Logo & Klangwelt', link: '/de/audio/' },
+          ]
+        },
+        {
+          text: 'Digitale Medien',
+          items: [
+            { text: 'Übersicht', link: '/de/digital/' },
+            { text: 'Social Media', link: '/de/digital/social-media' },
+            { text: 'Web Banner & Layouts', link: '/de/digital/web-banner' },
+            { text: 'E-Mail & Newsletter', link: '/de/digital/email' },
+          ]
+        },
+        {
           text: 'Werbemittel',
           collapsed: true,
           items: [
-            { text: 'Übersicht', link: '/de/werbemittel/' },
+            { text: 'Geschäftsausstattung', link: '/de/werbemittel/' },
           ]
         },
         {

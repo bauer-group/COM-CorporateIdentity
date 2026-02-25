@@ -8,25 +8,28 @@ Offizielle Corporate Identity & Brand Guide Dokumentation der BAUER GROUP — er
 
 ## Inhalt
 
-| Kapitel | Sektion | Inhalt |
+| Bereich | Sektion | Inhalt |
 |---------|---------|--------|
-| **1** | Werte & Leitbild | Taglines, Kernwerte, Markenpersönlichkeit, Tonalität |
-| **2** | Logo | Varianten, Schutzzone, Mindestgrößen, Don'ts |
-| **3** | Farbsystem | Primärfarbe, Orange-/Grau-Skala, Semantische Farben, Akzentfarben |
-| **4** | Typografie | Hierarchie, Font-Stack, Gewichte |
-| **5** | UI-Komponenten | Buttons, Badges, Formulare |
-| **6** | Barrierefreiheit | WCAG 2.1, Kontrastprüfung, Do/Don't |
-| **7** | Print & Produktion | CMYK, Pantone, Papierempfehlungen |
-| **8** | Werbemittel | Visitenkarten, Briefpapier, Vorlagen (in Arbeit) |
-| **9** | Ressourcen | Downloads, CSS-Variablen |
+| **Markenidentität** | Werte & Leitbild | Taglines, Kernwerte, Markenpersönlichkeit, Tonalität |
+| | Logo | Varianten, Schutzzone, Mindestgrößen, Don'ts |
+| | Farbsystem | Primärfarbe, Orange-/Grau-Skala, Semantische Farben, Akzentfarben |
+| | Typografie | Hierarchie, Font-Stack, Gewichte |
+| | Bildsprache | Fotostil, Bildrichtlinien, Komposition |
+| | Audioidentität | Sound Logo, Klangwelt, UI-Sounds |
+| **Anwendung** | Digitale Medien | Social Media, Web Banner, E-Mail & Newsletter |
+| | UI-Komponenten | Buttons, Badges, Formulare |
+| | Barrierefreiheit | WCAG 2.1, Kontrastprüfung, Do/Don't |
+| | Print & Produktion | CMYK, Pantone, Papierempfehlungen |
+| | Werbemittel | Geschäftsausstattung, Messe, Präsentationen |
+| **Ressourcen** | Downloads | Logo-Pakete, CSS-Variablen |
 
 ## Projektstruktur
 
 ```text
 .
 ├── docs/                          # VitePress-Dokumentation
-│   ├── de/                        # Deutsche Dokumentation (24 Seiten)
-│   ├── en/                        # Englische Dokumentation (24 Seiten)
+│   ├── de/                        # Deutsche Dokumentation (30 Seiten)
+│   ├── en/                        # Englische Dokumentation (30 Seiten)
 │   ├── public/                    # Statische Assets (Logo, Favicon)
 │   └── .vitepress/
 │       ├── config.ts              # VitePress-Konfiguration
@@ -97,7 +100,5 @@ Dieses Repository verwendet ein **Dual-License-Modell**:
 |---------|--------|------|
 | Code, Workflows, Konfiguration | [MIT License](LICENSE) | `MIT` |
 | Dokumentation (`docs/`) | [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) | `CC-BY-NC-4.0` |
-
-Die Dokumentation darf mit Namensnennung geteilt und bearbeitet werden, jedoch **nicht für kommerzielle Zwecke** verwendet werden.
 
 Copyright © BAUER GROUP

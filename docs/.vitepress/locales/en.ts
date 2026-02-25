@@ -9,21 +9,25 @@ export const en: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
   themeConfig: {
     nav: [
       { text: 'Overview', link: '/en/' },
-      { text: 'Values & Mission', link: '/en/brand/' },
       {
         text: 'Brand Identity',
         items: [
+          { text: 'Values & Mission', link: '/en/brand/' },
           { text: 'Logo', link: '/en/logo/' },
           { text: 'Colors', link: '/en/colors/' },
           { text: 'Typography', link: '/en/typography/' },
+          { text: 'Photography', link: '/en/photography/' },
+          { text: 'Audio Identity', link: '/en/audio/' },
         ]
       },
       {
         text: 'Application',
         items: [
+          { text: 'Digital Media', link: '/en/digital/' },
           { text: 'UI Components', link: '/en/components/' },
           { text: 'Accessibility', link: '/en/accessibility/' },
           { text: 'Print & CMYK', link: '/en/print/' },
+          { text: 'Advertising', link: '/en/advertising/' },
         ]
       },
       { text: 'Downloads', link: '/en/downloads/' },
@@ -88,10 +92,33 @@ export const en: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
           ]
         },
         {
+          text: 'Photography',
+          collapsed: true,
+          items: [
+            { text: 'Image Style & Guidelines', link: '/en/photography/' },
+          ]
+        },
+        {
+          text: 'Audio Identity',
+          collapsed: true,
+          items: [
+            { text: 'Sound Logo & Soundscape', link: '/en/audio/' },
+          ]
+        },
+        {
+          text: 'Digital Media',
+          items: [
+            { text: 'Overview', link: '/en/digital/' },
+            { text: 'Social Media', link: '/en/digital/social-media' },
+            { text: 'Web Banners & Layouts', link: '/en/digital/web-banners' },
+            { text: 'Email & Newsletter', link: '/en/digital/email' },
+          ]
+        },
+        {
           text: 'Advertising',
           collapsed: true,
           items: [
-            { text: 'Overview', link: '/en/advertising/' },
+            { text: 'Stationery & Materials', link: '/en/advertising/' },
           ]
         },
         {
