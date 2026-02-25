@@ -1,0 +1,285 @@
+/**
+ * BAUER GROUP Brand Guide – Corporate Identity Theme
+ * Brand Styleguide v2.0
+ */
+
+/* ─── Brand Color Scale (Orange) ─── */
+:root {
+  --bg-orange-50: #FFF7ED;
+  --bg-orange-100: #FFEDD5;
+  --bg-orange-200: #FED7AA;
+  --bg-orange-300: #FDBA74;
+  --bg-orange-400: #FB923C;
+  --bg-orange-500: #FF8500;
+  --bg-orange-600: #EA6D00;
+  --bg-orange-700: #C2570A;
+  --bg-orange-800: #9A4509;
+  --bg-orange-900: #7C3A0A;
+
+  /* Gray Scale */
+  --bg-gray-50: #FAFAFA;
+  --bg-gray-100: #F4F4F5;
+  --bg-gray-200: #E4E4E7;
+  --bg-gray-300: #D4D4D8;
+  --bg-gray-400: #A1A1AA;
+  --bg-gray-500: #71717A;
+  --bg-gray-600: #52525B;
+  --bg-gray-700: #3F3F46;
+  --bg-gray-800: #27272A;
+  --bg-gray-900: #18181B;
+
+  /* VitePress Brand Mapping */
+  --vp-c-brand-1: #FF8500;
+  --vp-c-brand-2: #EA6D00;
+  --vp-c-brand-3: #C2570A;
+  --vp-c-brand-soft: rgba(255, 133, 0, 0.14);
+
+  /* VitePress Button Overrides */
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #fff;
+  --vp-button-brand-bg: #FF8500;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #EA6D00;
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #fff;
+  --vp-button-brand-active-bg: #C2570A;
+
+  /* Semantic Colors */
+  --brand-success: #22C55E;
+  --brand-warning: #EAB308;
+  --brand-error: #EF4444;
+  --brand-info: #3B82F6;
+
+  /* Custom Block: tip → Erfolg (Grün) */
+  --vp-custom-block-tip-border: #22C55E;
+  --vp-custom-block-tip-bg: rgba(34, 197, 94, 0.08);
+  --vp-custom-block-tip-code-bg: rgba(34, 197, 94, 0.12);
+
+  /* Custom Block: info → Information (Blau) */
+  --vp-custom-block-info-border: #3B82F6;
+  --vp-custom-block-info-bg: rgba(59, 130, 246, 0.08);
+  --vp-custom-block-info-code-bg: rgba(59, 130, 246, 0.12);
+
+  /* Custom Block: warning → Warnung (Gelb) */
+  --vp-custom-block-warning-border: #EAB308;
+  --vp-custom-block-warning-bg: rgba(234, 179, 8, 0.08);
+  --vp-custom-block-warning-code-bg: rgba(234, 179, 8, 0.12);
+
+  /* Custom Block: danger → Fehler (Rot) */
+  --vp-custom-block-danger-border: #EF4444;
+  --vp-custom-block-danger-bg: rgba(239, 68, 68, 0.08);
+  --vp-custom-block-danger-code-bg: rgba(239, 68, 68, 0.12);
+
+  /* Typography */
+  --vp-font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  --vp-font-family-mono: ui-monospace, "SF Mono", "Cascadia Code", "Fira Code",
+    Consolas, "Courier New", monospace;
+
+  /* Layout */
+  --vp-layout-max-width: 1440px;
+  --vp-doc-width: 1000px;
+  --vp-sidebar-width: 320px;
+  --vp-aside-width: 272px;
+}
+
+/* ─── Dark Mode ─── */
+.dark {
+  --vp-c-brand-1: #FB923C;
+  --vp-c-brand-2: #FDBA74;
+  --vp-c-brand-3: #FED7AA;
+  --vp-c-brand-soft: rgba(251, 146, 60, 0.14);
+
+  --vp-button-brand-bg: #FB923C;
+  --vp-button-brand-hover-bg: #FF8500;
+  --vp-button-brand-active-bg: #EA6D00;
+}
+
+/* ─── Hero Section ─── */
+.VPHero .VPImage {
+  max-width: 180px;
+  max-height: 180px;
+}
+
+/* ─── Section Headers (3px orange bottom border per CI) ─── */
+.vp-doc h2 {
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--bg-orange-500);
+}
+
+/* ─── Color Swatch Component ─── */
+.color-swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.85em;
+  font-weight: 600;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.color-swatch .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* ─── Color Scale Bar ─── */
+.color-scale {
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 56px;
+  margin: 16px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.color-scale > div {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  padding: 6px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  font-family: var(--vp-font-family-mono);
+}
+
+/* ─── Logo Display Stages ─── */
+.logo-stage {
+  border-radius: 16px;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.logo-stage.light {
+  background: var(--bg-gray-100);
+}
+
+.logo-stage.dark {
+  background: var(--bg-gray-900);
+}
+
+.logo-stage img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ─── Don't Card ─── */
+.dont-card {
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.dont-card .label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--brand-error);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 8px;
+}
+
+/* ─── Contrast Badge ─── */
+.contrast-pass {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: 700;
+  background: rgba(34, 197, 94, 0.12);
+  color: #15803D;
+}
+
+.contrast-fail {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: 700;
+  background: rgba(239, 68, 68, 0.12);
+  color: #B91C1C;
+}
+
+/* ─── Cards / Feature Grid ─── */
+.VPFeatures .VPFeature {
+  border-radius: 12px !important;
+}
+
+/* ─── Wide Content Layout ─── */
+@media (min-width: 1440px) {
+  .VPDoc .container {
+    max-width: 100% !important;
+  }
+  .VPDoc .content {
+    max-width: 1100px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .VPDoc .content {
+    max-width: 1200px !important;
+  }
+}
+
+/* ─── Table Styling ─── */
+.vp-doc table {
+  width: 100%;
+  display: table;
+  overflow-x: auto;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 700;
+}
+
+/* ─── Sidebar Brand Accent ─── */
+.VPSidebar .VPSidebarItem.is-active > .item > .indicator {
+  background-color: var(--bg-orange-500);
+}
+
+.VPNavBar .title {
+  font-weight: 700;
+}
+
+/* ─── Search Bar Width ─── */
+.VPNavBarSearch {
+  padding-left: 16px !important;
+}
+
+.VPNavBarSearch .DocSearch-Button,
+.VPNavBarSearch .search-button {
+  min-width: 260px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.VPNavBarSearch .search-button .search-actions {
+  margin-left: auto;
+}
+
+@media (min-width: 960px) {
+  .VPNavBarSearch .DocSearch-Button,
+  .VPNavBarSearch .search-button {
+    min-width: 320px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .VPNavBarSearch .DocSearch-Button,
+  .VPNavBarSearch .search-button {
+    min-width: 400px;
+  }
+}
