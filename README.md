@@ -10,32 +10,34 @@ Offizielle Corporate Identity & Brand Guide Dokumentation der BAUER GROUP — er
 
 | Kapitel | Sektion | Inhalt |
 |---------|---------|--------|
-| **1** | Logo | Varianten, Schutzzone, Mindestgrößen, Don'ts |
-| **2** | Farbsystem | Primärfarbe, Orange-/Grau-Skala, Semantische Farben, Akzentfarben |
-| **3** | Typografie | Hierarchie, Font-Stack, Gewichte |
-| **4** | UI-Komponenten | Buttons, Badges, Formulare |
-| **5** | Barrierefreiheit | WCAG 2.1, Kontrastprüfung, Do/Don't |
-| **6** | Print & Produktion | CMYK, Pantone, Papierempfehlungen |
-| **7** | Werbemittel | Visitenkarten, Briefpapier, Vorlagen (in Arbeit) |
-| **8** | Ressourcen | Downloads, CSS-Variablen |
+| **1** | Werte & Leitbild | Taglines, Kernwerte, Markenpersönlichkeit, Tonalität |
+| **2** | Logo | Varianten, Schutzzone, Mindestgrößen, Don'ts |
+| **3** | Farbsystem | Primärfarbe, Orange-/Grau-Skala, Semantische Farben, Akzentfarben |
+| **4** | Typografie | Hierarchie, Font-Stack, Gewichte |
+| **5** | UI-Komponenten | Buttons, Badges, Formulare |
+| **6** | Barrierefreiheit | WCAG 2.1, Kontrastprüfung, Do/Don't |
+| **7** | Print & Produktion | CMYK, Pantone, Papierempfehlungen |
+| **8** | Werbemittel | Visitenkarten, Briefpapier, Vorlagen (in Arbeit) |
+| **9** | Ressourcen | Downloads, CSS-Variablen |
 
 ## Projektstruktur
 
 ```text
 .
 ├── docs/                          # VitePress-Dokumentation
-│   ├── de/                        # Deutsche Dokumentation (22 Seiten)
-│   ├── en/                        # Englische Dokumentation (22 Seiten)
+│   ├── de/                        # Deutsche Dokumentation (24 Seiten)
+│   ├── en/                        # Englische Dokumentation (24 Seiten)
 │   ├── public/                    # Statische Assets (Logo, Favicon)
 │   └── .vitepress/
 │       ├── config.ts              # VitePress-Konfiguration
 │       ├── locales/               # DE/EN Navigation + Sidebar
 │       └── theme/                 # Custom Theme (BAUER CI)
-├── assets/                        # Branding-Quelldateien
-│   └── branding/                  # Logos (SVG, PNG, EPS), branding.env
 ├── .github/
-│   └── workflows/                 # GitHub Pages Deployment
-├── brand-guide.html               # Standalone HTML Brand Guide
+│   ├── workflows/                 # Deploy, Release, Notifications, AI Summary
+│   ├── config/                    # Semantic Release Config
+│   ├── CODEOWNERS                 # Code-Ownership
+│   ├── PULL_REQUEST_TEMPLATE.md   # PR-Template
+│   └── dependabot.yml             # Automatische Dependency-Updates
 └── package.json                   # @bauer-group/brand-guide
 ```
 
