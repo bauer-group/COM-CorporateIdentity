@@ -1,5 +1,5 @@
 # =============================================================================
-# Release – CRA Compliance Documentation
+# Release – Brand Documentation
 # =============================================================================
 # Validates the VitePress documentation build (lint + build) and creates a
 # semantic release on success.
