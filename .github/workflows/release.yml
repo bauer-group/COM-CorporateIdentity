@@ -39,6 +39,7 @@ jobs:
     name: 🔍 Validate Node.js Build
     uses: bauer-group/automation-templates/.github/workflows/nodejs-build.yml@main
     with:
+      node-version: '24'
       node-version-file: '.nvmrc'
       package-manager: 'npm'
       frozen-lockfile: true
@@ -47,7 +48,7 @@ jobs:
       build-command: 'npm run docs:build'
       run-tests: false
       run-audit: true
-      audit-level: 'moderate'
+      audit-level: 'high'
       upload-artifacts: false
 
   # ---------------------------------------------------------------------------

@@ -5,21 +5,21 @@ Die BAUER GROUP steht für Technologie, die bleibt — und für Partnerschaften,
 ## Unsere Taglines
 
 <div style="display:flex;flex-direction:column;gap:12px;margin:32px 0;">
-  <div style="background:#FF8500;color:white;padding:20px 28px;border-radius:10px;font-size:1.2em;font-weight:700;display:flex;align-items:center;gap:12px;">
-    <span style="font-size:0.65em;font-weight:600;background:rgba(255,255,255,0.2);padding:3px 10px;border-radius:6px;white-space:nowrap;">Primär</span>
-    BAUER GROUP — Today. Tomorrow. Together.
+  <div style="padding:20px 28px;border-radius:10px;border-left:4px solid #FF8500;background:var(--vp-c-bg-soft);display:flex;align-items:center;gap:12px;">
+    <span style="font-size:0.7em;font-weight:700;color:#FF8500;background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Primär</span>
+    <span style="font-size:1.1em;font-weight:700;color:var(--vp-c-text-1);">BAUER GROUP — Today. Tomorrow. Together.</span>
   </div>
-  <div style="background:#FF8500;color:white;padding:20px 28px;border-radius:10px;font-size:1.2em;font-weight:700;display:flex;align-items:center;gap:12px;">
-    <span style="font-size:0.65em;font-weight:600;background:rgba(255,255,255,0.2);padding:3px 10px;border-radius:6px;white-space:nowrap;">Technisch</span>
-    BAUER GROUP — Building Better Software Together
+  <div style="padding:20px 28px;border-radius:10px;border-left:4px solid #FF8500;background:var(--vp-c-bg-soft);display:flex;align-items:center;gap:12px;">
+    <span style="font-size:0.7em;font-weight:700;color:#FF8500;background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Technisch</span>
+    <span style="font-size:1.1em;font-weight:700;color:var(--vp-c-text-1);">BAUER GROUP — Building Better Software Together</span>
   </div>
-  <div style="background:#FF8500;color:white;padding:20px 28px;border-radius:10px;font-size:1.2em;font-weight:700;display:flex;align-items:center;gap:12px;">
-    <span style="font-size:0.65em;font-weight:600;background:rgba(255,255,255,0.2);padding:3px 10px;border-radius:6px;white-space:nowrap;">Stabilität</span>
-    BAUER GROUP — Technology for the Long Run
+  <div style="padding:20px 28px;border-radius:10px;border-left:4px solid #FF8500;background:var(--vp-c-bg-soft);display:flex;align-items:center;gap:12px;">
+    <span style="font-size:0.7em;font-weight:700;color:#FF8500;background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Stabilität</span>
+    <span style="font-size:1.1em;font-weight:700;color:var(--vp-c-text-1);">BAUER GROUP — Technology for the Long Run</span>
   </div>
-  <div style="background:#FF8500;color:white;padding:20px 28px;border-radius:10px;font-size:1.2em;font-weight:700;display:flex;align-items:center;gap:12px;">
-    <span style="font-size:0.65em;font-weight:600;background:rgba(255,255,255,0.2);padding:3px 10px;border-radius:6px;white-space:nowrap;">Wachstum</span>
-    BAUER GROUP — Technology That Scales With You
+  <div style="padding:20px 28px;border-radius:10px;border-left:4px solid #FF8500;background:var(--vp-c-bg-soft);display:flex;align-items:center;gap:12px;">
+    <span style="font-size:0.7em;font-weight:700;color:#FF8500;background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Wachstum</span>
+    <span style="font-size:1.1em;font-weight:700;color:var(--vp-c-text-1);">BAUER GROUP — Technology That Scales With You</span>
   </div>
 </div>
 
