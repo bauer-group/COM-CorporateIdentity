@@ -1,0 +1,47 @@
+# ──────────────────────────────────────────────
+# BAUER GROUP — Brand Guide
+# ──────────────────────────────────────────────
+
+# Dependencies
+node_modules/
+
+# VitePress
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# npm
+npm-debug.log*
+.npm/
+
+# Environment & Secrets
+.env
+.env.*
+*.local
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+
+# Claude Code (keep CLAUDE.md, ignore the rest)
+.claude/*
+!.claude/CLAUDE.md
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+ehthumbs_vista.db
+$RECYCLE.BIN/
+
+# Temp & Logs
+*.tmp
+*.bak
+*.log
+
+# Obsolete / lokale Referenzdateien
+_obsolete/
