@@ -6,20 +6,25 @@
 
 ## Art der Änderung
 
-- [ ] 📖 Neue Dokumentation / Neues Kapitel
-- [ ] ✏️ Aktualisierung bestehender Dokumentation
-- [ ] ⚙️ Workflow / Automation
-- [ ] 📋 Template (ENISA, Incident, Risk Assessment, etc.)
-- [ ] 🔧 Konfiguration / Build
+- [ ] 🎨 Neue Brand-Guideline / Neues Kapitel
+- [ ] ✏️ Aktualisierung bestehender Richtlinie
+- [ ] 🖼️ Assets (Logo, Icons, Grafiken)
+- [ ] 🌐 Lokalisierung (DE/EN)
+- [ ] ⚙️ Theme / VitePress-Konfiguration
+- [ ] 🔧 Build / Workflow / CI
 - [ ] 🐛 Fehlerbehebung
 
-## CRA-Bezug
+## Brand-Bereich
 
-<!-- Welche CRA-Artikel oder Anforderungen betrifft diese Änderung? -->
+<!-- Welche Bereiche der Corporate Identity sind betroffen? -->
 
-- **CRA-Artikel:** <!-- z.B. Art. 10 Abs. 6, Art. 13 Abs. 23 -->
-- **Betroffene Kapitel:** <!-- z.B. Kap. 3 Vulnerability Management -->
-- **Compliance-Matrix:** Keine Änderung / Aktualisiert
+- [ ] Logo & Schutzzone
+- [ ] Farbsystem (HEX, RGB, CMYK, Pantone)
+- [ ] Typografie
+- [ ] UI-Komponenten
+- [ ] Barrierefreiheit (WCAG 2.1)
+- [ ] Print / Werbemittel
+- [ ] Downloads / Ressourcen
 
 ## Änderungen
 
@@ -32,6 +37,8 @@
 - [ ] `npm run lint` – Markdown-Lint erfolgreich
 - [ ] `npm run docs:build` – VitePress-Build erfolgreich
 - [ ] Querverweise und interne Links geprüft
-- [ ] Compliance-Matrix aktualisiert (falls neue Anforderungen abgedeckt)
-- [ ] Keine vertraulichen oder internen Informationen in öffentlichen Dateien
+- [ ] Visuelle Darstellung im Browser geprüft (`npm run docs:dev`)
+- [ ] Markenrichtlinien eingehalten (Farben, Logo, Typografie)
+- [ ] WCAG 2.1 AA Konformität gewährleistet (falls UI-relevant)
+- [ ] Keine internen/vertraulichen Informationen in öffentlichen Dateien
 - [ ] Self-Review durchgeführt
