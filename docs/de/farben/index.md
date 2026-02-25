@@ -32,6 +32,7 @@ Die Primärfarbe der BAUER GROUP ist **Orange (#FF8500)**. Sie steht für Energi
 Orange 500 (#FF8500) hat ein **Kontrastverhältnis von nur 3.1:1** auf Weiß — das reicht **nicht** für normalen Text (WCAG AA erfordert 4.5:1).
 
 Für Text verwenden Sie stattdessen:
+
 - <span style="color:#C2570A;font-weight:700;font-size:1.1em;">Orange 700 (#C2570A)</span> — 4.6:1 Kontrast → AA konform
 - <span style="color:#9A4509;font-weight:700;font-size:1.1em;">Orange 800 (#9A4509)</span> — 6.4:1 Kontrast → AA+ konform
 :::

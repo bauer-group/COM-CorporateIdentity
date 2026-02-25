@@ -21,6 +21,7 @@
   "ignores": [
     "node_modules",
     "docs/.vitepress/dist",
-    "docs/.vitepress/cache"
+    "docs/.vitepress/cache",
+    "docs/index.md"
   ]
 }

@@ -15,6 +15,7 @@ Das Logo darf nicht gedreht oder gekippt dargestellt werden. Die Ausrichtung ist
 Die Markenfarben des Logos dürfen nicht verändert werden. Insbesondere darf die orange Bildmarke nicht in andere Farben umgefärbt werden.
 
 ::: danger Verboten
+
 - Keine Gradients auf der Bildmarke
 - Kein Blau, Grün, Rot oder andere Farben
 - Keine Transparenz-Reduktion unter 100%
