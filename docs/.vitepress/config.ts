@@ -23,7 +23,7 @@ export default defineConfig({
     siteTitle: 'Brand Guide',
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/bauer-group/SEC-CorporateIdentity' },
+      { icon: 'github', link: 'https://github.com/bauer-group/COM-CorporateIdentity' },
     ],
 
     search: {

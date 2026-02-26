@@ -127,7 +127,7 @@ export const de: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
     },
 
     editLink: {
-      pattern: 'https://github.com/bauer-group/SEC-CorporateIdentity/edit/main/docs/:path',
+      pattern: 'https://github.com/bauer-group/COM-CorporateIdentity/edit/main/docs/:path',
       text: 'Diese Seite auf GitHub bearbeiten',
     },
 
