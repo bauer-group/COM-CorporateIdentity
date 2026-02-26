@@ -1,3 +1,9 @@
+## [0.2.0](https://github.com/bauer-group/SEC-CorporateIdentity/compare/v0.1.0...v0.2.0) (2026-02-25)
+
+### 🚀 Features
+
+* erweitere Brand Guide um Bildsprache, Audioidentität und digitale Medien mit neuen Inhalten und Struktur ([433e9f6](https://github.com/bauer-group/SEC-CorporateIdentity/commit/433e9f636ebf0e58505efc38e923a1848bbbc661))
+
 ## [0.1.0](https://github.com/bauer-group/SEC-CorporateIdentity/compare/v0.0.0...v0.1.0) (2026-02-25)
 
 ### 🚀 Features
