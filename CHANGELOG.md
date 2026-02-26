@@ -1,3 +1,9 @@
+## [0.2.2](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.2.1...v0.2.2) (2026-02-26)
+
+### 🐛 Bug Fixes
+
+* update repository URLs in changelog and locale files ([98fd7ea](https://github.com/bauer-group/COM-CorporateIdentity/commit/98fd7ea85a3c533a4934d9add9158144370d568f))
+
 ## [0.2.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.2.0...v0.2.1) (2026-02-26)
 
 ### 🐛 Bug Fixes
