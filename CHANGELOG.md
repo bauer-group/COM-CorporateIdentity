@@ -1,3 +1,9 @@
+## [0.2.1](https://github.com/bauer-group/SEC-CorporateIdentity/compare/v0.2.0...v0.2.1) (2026-02-26)
+
+### 🐛 Bug Fixes
+
+* update edit link pattern in locale files to reflect correct repository URL ([6d04d1b](https://github.com/bauer-group/SEC-CorporateIdentity/commit/6d04d1b822232935691868d53a3026377c702360))
+
 ## [0.2.0](https://github.com/bauer-group/SEC-CorporateIdentity/compare/v0.1.0...v0.2.0) (2026-02-25)
 
 ### 🚀 Features
