@@ -1,3 +1,9 @@
+## [0.3.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.2.2...v0.3.0) (2026-03-04)
+
+### 🚀 Features
+
+* Update documentation links for English translations and add new German content for neutrals and secondary colors ([afea9e3](https://github.com/bauer-group/COM-CorporateIdentity/commit/afea9e3c393b3fa07804927eaff8775c3cf410c2))
+
 ## [0.2.2](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.2.1...v0.2.2) (2026-02-26)
 
 ### 🐛 Bug Fixes
