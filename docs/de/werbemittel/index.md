@@ -171,7 +171,7 @@ Vorwahlen werden **ohne Klammern** dargestellt. Gilt einheitlich für alle Gesch
 | Format | Beispiel |
 |--------|----------|
 | **Telefon** | Tel. +49 9971 20098 - 199 |
-| **Fax** | Fax +49 9971 20098 - 4100 |
+| **Fax** | Fax +49 9971 20098 - 4199 |
 | **Mobil** | Mobil +49 178 1002005 |
 
 ## Canva-Einbettung
