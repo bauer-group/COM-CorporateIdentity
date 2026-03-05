@@ -1,3 +1,9 @@
+## [0.4.2](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.4.1...v0.4.2) (2026-03-05)
+
+### 🐛 Bug Fixes
+
+* aktualisiere Inhalte in der README.md für Farbsystem und Anwendung ([eb0b1cb](https://github.com/bauer-group/COM-CorporateIdentity/commit/eb0b1cb84a7e85d4298bea73819beb8486251a86))
+
 ## [0.4.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.4.0...v0.4.1) (2026-03-05)
 
 ### 🐛 Bug Fixes
