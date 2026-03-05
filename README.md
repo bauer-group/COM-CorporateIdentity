@@ -12,15 +12,15 @@ Offizielle Corporate Identity & Brand Guide Dokumentation der BAUER GROUP — er
 |---------|---------|--------|
 | **Markenidentität** | Werte & Leitbild | Taglines, Kernwerte, Markenpersönlichkeit, Tonalität |
 | | Logo | Varianten, Schutzzone, Mindestgrößen, Don'ts |
-| | Farbsystem | Primärfarbe, Orange-/Grau-Skala, Semantische Farben, Akzentfarben |
+| | Farbsystem | Primärfarbe, Orange-/Warm-Gray-/Neutral-Gray-Skala, Semantische Farben, Akzentfarben |
 | | Typografie | Hierarchie, Font-Stack, Gewichte |
 | | Bildsprache | Fotostil, Bildrichtlinien, Komposition |
 | | Audioidentität | Sound Logo, Klangwelt, UI-Sounds |
-| **Anwendung** | Digitale Medien | Social Media, Web Banner, E-Mail & Newsletter |
+| **Anwendung** | Digitale Medien | Social Media, Web Banner, E-Mail & Newsletter, Canva Design-Workflow |
 | | UI-Komponenten | Buttons, Badges, Formulare |
 | | Barrierefreiheit | WCAG 2.1, Kontrastprüfung, Do/Don't |
-| | Print & Produktion | CMYK, Pantone, Papierempfehlungen |
-| | Werbemittel | Geschäftsausstattung, Messe, Präsentationen |
+| | Print & Geschäftsausstattung | Visitenkarten, Stempel, Briefpapier, CMYK, Pantone, Papierempfehlungen |
+| | Werbemittel | Schreibblöcke, Mappen, Kugelschreiber, Feuerzeuge, Taschen |
 | **Ressourcen** | Downloads | Logo-Pakete, CSS-Variablen |
 
 ## Projektstruktur
