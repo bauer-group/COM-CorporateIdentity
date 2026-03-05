@@ -1,3 +1,10 @@
+## [0.4.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.4.0...v0.4.1) (2026-03-05)
+
+### 🐛 Bug Fixes
+
+* aktualisiere Faxnummer in Visitenkarten und Druckmaterialien ([35a3066](https://github.com/bauer-group/COM-CorporateIdentity/commit/35a3066cc4b8ec707ce45462c3650de9f147b02f))
+* aktualisiere Telefonnummern in Visitenkarten und Druckmaterialien ([602b0f5](https://github.com/bauer-group/COM-CorporateIdentity/commit/602b0f5c1715ecc416b89a24a1b1f9ab5ab78bf9))
+
 ## [0.4.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.3.0...v0.4.0) (2026-03-04)
 
 ### 🚀 Features
