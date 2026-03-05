@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "husky": "^9.1.7",
-    "linkinator": "^7.5.3",
+    "linkinator": "^7.6.1",
     "lint-staged": "^16.2.7",
     "markdownlint-cli2": "^0.21.0",
     "rimraf": "^6.0.1",
