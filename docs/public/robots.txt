@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brand.docs.bauer-group.com/sitemap.xml

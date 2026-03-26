@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
+import { RssPlugin } from 'vitepress-plugin-rss'
 import { de } from './locales/de'
 import { en } from './locales/en'
+
+const baseUrl = 'https://brand.docs.bauer-group.com'
 
 export default defineConfig({
   title: 'Brand Guide',
@@ -11,7 +14,27 @@ export default defineConfig({
     image: { lazyLoading: true },
   },
   sitemap: {
-    hostname: 'https://brand.docs.bauer-group.com',
+    hostname: baseUrl,
+  },
+  vite: {
+    plugins: [
+      RssPlugin({
+        title: 'Brand Guide – BAUER GROUP',
+        baseUrl,
+        copyright: `© ${new Date().getFullYear()} BAUER GROUP`,
+        description: 'BAUER GROUP Brand Guidelines Updates',
+        language: 'de',
+        author: { name: 'BAUER GROUP', link: baseUrl },
+        icon: true,
+        ignoreHome: true,
+        ignorePublish: true,
+        log: true,
+        locales: {
+          de: { filename: 'feed-de.xml', language: 'de' },
+          en: { filename: 'feed-en.xml', language: 'en' },
+        },
+      }),
+    ],
   },
 
   head: [
