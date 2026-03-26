@@ -25,19 +25,17 @@ export default defineConfig({
         description: 'BAUER GROUP Brand Guidelines Updates',
         language: 'en',
         author: { name: 'BAUER GROUP', link: baseUrl },
+        filename: 'feed.xml',
         icon: false,
         ignoreHome: true,
         ignorePublish: true,
         log: true,
-        locales: {
-          de: { filename: 'feed-de.xml', language: 'de' },
-          en: { filename: 'feed-en.xml', language: 'en' },
-        },
       }),
     ],
   },
 
   head: [
+    ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'Brand Guide – BAUER GROUP', href: `${baseUrl}/feed.xml` }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
     ['meta', { name: 'theme-color', content: '#FF8500' }],
     ['meta', { name: 'og:type', content: 'website' }],
