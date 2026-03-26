@@ -1,3 +1,9 @@
+## [0.5.2](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.5.1...v0.5.2) (2026-03-26)
+
+### 🐛 Bug Fixes
+
+* **config:** remove RSS icon from socialLinks (not locale-aware) ([09f7462](https://github.com/bauer-group/COM-CorporateIdentity/commit/09f746260227f3aaa163293a9cb2c2fcbf3b7530))
+
 ## [0.5.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.5.0...v0.5.1) (2026-03-26)
 
 ### 🐛 Bug Fixes
