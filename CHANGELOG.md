@@ -1,3 +1,9 @@
+## [0.5.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.5.0...v0.5.1) (2026-03-26)
+
+### 🐛 Bug Fixes
+
+* **config:** prevent RSS plugin from replacing socialLinks ([24f69c6](https://github.com/bauer-group/COM-CorporateIdentity/commit/24f69c68a7f46b7ae42ebd3fa1133e6405743f7d))
+
 ## [0.5.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.4.2...v0.5.0) (2026-03-26)
 
 ### 🚀 Features
