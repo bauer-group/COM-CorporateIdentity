@@ -1,3 +1,9 @@
+## [0.5.5](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.5.4...v0.5.5) (2026-03-26)
+
+### 🐛 Bug Fixes
+
+* **seo:** add hreflang to RSS auto-discovery link tags ([7851b7e](https://github.com/bauer-group/COM-CorporateIdentity/commit/7851b7eb2b6386c6e4290cc93acecf2242a72608))
+
 ## [0.5.4](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.5.3...v0.5.4) (2026-03-26)
 
 ### 🐛 Bug Fixes
