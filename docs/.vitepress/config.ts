@@ -7,6 +7,12 @@ export default defineConfig({
   titleTemplate: ':title | BAUER GROUP',
   lastUpdated: true,
   cleanUrls: true,
+  markdown: {
+    image: { lazyLoading: true },
+  },
+  sitemap: {
+    hostname: 'https://brand.docs.bauer-group.com',
+  },
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
