@@ -60,6 +60,8 @@ export const en: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
             { text: 'Color Scales', link: '/en/colors/scales' },
             { text: 'Semantic Colors', link: '/en/colors/semantic' },
             { text: 'Accent Colors', link: '/en/colors/accent' },
+            { text: 'Semantic Aliases', link: '/en/colors/aliases' },
+            { text: 'Methodology & Conventions', link: '/en/colors/methodology' },
           ]
         },
         {

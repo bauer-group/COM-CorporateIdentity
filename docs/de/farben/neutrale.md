@@ -37,12 +37,12 @@ Die BAUER GROUP definiert vier Markenneutralen als feste Referenzpunkte. Diese s
 
 ## Spezifikation
 
-| Name | HEX | RGB | HSL | CMYK | Warm-Gray-Stufe |
-|------|-----|-----|-----|------|-----------------|
-| **Brand White** | `#FFFFFF` | `255, 255, 255` | `0°, 0%, 100%` | `C0 M0 Y0 K0` | — |
-| **Brand Light** | `#F9F8F6` | `249, 248, 246` | `28°, 18%, 97%` | `C0 M0 Y1 K2` | Warm 50 |
-| **Brand Dark** | `#3A3430` | `58, 52, 48` | `24°, 9%, 21%` | `C0 M8 Y13 K77` | Warm 800 |
-| **Brand Black** | `#231F1C` | `35, 31, 28` | `26°, 11%, 12%` | `C0 M9 Y14 K86` | Warm 900 |
+| Name | HEX | OKLCH | RGB | CMYK | Warm-Gray-Stufe |
+|------|-----|-------|-----|------|-----------------|
+| **Brand White** | `#FFFFFF` | `oklch(100% 0 0)` | `255, 255, 255` | `C0 M0 Y0 K0` | — |
+| **Brand Light** | `#F9F8F6` | `oklch(98% 0.005 50)` | `249, 248, 246` | `C0 M0 Y1 K2` | Warm 50 |
+| **Brand Dark** | `#3A3430` | `oklch(30% 0.011 50)` | `58, 52, 48` | `C0 M8 Y13 K77` | Warm 800 |
+| **Brand Black** | `#231F1C` | `oklch(20% 0.009 50)` | `35, 31, 28` | `C0 M9 Y14 K86` | Warm 900 |
 
 ## Mapping zur Warm-Gray-Skala
 
@@ -135,9 +135,20 @@ Brand Dark und Brand Black sind **nicht reines Schwarz** (K100) — sie enthalte
 
 ```css
 :root {
+  /* HEX — Print-Authority, Tooling-Fallback */
   --brand-white: #FFFFFF;
   --brand-light: #F9F8F6;  /* = Warm 50 */
-  --brand-dark: #3A3430;    /* = Warm 800 */
-  --brand-black: #231F1C;   /* = Warm 900 */
+  --brand-dark:  #3A3430;  /* = Warm 800 */
+  --brand-black: #231F1C;  /* = Warm 900 */
+
+  /* OKLCH — Web/Display-Authority */
+  --brand-white-oklch: oklch(100% 0 0);
+  --brand-light-oklch: oklch(98% 0.005 50);
+  --brand-dark-oklch:  oklch(30% 0.011 50);
+  --brand-black-oklch: oklch(20% 0.009 50);
 }
 ```
+
+::: info Aliase auf Warm-Gray
+`--brand-light`, `--brand-dark` und `--brand-black` sind **semantische Aliase** auf die Warm-Gray-Skala. Wer alternativ direkt mit Skalen-Tokens arbeiten möchte, kann auch die Warm-Token-Variante verwenden — siehe [Semantische Aliase](/de/farben/aliase).
+:::

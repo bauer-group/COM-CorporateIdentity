@@ -55,6 +55,8 @@ export const de: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
             { text: 'Farbskalen', link: '/de/farben/skalen' },
             { text: 'Semantische Farben', link: '/de/farben/semantisch' },
             { text: 'Akzentfarben', link: '/de/farben/akzent' },
+            { text: 'Semantische Aliase', link: '/de/farben/aliase' },
+            { text: 'Methodik & Konventionen', link: '/de/farben/methodik' },
           ]
         },
         {

@@ -50,18 +50,23 @@ Die 10-Stufen-Skala verwendet **OKLCH-basierte Helligkeitsverteilung** für perc
 
 ### Vollständige Werte
 
-| Stufe | HEX | Vorschau | RGB | OKLCH (L) | CMYK | Anwendung |
-|-------|-----|----------|-----|-----------|------|-----------|
-| **50** | `#F9F8F6` | <span style="display:inline-block;width:48px;height:24px;background:#F9F8F6;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | `249, 248, 246` | 0.97 | `C0 M0 Y1 K2` | Hintergründe, Hover-States |
-| **100** | `#F0EDEA` | <span style="display:inline-block;width:48px;height:24px;background:#F0EDEA;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | `240, 237, 234` | 0.94 | `C0 M1 Y2 K6` | Subtile Akzente, Sektionen |
-| **200** | `#E0DBD6` | <span style="display:inline-block;width:48px;height:24px;background:#E0DBD6;border-radius:4px;vertical-align:middle;"></span> | `224, 219, 214` | 0.88 | `C0 M2 Y4 K12` | Rahmen, Trennlinien |
-| **300** | `#C4BDB7` | <span style="display:inline-block;width:48px;height:24px;background:#C4BDB7;border-radius:4px;vertical-align:middle;"></span> | `196, 189, 183` | 0.79 | `C0 M3 Y5 K23` | Icons, Dekoration |
-| **400** | `#A69E97` | <span style="display:inline-block;width:48px;height:24px;background:#A69E97;border-radius:4px;vertical-align:middle;"></span> | `166, 158, 151` | 0.68 | `C0 M4 Y7 K35` | Deaktivierter Text, Platzhalter |
-| **500** | `#887F78` | <span style="display:inline-block;width:48px;height:24px;background:#887F78;border-radius:4px;vertical-align:middle;"></span> | `136, 127, 120` | 0.57 | `C0 M5 Y9 K47` | Sekundärtext (nur groß, AA Large) |
-| **600** | `#6B635C` | <span style="display:inline-block;width:48px;height:24px;background:#6B635C;border-radius:4px;vertical-align:middle;"></span> | `107, 99, 92` | 0.47 | `C0 M6 Y10 K58` | **Fließtext (WCAG AA)** |
-| **700** | `#524B45` | <span style="display:inline-block;width:48px;height:24px;background:#524B45;border-radius:4px;vertical-align:middle;"></span> | `82, 75, 69` | 0.38 | `C0 M7 Y12 K68` | **Starker Text (WCAG AAA)** |
-| **800** | `#3A3430` | <span style="display:inline-block;width:48px;height:24px;background:#3A3430;border-radius:4px;vertical-align:middle;"></span> | `58, 52, 48` | 0.29 | `C0 M8 Y13 K77` | **Headlines, dunkle Flächen** |
-| **900** | `#231F1C` | <span style="display:inline-block;width:48px;height:24px;background:#231F1C;border-radius:4px;vertical-align:middle;"></span> | `35, 31, 28` | 0.20 | `C0 M9 Y14 K86` | Maximaler Kontrast, Footer |
+| Stufe | HEX | Vorschau | RGB | OKLCH | CMYK | Anwendung |
+|-------|-----|----------|-----|-------|------|-----------|
+| **50** | `#F9F8F6` | <span style="display:inline-block;width:48px;height:24px;background:#F9F8F6;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | `249, 248, 246` | `oklch(98% 0.005 50)` | `C0 M0 Y1 K2` | Hintergründe, Hover-States |
+| **100** | `#F0EDEA` | <span style="display:inline-block;width:48px;height:24px;background:#F0EDEA;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | `240, 237, 234` | `oklch(95% 0.008 50)` | `C0 M1 Y2 K6` | Subtile Akzente, Sektionen |
+| **200** | `#E0DBD6` | <span style="display:inline-block;width:48px;height:24px;background:#E0DBD6;border-radius:4px;vertical-align:middle;"></span> | `224, 219, 214` | `oklch(89% 0.011 50)` | `C0 M2 Y4 K12` | Rahmen, Trennlinien |
+| **300** | `#C4BDB7` | <span style="display:inline-block;width:48px;height:24px;background:#C4BDB7;border-radius:4px;vertical-align:middle;"></span> | `196, 189, 183` | `oklch(80% 0.012 50)` | `C0 M3 Y5 K23` | Icons, Dekoration |
+| **400** | `#A69E97` | <span style="display:inline-block;width:48px;height:24px;background:#A69E97;border-radius:4px;vertical-align:middle;"></span> | `166, 158, 151` | `oklch(70% 0.013 50)` | `C0 M4 Y7 K35` | Deaktivierter Text, Platzhalter |
+| **500** | `#887F78` | <span style="display:inline-block;width:48px;height:24px;background:#887F78;border-radius:4px;vertical-align:middle;"></span> | `136, 127, 120` | `oklch(60% 0.013 50)` | `C0 M5 Y9 K47` | Sekundärtext (nur groß, AA Large) |
+| **600** | `#6B635C` | <span style="display:inline-block;width:48px;height:24px;background:#6B635C;border-radius:4px;vertical-align:middle;"></span> | `107, 99, 92` | `oklch(50% 0.013 50)` | `C0 M6 Y10 K58` | **Fließtext (WCAG AA)** |
+| **700** | `#524B45` | <span style="display:inline-block;width:48px;height:24px;background:#524B45;border-radius:4px;vertical-align:middle;"></span> | `82, 75, 69` | `oklch(40% 0.012 50)` | `C0 M7 Y12 K68` | **Starker Text (WCAG AAA)** |
+| **800** | `#3A3430` | <span style="display:inline-block;width:48px;height:24px;background:#3A3430;border-radius:4px;vertical-align:middle;"></span> | `58, 52, 48` | `oklch(30% 0.011 50)` | `C0 M8 Y13 K77` | **Headlines, dunkle Flächen** |
+| **900** | `#231F1C` | <span style="display:inline-block;width:48px;height:24px;background:#231F1C;border-radius:4px;vertical-align:middle;"></span> | `35, 31, 28` | `oklch(20% 0.009 50)` | `C0 M9 Y14 K86` | Maximaler Kontrast, Footer |
+
+::: tip OKLCH-Lesehilfe
+Format: `oklch(L% C H)` — **L**ightness in % (0–100), **C**hroma absolut (0–~0.4 in sRGB), **H**ue in Grad (0–360°).
+Die Warm-Gray-Skala teilt **denselben Hue (50°)** und nahezu konstantes Chroma (~0.01) — variiert wird nur die Lightness. Das macht die Skala perzeptiv linear.
+:::
 
 ::: details OKLCH-Helligkeitsverteilung
 Die Skala verwendet OKLCH-Lightness für perceptuelle Gleichmäßigkeit:
@@ -229,11 +234,31 @@ Die warmen Grautöne enthalten stets einen leichten **Gelb/Magenta-Anteil** (Y, 
 
 ```css
 :root {
-  /* Warm Gray Scale */
+  /* Warm Gray Scale — HEX (Print-Authority, SVG, Tooling-Fallback) */
   --warm-50: #F9F8F6;   --warm-100: #F0EDEA;
-  --warm-200: #E0DBD6;   --warm-300: #C4BDB7;
-  --warm-400: #A69E97;   --warm-500: #887F78;
-  --warm-600: #6B635C;   --warm-700: #524B45;
-  --warm-800: #3A3430;   --warm-900: #231F1C;
+  --warm-200: #E0DBD6;  --warm-300: #C4BDB7;
+  --warm-400: #A69E97;  --warm-500: #887F78;
+  --warm-600: #6B635C;  --warm-700: #524B45;
+  --warm-800: #3A3430;  --warm-900: #231F1C;
+
+  /* Warm Gray Scale — OKLCH (Web/Display-Authority) */
+  --warm-50-oklch:  oklch(98% 0.005 50);
+  --warm-100-oklch: oklch(95% 0.008 50);
+  --warm-200-oklch: oklch(89% 0.011 50);
+  --warm-300-oklch: oklch(80% 0.012 50);
+  --warm-400-oklch: oklch(70% 0.013 50);
+  --warm-500-oklch: oklch(60% 0.013 50);
+  --warm-600-oklch: oklch(50% 0.013 50);
+  --warm-700-oklch: oklch(40% 0.012 50);
+  --warm-800-oklch: oklch(30% 0.011 50);
+  --warm-900-oklch: oklch(20% 0.009 50);
 }
 ```
+
+::: details Wann HEX, wann OKLCH im CSS?
+
+- **Standard-Komponenten** verwenden weiterhin `var(--warm-700)` etc. (HEX-Tokens) — das funktioniert garantiert in jedem Tooling-Workflow.
+- **Wide-Gamut-Optimierung** (P3-Displays, HDR-Hero-Sektionen): `var(--warm-700-oklch)` einsetzen, wenn perzeptive Konsistenz wichtiger ist als Tooling-Kompatibilität.
+- **Skalengeneration zur Build-Zeit**: OKLCH-Tokens sind die Quelle der Wahrheit für mathematisch ableitbare Skalen-Erweiterungen — siehe [Methodik](/de/farben/methodik).
+
+:::

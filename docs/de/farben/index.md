@@ -8,13 +8,22 @@ Die Primärfarbe der BAUER GROUP ist **Orange (#FF8500)**. Sie steht für Energi
   #FF8500
 </div>
 
-| Format | Wert |
-|--------|------|
-| **HEX** | `#FF8500` |
-| **RGB** | `255, 133, 0` |
-| **HSL** | `31°, 100%, 50%` |
-| **CMYK** | `C0 M48 Y100 K0` |
-| **Pantone** | `PMS 144 C` (Coated) / `PMS 144 U` (Uncoated) |
+| Format | Wert | Authority |
+|--------|------|-----------|
+| **HEX** | `#FF8500` | Print, SVG, Tooling-Fallback |
+| **OKLCH** | `oklch(68% 0.19 47)` | Web, Display, Wide-Gamut |
+| **RGB** | `255, 133, 0` | — |
+| **HSL** | `31°, 100%, 50%` | — |
+| **CMYK** | `C0 M48 Y100 K0` | Druck (kalibriert) |
+| **Pantone** | `PMS 144 C` (Coated) / `PMS 144 U` (Uncoated) | Sonderfarbe Print |
+
+::: info Notations-Hierarchie
+**Print** (Drucksachen, Visitenkarten, Pantone-Konversion): die **HEX/CMYK/Pantone-Werte** sind verbindlich. Druckereien wandeln HEX → CMYK über kalibrierte Profile.
+**Web/Display** (Apps, Sites, P3, HDR): die **OKLCH-Werte** geben die korrekte perzeptive Wirkung auf modernen Displays. HEX bleibt Fallback für Tooling, das OKLCH noch nicht versteht.
+**SVG/Logo, Adobe-/Figma-Tooling**: ausschließlich **HEX** (für maximale Kompatibilität).
+
+→ [Token-Methodik & Konventionen](/de/farben/methodik)
+:::
 
 ## Anwendung
 
