@@ -1,9 +1,9 @@
 # Semantische Aliase
 
-Semantische Aliase trennen die **physische Farbe** (z. B. `--warm-800`) von ihrer **semantischen Rolle** (z. B. `--text-primary`). Diese Indirektion ist zentral für die Wartbarkeit des Designsystems: ein Theme-Refactor ändert nur das Mapping an einer Stelle — nicht jede Komponente einzeln.
+Semantische Aliase trennen die **physische Farbe** (z. B. `--bg-warm-800`) von ihrer **semantischen Rolle** (z. B. `--bg-text`). Diese Indirektion ist zentral für die Wartbarkeit des Designsystems: ein Theme-Refactor ändert nur das Mapping an einer Stelle — nicht jede Komponente einzeln.
 
 ::: tip Warum Aliase?
-Wenn das Theme in 3 Jahren wärmer oder kühler werden soll, reicht es, das Mapping `--text-primary → warm-X` an *einer Stelle* zu ändern. Würde stattdessen jede Komponente direkt `var(--warm-900)` verwenden, wäre ein Theme-Refactor ein Find-And-Replace über die gesamte Codebase. Aliase machen das Designsystem langfristig wartbar.
+Wenn das Theme in 3 Jahren wärmer oder kühler werden soll, reicht es, das Mapping `--bg-text → bg-warm-X` an *einer Stelle* zu ändern. Würde stattdessen jede Komponente direkt `var(--bg-warm-900)` verwenden, wäre ein Theme-Refactor ein Find-And-Replace über die gesamte Codebase. Aliase machen das Designsystem langfristig wartbar.
 :::
 
 ## Brand-Farb-Aliase
@@ -12,9 +12,9 @@ Die Brand-Neutrals als feste Referenzpunkte — abgeleitet aus der [Warm-Gray-Sk
 
 | Alias | Verweist auf | HEX | Verwendung |
 |-------|--------------|-----|------------|
-| `--brand-light` | `--warm-50` | `#F9F8F6` | Cremiger Surface-Hintergrund (Light-Theme Card) |
-| `--brand-dark` | `--warm-800` | `#3A3430` | Dunkle CTA-Buttons auf orangem Background, Footer, dunkle Akzente |
-| `--brand-black` | `--warm-900` | `#231F1C` | Tiefster Brand-Neutral, Print-Schwarz, Hover-States für `--brand-dark` |
+| `--bg-brand-light` | `--bg-warm-50` | `#F9F8F6` | Cremiger Surface-Hintergrund (Light-Theme Card) |
+| `--bg-brand-dark` | `--bg-warm-800` | `#3A3430` | Dunkle CTA-Buttons auf orangem Background, Footer, dunkle Akzente |
+| `--bg-brand-black` | `--bg-warm-900` | `#231F1C` | Tiefster Brand-Neutral, Print-Schwarz, Hover-States für `--bg-brand-dark` |
 
 → Vollständige Spezifikation: [Brand-Neutrals](/de/farben/neutrale)
 
@@ -24,10 +24,10 @@ Hierarchie der Text-Sichtbarkeit. Alle Aliase sind WCAG-validiert auf Brand-Whit
 
 | Alias | Verweist auf | HEX | Verwendung | WCAG auf Weiß |
 |-------|--------------|-----|------------|---------------|
-| `--text-primary` | `--warm-900` | `#231F1C` | Headlines, primärer Body-Text | AAA (16.6:1) |
-| `--text-secondary` | `--warm-600` | `#6B635C` | Lead-Texte, sekundäre Beschreibungen | AA (5.9:1) |
-| `--text-muted` | `--warm-500` | `#887F78` | Captions, Metadaten, Timestamps | AA Large (3.9:1) |
-| `--text-disabled` | `--warm-400` | `#A69E97` | Deaktivierte Buttons, Placeholders | — (2.6:1, dekorativ) |
+| `--bg-text` | `--bg-warm-900` | `#231F1C` | Headlines, primärer Body-Text | AAA (16.6:1) |
+| `--bg-text-secondary` | `--bg-warm-600` | `#6B635C` | Lead-Texte, sekundäre Beschreibungen | AA (5.9:1) |
+| `--bg-text-muted` | `--bg-warm-500` | `#887F78` | Captions, Metadaten, Timestamps | AA Large (3.9:1) |
+| `--bg-text-disabled` | `--bg-warm-400` | `#A69E97` | Deaktivierte Buttons, Placeholders | — (2.6:1, dekorativ) |
 
 <div style="display:flex;flex-direction:column;gap:8px;background:white;padding:24px;border:1px solid #E0DBD6;border-radius:12px;margin:24px 0;">
   <div style="color:#231F1C;font-weight:700;font-size:1.5em;">Headline (text-primary)</div>
@@ -40,9 +40,9 @@ Hierarchie der Text-Sichtbarkeit. Alle Aliase sind WCAG-validiert auf Brand-Whit
 
 | Alias | Verweist auf (Light) | Verweist auf (Dark) | Verwendung |
 |-------|----------------------|---------------------|------------|
-| `--bg-primary` | `#FFFFFF` | `--warm-900` | Page-Background |
-| `--bg-subtle` | `--warm-50` | `--warm-800` | Card-Background, Hover-States |
-| `--bg-muted` | `--warm-100` | `--warm-700` | Tertiäre Surfaces, Code-Block-Background |
+| `--bg-surface` | `#FFFFFF` | `--bg-warm-900` | Page-Background |
+| `--bg-surface-subtle` | `--bg-warm-50` | `--bg-warm-800` | Card-Background, Hover-States |
+| `--bg-surface-muted` | `--bg-warm-100` | `--bg-warm-700` | Tertiäre Surfaces, Code-Block-Background |
 
 <div style="border-radius:12px;overflow:hidden;border:1px solid #E0DBD6;margin:24px 0;">
   <div style="background:#FFFFFF;padding:20px;border-bottom:1px solid #E0DBD6;">
@@ -63,8 +63,8 @@ Hierarchie der Text-Sichtbarkeit. Alle Aliase sind WCAG-validiert auf Brand-Whit
 
 | Alias | Verweist auf (Light) | Verweist auf (Dark) | Verwendung |
 |-------|----------------------|---------------------|------------|
-| `--border` | `--warm-200` | `--warm-700` | Standard-Hairline (Cards, Tables, Form-Inputs) |
-| `--border-strong` | `--warm-300` | `--warm-600` | Betonte Trennlinien, aktive Form-Inputs, Focus-Outlines |
+| `--bg-border` | `--bg-warm-200` | `--bg-warm-700` | Standard-Hairline (Cards, Tables, Form-Inputs) |
+| `--bg-border-strong` | `--bg-warm-300` | `--bg-warm-600` | Betonte Trennlinien, aktive Form-Inputs, Focus-Outlines |
 
 <div style="display:flex;gap:16px;flex-wrap:wrap;margin:24px 0;">
   <div style="flex:1;min-width:200px;background:white;border:1px solid #E0DBD6;border-radius:8px;padding:20px;">
@@ -90,9 +90,9 @@ Hierarchie der Text-Sichtbarkeit. Alle Aliase sind WCAG-validiert auf Brand-Whit
                     ▼                         ▼
          ┌────────────────────┐   ┌────────────────────┐
          │  Brand-Aliase      │   │  Rollen-Aliase     │
-         │  --brand-light     │   │  --text-primary    │
-         │  --brand-dark      │   │  --bg-subtle       │
-         │  --brand-black     │   │  --border          │
+         │  --bg-brand-light  │   │  --bg-text         │
+         │  --bg-brand-dark   │   │ --bg-surface-subtle│
+         │  --bg-brand-black  │   │  --bg-border       │
          └────────────────────┘   └────────────────────┘
                     │                         │
                     └──────────┬──────────────┘
@@ -109,54 +109,54 @@ Hierarchie der Text-Sichtbarkeit. Alle Aliase sind WCAG-validiert auf Brand-Whit
 ```css
 :root {
   /* Brand-Aliase */
-  --brand-light: var(--warm-50);
-  --brand-dark:  var(--warm-800);
-  --brand-black: var(--warm-900);
+  --bg-brand-light: var(--bg-warm-50);
+  --bg-brand-dark:  var(--bg-warm-800);
+  --bg-brand-black: var(--bg-warm-900);
 
   /* Text-Rollen */
-  --text-primary:   var(--warm-900);
-  --text-secondary: var(--warm-600);
-  --text-muted:     var(--warm-500);
-  --text-disabled:  var(--warm-400);
+  --bg-text:           var(--bg-warm-900);
+  --bg-text-secondary: var(--bg-warm-600);
+  --bg-text-muted:     var(--bg-warm-500);
+  --bg-text-disabled:  var(--bg-warm-400);
 
   /* Background-Rollen — Light Theme */
-  --bg-primary: #FFFFFF;
-  --bg-subtle:  var(--warm-50);
-  --bg-muted:   var(--warm-100);
+  --bg-surface:        #FFFFFF;
+  --bg-surface-subtle: var(--bg-warm-50);
+  --bg-surface-muted:  var(--bg-warm-100);
 
   /* Border-Rollen */
-  --border:        var(--warm-200);
-  --border-strong: var(--warm-300);
+  --bg-border:        var(--bg-warm-200);
+  --bg-border-strong: var(--bg-warm-300);
 }
 
 [data-theme="dark"] {
-  --bg-primary: var(--warm-900);
-  --bg-subtle:  var(--warm-800);
-  --bg-muted:   var(--warm-700);
+  --bg-surface:        var(--bg-warm-900);
+  --bg-surface-subtle: var(--bg-warm-800);
+  --bg-surface-muted:  var(--bg-warm-700);
 
-  --border:        var(--warm-700);
-  --border-strong: var(--warm-600);
+  --bg-border:        var(--bg-warm-700);
+  --bg-border-strong: var(--bg-warm-600);
 }
 ```
 
 ## Anwendungsregeln
 
 1. **Komponenten verwenden Aliase, niemals Skalen-Token direkt.**
-   `color: var(--text-primary)` statt `color: var(--warm-900)`.
+   `color: var(--bg-text)` statt `color: var(--bg-warm-900)`.
 2. **Aliase sind Single-Source-of-Truth pro Rolle.**
-   Eine Komponente sollte für "Body-Text" immer `--text-primary` verwenden, niemals zwischen `--warm-800` und `--warm-900` schwanken.
+   Eine Komponente sollte für "Body-Text" immer `--bg-text` verwenden, niemals zwischen `--bg-warm-800` und `--bg-warm-900` schwanken.
 3. **Theme-Wechsel passiert nur am Alias.**
-   Dark-Mode ändert das Mapping `--text-primary → warm-100`, nicht jede Komponente.
+   Dark-Mode ändert das Mapping `--bg-text → bg-warm-100`, nicht jede Komponente.
 4. **Skalen-Token sind erlaubt für Spezialfälle**, in denen die semantische Rolle nicht klar ist (z. B. dekorative Verläufe, Datenvisualisierungen mit eigener Hierarchie).
 
 ::: warning Anti-Pattern
 
 ```css
 /* FALSCH — koppelt Komponente direkt an die Skala */
-.card-title { color: var(--warm-900); }
+.card-title { color: var(--bg-warm-900); }
 
 /* RICHTIG — verwendet die semantische Rolle */
-.card-title { color: var(--text-primary); }
+.card-title { color: var(--bg-text); }
 ```
 
 Beim Theme-Refactor muss der zweite Code nicht angefasst werden — beim ersten schon.

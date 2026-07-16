@@ -40,12 +40,16 @@ Die Tasche setzt ausschließlich auf die Bildmarke — ohne Wortmarke oder URL. 
 
 ## Downloads
 
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;">
-  <a href="/print/BAUER%20GROUP,%20Baumwolltasche%20200x200mm%20mit%201%20Farbe,%20Version%202023-06-25.pdf" download style="display:flex;align-items:center;gap:10px;background:var(--vp-c-bg-soft);border:1px solid var(--vp-c-divider);border-radius:10px;padding:14px 20px;text-decoration:none;color:var(--vp-c-text-1);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--vp-c-brand-1)'" onmouseout="this.style.borderColor='var(--vp-c-divider)'">
-    <span style="font-size:1.5em;">📄</span>
-    <div>
-      <div style="font-weight:700;font-size:0.85em;">Baumwolltasche — Druckdatei</div>
-      <div style="font-size:0.75em;color:var(--vp-c-text-2);">BAUER GROUP, Baumwolltasche 200x200mm mit 1 Farbe, Version 2023-06-25.pdf · 489 KB</div>
+<div class="download-grid">
+  <div class="download-card">
+    <div class="preview"><img src="/print/tasche-preview.png" alt="Baumwolltasche" /></div>
+    <div class="body">
+      <div class="title">Baumwolltasche — Druckdatei</div>
+      <div class="note">BAUER GROUP, Baumwolltasche 200x200mm mit 1 Farbe, Version 2023-06-25.pdf · 489 KB</div>
+      <div class="links">
+        <a href="/print/BAUER%20GROUP,%20Baumwolltasche%20200x200mm%20mit%201%20Farbe,%20Version%202023-06-25.pdf" download>PDF</a>
+        <a href="/print/tasche-preview.png" download>PNG</a>
+      </div>
     </div>
-  </a>
+  </div>
 </div>

@@ -120,38 +120,29 @@ Weitere Druckhinweise: [Print & CMYK](/de/print/) · [Papierempfehlungen](/de/pr
 
 ## Downloads
 
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;">
-  <a href="/print/BAUER%20GROUP,%20Schreibblock%20A5,%20Version%202023-06-20.pdf" download style="display:flex;align-items:center;gap:10px;background:var(--vp-c-bg-soft);border:1px solid var(--vp-c-divider);border-radius:10px;padding:14px 20px;text-decoration:none;color:var(--vp-c-text-1);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--vp-c-brand-1)'" onmouseout="this.style.borderColor='var(--vp-c-divider)'">
-    <span style="font-size:1.5em;">📄</span>
-    <div>
-      <div style="font-weight:700;font-size:0.85em;">Schreibblock A5 — Druckdatei</div>
-      <div style="font-size:0.75em;color:var(--vp-c-text-2);">BAUER GROUP, Schreibblock A5, Version 2023-06-20.pdf · 102 KB</div>
+<div class="download-grid">
+  <div class="download-card">
+    <div class="preview"><img src="/print/block-a5-preview.png" alt="Schreibblock A5" /></div>
+    <div class="body">
+      <div class="title">Schreibblock A5</div>
+      <div class="note">Version 2023-06-20 · PDF 102 KB · PNG 898 × 1264 px</div>
+      <div class="links">
+        <a href="/print/BAUER%20GROUP,%20Schreibblock%20A5,%20Version%202023-06-20.pdf" download>PDF</a>
+        <a href="/print/block-a5-preview.png" download>PNG</a>
+      </div>
     </div>
-  </a>
-  <a href="/print/BAUER%20GROUP,%20Schreibblock%20A6,%20Version%202023-06-20.pdf" download style="display:flex;align-items:center;gap:10px;background:var(--vp-c-bg-soft);border:1px solid var(--vp-c-divider);border-radius:10px;padding:14px 20px;text-decoration:none;color:var(--vp-c-text-1);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--vp-c-brand-1)'" onmouseout="this.style.borderColor='var(--vp-c-divider)'">
-    <span style="font-size:1.5em;">📄</span>
-    <div>
-      <div style="font-weight:700;font-size:0.85em;">Schreibblock A6 — Druckdatei</div>
-      <div style="font-size:0.75em;color:var(--vp-c-text-2);">BAUER GROUP, Schreibblock A6, Version 2023-06-20.pdf · 67 KB</div>
+  </div>
+  <div class="download-card">
+    <div class="preview"><img src="/print/block-a6-preview.png" alt="Schreibblock A6" /></div>
+    <div class="body">
+      <div class="title">Schreibblock A6</div>
+      <div class="note">Version 2023-06-20 · PDF 67 KB · PNG 644 × 898 px</div>
+      <div class="links">
+        <a href="/print/BAUER%20GROUP,%20Schreibblock%20A6,%20Version%202023-06-20.pdf" download>PDF</a>
+        <a href="/print/block-a6-preview.png" download>PNG</a>
+      </div>
     </div>
-  </a>
-</div>
-
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin:8px 0;">
-  <a href="/print/block-a5-preview.png" download style="display:flex;align-items:center;gap:10px;background:var(--vp-c-bg-soft);border:1px solid var(--vp-c-divider);border-radius:10px;padding:14px 20px;text-decoration:none;color:var(--vp-c-text-1);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--vp-c-brand-1)'" onmouseout="this.style.borderColor='var(--vp-c-divider)'">
-    <span style="font-size:1.5em;">🖼️</span>
-    <div>
-      <div style="font-weight:700;font-size:0.85em;">Schreibblock A5 — Vorschau</div>
-      <div style="font-size:0.75em;color:var(--vp-c-text-2);">PNG · 898 × 1264 px</div>
-    </div>
-  </a>
-  <a href="/print/block-a6-preview.png" download style="display:flex;align-items:center;gap:10px;background:var(--vp-c-bg-soft);border:1px solid var(--vp-c-divider);border-radius:10px;padding:14px 20px;text-decoration:none;color:var(--vp-c-text-1);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--vp-c-brand-1)'" onmouseout="this.style.borderColor='var(--vp-c-divider)'">
-    <span style="font-size:1.5em;">🖼️</span>
-    <div>
-      <div style="font-weight:700;font-size:0.85em;">Schreibblock A6 — Vorschau</div>
-      <div style="font-size:0.75em;color:var(--vp-c-text-2);">PNG · 644 × 898 px</div>
-    </div>
-  </a>
+  </div>
 </div>
 
 ::: warning Versionshinweis

@@ -96,23 +96,23 @@ Rein neutrale Grautöne (Sättigung 0%) — bewährt in Print-Materialien (Raste
 
 ```css
 :root {
-  --orange-50: #FFF7ED;   --orange-100: #FFEDD5;
-  --orange-200: #FED7AA;  --orange-300: #FDBA74;
-  --orange-400: #FB923C;  --orange-500: #FF8500;
-  --orange-600: #EA6D00;  --orange-700: #C2570A;
-  --orange-800: #9A4509;  --orange-900: #7C3A0A;
+  --bg-orange-50: #FFF7ED;   --bg-orange-100: #FFEDD5;
+  --bg-orange-200: #FED7AA;  --bg-orange-300: #FDBA74;
+  --bg-orange-400: #FB923C;  --bg-orange-500: #FF8500;
+  --bg-orange-600: #EA6D00;  --bg-orange-700: #C2570A;
+  --bg-orange-800: #9A4509;  --bg-orange-900: #7C3A0A;
 
-  --warm-50: #F9F8F6;     --warm-100: #F0EDEA;
-  --warm-200: #E0DBD6;    --warm-300: #C4BDB7;
-  --warm-400: #A69E97;    --warm-500: #887F78;
-  --warm-600: #6B635C;    --warm-700: #524B45;
-  --warm-800: #3A3430;    --warm-900: #231F1C;
+  --bg-warm-50: #F9F8F6;     --bg-warm-100: #F0EDEA;
+  --bg-warm-200: #E0DBD6;    --bg-warm-300: #C4BDB7;
+  --bg-warm-400: #A69E97;    --bg-warm-500: #887F78;
+  --bg-warm-600: #6B635C;    --bg-warm-700: #524B45;
+  --bg-warm-800: #3A3430;    --bg-warm-900: #231F1C;
 
-  --gray-50: #F7F7F7;     --gray-100: #EBEBEB;
-  --gray-200: #D1D1D1;    --gray-300: #B8B8B8;
-  --gray-400: #9E9E9E;    --gray-500: #7F7F7F;
-  --gray-600: #666666;    --gray-700: #4D4D4D;
-  --gray-800: #333333;    --gray-900: #1C1C1C;
+  --bg-neutral-50: #F7F7F7;     --bg-neutral-100: #EBEBEB;
+  --bg-neutral-200: #D1D1D1;    --bg-neutral-300: #B8B8B8;
+  --bg-neutral-400: #9E9E9E;    --bg-neutral-500: #7F7F7F;
+  --bg-neutral-600: #666666;    --bg-neutral-700: #4D4D4D;
+  --bg-neutral-800: #333333;    --bg-neutral-900: #1C1C1C;
 }
 ```
 
@@ -121,40 +121,40 @@ Rein neutrale Grautöne (Sättigung 0%) — bewährt in Print-Materialien (Raste
 ```css
 :root {
   /* Orange-Skala — Hue 47°, Chroma-Anker 0.19 bei -500 */
-  --orange-50-oklch:  oklch(96% 0.03 60);
-  --orange-100-oklch: oklch(92% 0.06 60);
-  --orange-200-oklch: oklch(86% 0.11 58);
-  --orange-300-oklch: oklch(78% 0.15 55);
-  --orange-400-oklch: oklch(72% 0.18 50);
-  --orange-500-oklch: oklch(68% 0.19 47);
-  --orange-600-oklch: oklch(62% 0.18 44);
-  --orange-700-oklch: oklch(54% 0.16 42);
-  --orange-800-oklch: oklch(44% 0.13 40);
-  --orange-900-oklch: oklch(34% 0.10 38);
+  --bg-orange-50-oklch:  oklch(96% 0.03 60);
+  --bg-orange-100-oklch: oklch(92% 0.06 60);
+  --bg-orange-200-oklch: oklch(86% 0.11 58);
+  --bg-orange-300-oklch: oklch(78% 0.15 55);
+  --bg-orange-400-oklch: oklch(72% 0.18 50);
+  --bg-orange-500-oklch: oklch(68% 0.19 47);
+  --bg-orange-600-oklch: oklch(62% 0.18 44);
+  --bg-orange-700-oklch: oklch(54% 0.16 42);
+  --bg-orange-800-oklch: oklch(44% 0.13 40);
+  --bg-orange-900-oklch: oklch(34% 0.10 38);
 
   /* Warm-Gray-Skala — Hue 50°, Chroma ~0.01 (warm getönt) */
-  --warm-50-oklch:  oklch(98% 0.005 50);
-  --warm-100-oklch: oklch(95% 0.008 50);
-  --warm-200-oklch: oklch(89% 0.011 50);
-  --warm-300-oklch: oklch(80% 0.012 50);
-  --warm-400-oklch: oklch(70% 0.013 50);
-  --warm-500-oklch: oklch(60% 0.013 50);
-  --warm-600-oklch: oklch(50% 0.013 50);
-  --warm-700-oklch: oklch(40% 0.012 50);
-  --warm-800-oklch: oklch(30% 0.011 50);
-  --warm-900-oklch: oklch(20% 0.009 50);
+  --bg-warm-50-oklch:  oklch(98% 0.005 50);
+  --bg-warm-100-oklch: oklch(95% 0.008 50);
+  --bg-warm-200-oklch: oklch(89% 0.011 50);
+  --bg-warm-300-oklch: oklch(80% 0.012 50);
+  --bg-warm-400-oklch: oklch(70% 0.013 50);
+  --bg-warm-500-oklch: oklch(60% 0.013 50);
+  --bg-warm-600-oklch: oklch(50% 0.013 50);
+  --bg-warm-700-oklch: oklch(40% 0.012 50);
+  --bg-warm-800-oklch: oklch(30% 0.011 50);
+  --bg-warm-900-oklch: oklch(20% 0.009 50);
 
   /* Neutral-Gray-Skala — Chroma 0 (rein achromatisch) */
-  --gray-50-oklch:  oklch(97% 0 0);
-  --gray-100-oklch: oklch(93% 0 0);
-  --gray-200-oklch: oklch(85% 0 0);
-  --gray-300-oklch: oklch(77% 0 0);
-  --gray-400-oklch: oklch(68% 0 0);
-  --gray-500-oklch: oklch(58% 0 0);
-  --gray-600-oklch: oklch(48% 0 0);
-  --gray-700-oklch: oklch(38% 0 0);
-  --gray-800-oklch: oklch(28% 0 0);
-  --gray-900-oklch: oklch(18% 0 0);
+  --bg-neutral-50-oklch:  oklch(97% 0 0);
+  --bg-neutral-100-oklch: oklch(93% 0 0);
+  --bg-neutral-200-oklch: oklch(85% 0 0);
+  --bg-neutral-300-oklch: oklch(77% 0 0);
+  --bg-neutral-400-oklch: oklch(68% 0 0);
+  --bg-neutral-500-oklch: oklch(58% 0 0);
+  --bg-neutral-600-oklch: oklch(48% 0 0);
+  --bg-neutral-700-oklch: oklch(38% 0 0);
+  --bg-neutral-800-oklch: oklch(28% 0 0);
+  --bg-neutral-900-oklch: oklch(18% 0 0);
 }
 ```
 

@@ -235,30 +235,30 @@ Die warmen Grautöne enthalten stets einen leichten **Gelb/Magenta-Anteil** (Y, 
 ```css
 :root {
   /* Warm Gray Scale — HEX (Print-Authority, SVG, Tooling-Fallback) */
-  --warm-50: #F9F8F6;   --warm-100: #F0EDEA;
-  --warm-200: #E0DBD6;  --warm-300: #C4BDB7;
-  --warm-400: #A69E97;  --warm-500: #887F78;
-  --warm-600: #6B635C;  --warm-700: #524B45;
-  --warm-800: #3A3430;  --warm-900: #231F1C;
+  --bg-warm-50: #F9F8F6;   --bg-warm-100: #F0EDEA;
+  --bg-warm-200: #E0DBD6;  --bg-warm-300: #C4BDB7;
+  --bg-warm-400: #A69E97;  --bg-warm-500: #887F78;
+  --bg-warm-600: #6B635C;  --bg-warm-700: #524B45;
+  --bg-warm-800: #3A3430;  --bg-warm-900: #231F1C;
 
   /* Warm Gray Scale — OKLCH (Web/Display-Authority) */
-  --warm-50-oklch:  oklch(98% 0.005 50);
-  --warm-100-oklch: oklch(95% 0.008 50);
-  --warm-200-oklch: oklch(89% 0.011 50);
-  --warm-300-oklch: oklch(80% 0.012 50);
-  --warm-400-oklch: oklch(70% 0.013 50);
-  --warm-500-oklch: oklch(60% 0.013 50);
-  --warm-600-oklch: oklch(50% 0.013 50);
-  --warm-700-oklch: oklch(40% 0.012 50);
-  --warm-800-oklch: oklch(30% 0.011 50);
-  --warm-900-oklch: oklch(20% 0.009 50);
+  --bg-warm-50-oklch:  oklch(98% 0.005 50);
+  --bg-warm-100-oklch: oklch(95% 0.008 50);
+  --bg-warm-200-oklch: oklch(89% 0.011 50);
+  --bg-warm-300-oklch: oklch(80% 0.012 50);
+  --bg-warm-400-oklch: oklch(70% 0.013 50);
+  --bg-warm-500-oklch: oklch(60% 0.013 50);
+  --bg-warm-600-oklch: oklch(50% 0.013 50);
+  --bg-warm-700-oklch: oklch(40% 0.012 50);
+  --bg-warm-800-oklch: oklch(30% 0.011 50);
+  --bg-warm-900-oklch: oklch(20% 0.009 50);
 }
 ```
 
 ::: details Wann HEX, wann OKLCH im CSS?
 
-- **Standard-Komponenten** verwenden weiterhin `var(--warm-700)` etc. (HEX-Tokens) — das funktioniert garantiert in jedem Tooling-Workflow.
-- **Wide-Gamut-Optimierung** (P3-Displays, HDR-Hero-Sektionen): `var(--warm-700-oklch)` einsetzen, wenn perzeptive Konsistenz wichtiger ist als Tooling-Kompatibilität.
+- **Standard-Komponenten** verwenden weiterhin `var(--bg-warm-700)` etc. (HEX-Tokens) — das funktioniert garantiert in jedem Tooling-Workflow.
+- **Wide-Gamut-Optimierung** (P3-Displays, HDR-Hero-Sektionen): `var(--bg-warm-700-oklch)` einsetzen, wenn perzeptive Konsistenz wichtiger ist als Tooling-Kompatibilität.
 - **Skalengeneration zur Build-Zeit**: OKLCH-Tokens sind die Quelle der Wahrheit für mathematisch ableitbare Skalen-Erweiterungen — siehe [Methodik](/de/farben/methodik).
 
 :::

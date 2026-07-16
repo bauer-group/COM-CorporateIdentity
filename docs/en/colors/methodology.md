@@ -117,7 +117,7 @@ Protected are all gradients that use **Brand Orange as a central component** and
 background: linear-gradient(135deg, #FF8500, #C2570A);
 
 /* AFTER — token-based (render output identical) */
-background: linear-gradient(135deg, var(--orange-500), var(--orange-700));
+background: linear-gradient(135deg, var(--bg-orange-500), var(--bg-orange-700));
 ```
 
 → **Allowed**: replacing hardcoded values with token references, as long as the render output remains **pixel-identical**.
@@ -126,10 +126,10 @@ background: linear-gradient(135deg, var(--orange-500), var(--orange-700));
 
 ```css
 /* WRONG — new color tones, different visual impression */
-background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+background: linear-gradient(135deg, var(--bg-orange-400), var(--bg-orange-600));
 
 /* WRONG — different angle, different stop position */
-background: linear-gradient(180deg, var(--orange-500) 20%, var(--orange-700));
+background: linear-gradient(180deg, var(--bg-orange-500) 20%, var(--bg-orange-700));
 ```
 
 → **Not allowed**: a token refactor changing the render output. When in doubt: leave the hardcoded value and introduce a new token that captures exactly that value.
@@ -144,9 +144,9 @@ If a refactor of a Brand Orange gradient produces **a non-zero diff in a screens
 |------------|---------|------|
 | **HEX first** | `#FF8500` | Standard column in every table |
 | **OKLCH second column** | `oklch(68% 0.19 47)` | Next to HEX, never as a replacement |
-| **CSS variable HEX** | `--orange-500` | Standard token |
-| **CSS variable OKLCH** | `--orange-500-oklch` | Suffix `-oklch` for wide-gamut optimization |
-| **Semantic alias** | `--text-primary` | References a scale token, never HEX directly |
+| **CSS variable HEX** | `--bg-orange-500` | Standard token |
+| **CSS variable OKLCH** | `--bg-orange-500-oklch` | Suffix `-oklch` for wide-gamut optimization |
+| **Semantic alias** | `--bg-text` | References a scale token, never HEX directly |
 
 ## Verification Tools
 

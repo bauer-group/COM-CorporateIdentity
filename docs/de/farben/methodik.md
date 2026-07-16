@@ -117,7 +117,7 @@ Geschützt sind alle Verläufe, die **Brand-Orange als zentrale Komponente** ver
 background: linear-gradient(135deg, #FF8500, #C2570A);
 
 /* NACHHER — Token-basiert (Render-Output identisch) */
-background: linear-gradient(135deg, var(--orange-500), var(--orange-700));
+background: linear-gradient(135deg, var(--bg-orange-500), var(--bg-orange-700));
 ```
 
 → **Erlaubt**: Hardcoded-Werte durch Token-Referenzen ersetzen, solange der Render-Output **pixelidentisch** bleibt.
@@ -126,10 +126,10 @@ background: linear-gradient(135deg, var(--orange-500), var(--orange-700));
 
 ```css
 /* FALSCH — neue Farbtöne, anderer visueller Eindruck */
-background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+background: linear-gradient(135deg, var(--bg-orange-400), var(--bg-orange-600));
 
 /* FALSCH — andere Winkel, anderer Stop-Punkt */
-background: linear-gradient(180deg, var(--orange-500) 20%, var(--orange-700));
+background: linear-gradient(180deg, var(--bg-orange-500) 20%, var(--bg-orange-700));
 ```
 
 → **Nicht erlaubt**: Token-Refactor darf den Render-Output verändern. Im Zweifel: Hardcoded-Wert stehenlassen und einen neuen Token einführen, der genau diesen Wert kapselt.
@@ -144,9 +144,9 @@ Wenn ein Refactor an einem Brand-Orange-Gradient den **Diff in einem Screenshot-
 |-----------|----------|------|
 | **HEX zuerst** | `#FF8500` | Standard-Spalte in jeder Tabelle |
 | **OKLCH zweite Spalte** | `oklch(68% 0.19 47)` | Neben HEX, niemals als Ersatz |
-| **CSS-Variable HEX** | `--orange-500` | Standard-Token |
-| **CSS-Variable OKLCH** | `--orange-500-oklch` | Suffix `-oklch` für Wide-Gamut-Optimierung |
-| **Semantischer Alias** | `--text-primary` | Verweist auf Skalen-Token, niemals HEX direkt |
+| **CSS-Variable HEX** | `--bg-orange-500` | Standard-Token |
+| **CSS-Variable OKLCH** | `--bg-orange-500-oklch` | Suffix `-oklch` für Wide-Gamut-Optimierung |
+| **Semantischer Alias** | `--bg-text` | Verweist auf Skalen-Token, niemals HEX direkt |
 
 ## Verifikations-Tools
 

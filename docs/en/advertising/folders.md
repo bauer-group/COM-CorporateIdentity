@@ -84,40 +84,49 @@ BAUER GROUP uses two folder formats: **DIN-Lang** (with closure flap) and **DIN-
 
 ## Downloads
 
-### DIN-Lang Folder
-
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;">
-  <a href="/print/BAUER%20GROUP,%20Mappe%20mit%20Verschlusslasche%20DIN-Lang%20-%20Druckvorlage,%20Version%202023-07-14.pdf" download style="display:flex;align-items:center;gap:10px;background:var(--vp-c-bg-soft);border:1px solid var(--vp-c-divider);border-radius:10px;padding:14px 20px;text-decoration:none;color:var(--vp-c-text-1);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--vp-c-brand-1)'" onmouseout="this.style.borderColor='var(--vp-c-divider)'">
-    <span style="font-size:1.5em;">📄</span>
-    <div>
-      <div style="font-weight:700;font-size:0.85em;">DIN-Lang — Print template</div>
-      <div style="font-size:0.75em;color:var(--vp-c-text-2);">BAUER GROUP, Mappe mit Verschlusslasche DIN-Lang - Druckvorlage, Version 2023-07-14.pdf · 4.8 MB</div>
+<div class="download-grid">
+  <div class="download-card">
+    <div class="preview"><img src="/print/mappe-dinlang-druck-preview.png" alt="DIN-Lang — Print template" /></div>
+    <div class="body">
+      <div class="title">DIN-Lang — Print template</div>
+      <div class="note">Version 2023-07-14 · 4.8 MB</div>
+      <div class="links">
+        <a href="/print/BAUER%20GROUP,%20Mappe%20mit%20Verschlusslasche%20DIN-Lang%20-%20Druckvorlage,%20Version%202023-07-14.pdf" download>PDF</a>
+        <a href="/print/mappe-dinlang-druck-preview.png" download>PNG</a>
+      </div>
     </div>
-  </a>
-  <a href="/print/BAUER%20GROUP,%20Mappe%20mit%20Verschlusslasche%20DIN-Lang%20-%20Stanzansicht,%20Version%202023-07-14.pdf" download style="display:flex;align-items:center;gap:10px;background:var(--vp-c-bg-soft);border:1px solid var(--vp-c-divider);border-radius:10px;padding:14px 20px;text-decoration:none;color:var(--vp-c-text-1);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--vp-c-brand-1)'" onmouseout="this.style.borderColor='var(--vp-c-divider)'">
-    <span style="font-size:1.5em;">📄</span>
-    <div>
-      <div style="font-weight:700;font-size:0.85em;">DIN-Lang — Die-cut view</div>
-      <div style="font-size:0.75em;color:var(--vp-c-text-2);">BAUER GROUP, Mappe mit Verschlusslasche DIN-Lang - Stanzansicht, Version 2023-07-14.pdf · 4.8 MB</div>
+  </div>
+  <div class="download-card">
+    <div class="preview"><img src="/print/mappe-dinlang-stanz-preview.png" alt="DIN-Lang — Die-cut view" /></div>
+    <div class="body">
+      <div class="title">DIN-Lang — Die-cut view</div>
+      <div class="note">Version 2023-07-14 · 4.8 MB</div>
+      <div class="links">
+        <a href="/print/BAUER%20GROUP,%20Mappe%20mit%20Verschlusslasche%20DIN-Lang%20-%20Stanzansicht,%20Version%202023-07-14.pdf" download>PDF</a>
+        <a href="/print/mappe-dinlang-stanz-preview.png" download>PNG</a>
+      </div>
     </div>
-  </a>
-</div>
-
-### DIN-A4 Folder
-
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;">
-  <a href="/print/BAUER%20GROUP,%20Mappe%20mit%20Visitenkartentasche%20DIN-A4%20-%20Druckvorlage,%20Version%202023-06-26.pdf" download style="display:flex;align-items:center;gap:10px;background:var(--vp-c-bg-soft);border:1px solid var(--vp-c-divider);border-radius:10px;padding:14px 20px;text-decoration:none;color:var(--vp-c-text-1);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--vp-c-brand-1)'" onmouseout="this.style.borderColor='var(--vp-c-divider)'">
-    <span style="font-size:1.5em;">📄</span>
-    <div>
-      <div style="font-weight:700;font-size:0.85em;">DIN-A4 — Print template</div>
-      <div style="font-size:0.75em;color:var(--vp-c-text-2);">BAUER GROUP, Mappe mit Visitenkartentasche DIN-A4 - Druckvorlage, Version 2023-06-26.pdf · 7.5 MB</div>
+  </div>
+  <div class="download-card">
+    <div class="preview"><img src="/print/mappe-a4-druck-preview.png" alt="DIN-A4 — Print template" /></div>
+    <div class="body">
+      <div class="title">DIN-A4 — Print template</div>
+      <div class="note">Version 2023-06-26 · 7.5 MB</div>
+      <div class="links">
+        <a href="/print/BAUER%20GROUP,%20Mappe%20mit%20Visitenkartentasche%20DIN-A4%20-%20Druckvorlage,%20Version%202023-06-26.pdf" download>PDF</a>
+        <a href="/print/mappe-a4-druck-preview.png" download>PNG</a>
+      </div>
     </div>
-  </a>
-  <a href="/print/BAUER%20GROUP,%20Mappe%20mit%20Visitenkartentasche%20DIN-A4%20-%20Stanzansicht,%20Version%202023-06-26.pdf" download style="display:flex;align-items:center;gap:10px;background:var(--vp-c-bg-soft);border:1px solid var(--vp-c-divider);border-radius:10px;padding:14px 20px;text-decoration:none;color:var(--vp-c-text-1);transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--vp-c-brand-1)'" onmouseout="this.style.borderColor='var(--vp-c-divider)'">
-    <span style="font-size:1.5em;">📄</span>
-    <div>
-      <div style="font-weight:700;font-size:0.85em;">DIN-A4 — Die-cut view</div>
-      <div style="font-size:0.75em;color:var(--vp-c-text-2);">BAUER GROUP, Mappe mit Visitenkartentasche DIN-A4 - Stanzansicht, Version 2023-06-26.pdf · 7.5 MB</div>
+  </div>
+  <div class="download-card">
+    <div class="preview"><img src="/print/mappe-a4-stanz-preview.png" alt="DIN-A4 — Die-cut view" /></div>
+    <div class="body">
+      <div class="title">DIN-A4 — Die-cut view</div>
+      <div class="note">Version 2023-06-26 · 7.5 MB</div>
+      <div class="links">
+        <a href="/print/BAUER%20GROUP,%20Mappe%20mit%20Visitenkartentasche%20DIN-A4%20-%20Stanzansicht,%20Version%202023-06-26.pdf" download>PDF</a>
+        <a href="/print/mappe-a4-stanz-preview.png" download>PNG</a>
+      </div>
     </div>
-  </a>
+  </div>
 </div>
