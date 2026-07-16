@@ -1,3 +1,9 @@
+## [0.7.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.6.0...v0.7.0) (2026-07-16)
+
+### 🚀 Features
+
+* **release:** enable production-only audit in release workflow ([a7e25cc](https://github.com/bauer-group/COM-CorporateIdentity/commit/a7e25ccdc07b20664c846db44eecf6408b1da624))
+
 ## [0.6.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.5.5...v0.6.0) (2026-05-06)
 
 ### 🚀 Features
