@@ -1,99 +1,54 @@
 /**
  * BAUER GROUP Brand Guide – Corporate Identity Theme
  * Brand Styleguide v2.0
+ *
+ * Color tokens are GENERATED from scripts/tokens.json into ./tokens.css
+ * (single source of truth). Never hardcode hex here — reference var(--bg-*).
  */
 
-/* ─── Brand Color Scale (Orange) ─── */
+@import './tokens.css';
+
+/* ─── VitePress mapping — brand tokens feed the framework ─── */
 :root {
-  --bg-orange-50: #FFF7ED;
-  --bg-orange-100: #FFEDD5;
-  --bg-orange-200: #FED7AA;
-  --bg-orange-300: #FDBA74;
-  --bg-orange-400: #FB923C;
-  --bg-orange-500: #FF8500;
-  --bg-orange-600: #EA6D00;
-  --bg-orange-700: #C2570A;
-  --bg-orange-800: #9A4509;
-  --bg-orange-900: #7C3A0A;
-
-  /* Warm Gray Scale (Supporting Colors) */
-  --bg-gray-50: #F9F8F6;
-  --bg-gray-100: #F0EDEA;
-  --bg-gray-200: #E0DBD6;
-  --bg-gray-300: #C4BDB7;
-  --bg-gray-400: #A69E97;
-  --bg-gray-500: #887F78;
-  --bg-gray-600: #6B635C;
-  --bg-gray-700: #524B45;
-  --bg-gray-800: #3A3430;
-  --bg-gray-900: #231F1C;
-
-  /* Neutral Gray Scale (Print) */
-  --bg-neutral-50: #F7F7F7;
-  --bg-neutral-100: #EBEBEB;
-  --bg-neutral-200: #D1D1D1;
-  --bg-neutral-300: #B8B8B8;
-  --bg-neutral-400: #9E9E9E;
-  --bg-neutral-500: #7F7F7F;
-  --bg-neutral-600: #666666;
-  --bg-neutral-700: #4D4D4D;
-  --bg-neutral-800: #333333;
-  --bg-neutral-900: #1C1C1C;
-
-  /* Brand Neutrals */
-  --brand-white: #FFFFFF;
-  --brand-light: #F9F8F6;   /* = Warm 50 */
-  --brand-dark: #3A3430;     /* = Warm 800 */
-  --brand-black: #231F1C;    /* = Warm 900 */
-
-  /* VitePress Brand Mapping */
-  --vp-c-brand-1: #FF8500;
-  --vp-c-brand-2: #EA6D00;
-  --vp-c-brand-3: #C2570A;
+  --vp-c-brand-1: var(--bg-orange-500);
+  --vp-c-brand-2: var(--bg-orange-600);
+  --vp-c-brand-3: var(--bg-orange-700);
   --vp-c-brand-soft: rgba(255, 133, 0, 0.14);
 
-  /* VitePress Button Overrides */
+  /* Button overrides */
   --vp-button-brand-border: transparent;
   --vp-button-brand-text: #fff;
-  --vp-button-brand-bg: #FF8500;
+  --vp-button-brand-bg: var(--bg-orange-500);
   --vp-button-brand-hover-border: transparent;
   --vp-button-brand-hover-text: #fff;
-  --vp-button-brand-hover-bg: #EA6D00;
+  --vp-button-brand-hover-bg: var(--bg-orange-600);
   --vp-button-brand-active-border: transparent;
   --vp-button-brand-active-text: #fff;
-  --vp-button-brand-active-bg: #C2570A;
-
-  /* Semantic Colors */
-  --brand-success: #22C55E;
-  --brand-warning: #EAB308;
-  --brand-error: #EF4444;
-  --brand-info: #3B82F6;
+  --vp-button-brand-active-bg: var(--bg-orange-700);
 
   /* Custom Block: tip → Erfolg (Grün) */
-  --vp-custom-block-tip-border: #22C55E;
+  --vp-custom-block-tip-border: var(--bg-success-500);
   --vp-custom-block-tip-bg: rgba(34, 197, 94, 0.08);
   --vp-custom-block-tip-code-bg: rgba(34, 197, 94, 0.12);
 
   /* Custom Block: info → Information (Blau) */
-  --vp-custom-block-info-border: #3B82F6;
+  --vp-custom-block-info-border: var(--bg-info-500);
   --vp-custom-block-info-bg: rgba(59, 130, 246, 0.08);
   --vp-custom-block-info-code-bg: rgba(59, 130, 246, 0.12);
 
   /* Custom Block: warning → Warnung (Gelb) */
-  --vp-custom-block-warning-border: #EAB308;
+  --vp-custom-block-warning-border: var(--bg-warning-500);
   --vp-custom-block-warning-bg: rgba(234, 179, 8, 0.08);
   --vp-custom-block-warning-code-bg: rgba(234, 179, 8, 0.12);
 
   /* Custom Block: danger → Fehler (Rot) */
-  --vp-custom-block-danger-border: #EF4444;
+  --vp-custom-block-danger-border: var(--bg-error-500);
   --vp-custom-block-danger-bg: rgba(239, 68, 68, 0.08);
   --vp-custom-block-danger-code-bg: rgba(239, 68, 68, 0.12);
 
-  /* Typography */
-  --vp-font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
-  --vp-font-family-mono: ui-monospace, "SF Mono", "Cascadia Code", "Fira Code",
-    Consolas, "Courier New", monospace;
+  /* Typography → tokens */
+  --vp-font-family-base: var(--bg-font-body);
+  --vp-font-family-mono: var(--bg-font-mono);
 
   /* Layout */
   --vp-layout-max-width: 1440px;
@@ -102,23 +57,16 @@
   --vp-aside-width: 272px;
 }
 
-/* ─── Dark Mode ─── */
+/* ─── Dark Mode — brand shifts to lighter oranges for contrast ─── */
 .dark {
-  --vp-c-brand-1: #FB923C;
-  --vp-c-brand-2: #FDBA74;
-  --vp-c-brand-3: #FED7AA;
+  --vp-c-brand-1: var(--bg-orange-400);
+  --vp-c-brand-2: var(--bg-orange-300);
+  --vp-c-brand-3: var(--bg-orange-200);
   --vp-c-brand-soft: rgba(251, 146, 60, 0.14);
 
-  --vp-button-brand-bg: #FB923C;
-  --vp-button-brand-hover-bg: #FF8500;
-  --vp-button-brand-active-bg: #EA6D00;
-
-}
-
-/* ─── Hero Section ─── */
-.VPHero .VPImage {
-  max-width: 180px;
-  max-height: 180px;
+  --vp-button-brand-bg: var(--bg-orange-400);
+  --vp-button-brand-hover-bg: var(--bg-orange-500);
+  --vp-button-brand-active-bg: var(--bg-orange-600);
 }
 
 /* ─── Section Headers (3px orange bottom border per CI) ─── */
@@ -127,7 +75,13 @@
   border-bottom: 3px solid var(--bg-orange-500);
 }
 
-/* ─── Color Swatch Component ─── */
+/* ─── Hero Section ─── */
+.VPHero .VPImage {
+  max-width: 180px;
+  max-height: 180px;
+}
+
+/* ─── Color Swatch (inline chip) ─── */
 .color-swatch {
   display: inline-flex;
   align-items: center;
@@ -146,6 +100,48 @@
   border-radius: 4px;
   flex-shrink: 0;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* ─── Swatch Grid (color cards) ─── */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.swatch-card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+}
+
+.swatch-card .chip {
+  height: 96px;
+}
+
+.swatch-card .meta {
+  padding: 12px 14px;
+}
+
+.swatch-card .meta .name {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.swatch-card .meta .hex {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+  margin-top: 2px;
+}
+
+.swatch-card .meta .use {
+  font-size: 0.78rem;
+  color: var(--vp-c-text-3);
+  margin-top: 6px;
+  line-height: 1.4;
 }
 
 /* ─── Color Scale Bar ─── */
@@ -179,11 +175,11 @@
 }
 
 .logo-stage.light {
-  background: var(--bg-gray-100);
+  background: var(--bg-warm-100);
 }
 
 .logo-stage.dark {
-  background: var(--bg-gray-900);
+  background: var(--bg-warm-900);
 }
 
 .logo-stage img {
@@ -191,7 +187,180 @@
   height: auto;
 }
 
-/* ─── Don't Card ─── */
+/* ─── Feature / Tile Grid (home + section landings) ─── */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 20px 0 32px;
+}
+
+.feature-card {
+  display: block;
+  border-radius: 12px;
+  padding: 22px 24px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  text-decoration: none !important;
+  color: inherit;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.feature-card:hover {
+  border-color: var(--bg-orange-400);
+  transform: translateY(-2px);
+}
+
+.feature-card .icon {
+  font-size: 1.7rem;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.feature-card .title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--vp-c-text-1);
+}
+
+.feature-card .desc {
+  margin-top: 6px;
+  font-size: 0.88rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+}
+
+/* ─── Download Card Grid ─── */
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.download-card {
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  overflow: hidden;
+}
+
+.download-card .preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  padding: 24px;
+  background: var(--bg-warm-50);
+}
+
+.dark .download-card .preview {
+  background: var(--bg-warm-800);
+}
+
+.download-card .preview.dark {
+  background: var(--bg-warm-900);
+}
+
+.download-card img {
+  max-width: 100%;
+  max-height: 90px;
+  height: auto;
+}
+
+.download-card .body {
+  padding: 14px 16px;
+}
+
+.download-card .body .title {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.download-card .body .note {
+  font-size: 0.78rem;
+  color: var(--vp-c-text-3);
+  margin-top: 2px;
+}
+
+.download-card .links {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.download-card .links a {
+  font-weight: 600;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.72rem;
+  padding: 3px 9px;
+  border-radius: 6px;
+  background: var(--bg-orange-100);
+  color: var(--bg-orange-800);
+  text-decoration: none;
+}
+
+.download-card .links a:hover {
+  background: var(--bg-orange-200);
+}
+
+.dark .download-card .links a {
+  background: rgba(255, 133, 0, 0.16);
+  color: var(--bg-orange-200);
+}
+
+/* ─── Icon / Preview Gallery ─── */
+.icon-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.icon-gallery figure {
+  margin: 0;
+  text-align: center;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+}
+
+.icon-gallery img {
+  width: 72px;
+  height: 72px;
+}
+
+.icon-gallery figcaption {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--vp-c-text-2);
+  font-weight: 600;
+}
+
+/* ─── Do / Don't Cards ─── */
+.do-card {
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  background: rgba(34, 197, 94, 0.06);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.do-card .label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--bg-success-700);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 8px;
+}
+
+.dark .do-card .label {
+  color: #4ade80;
+}
+
 .dont-card {
   border-radius: 12px;
   padding: 16px;
@@ -203,7 +372,7 @@
 .dont-card .label {
   font-size: 0.7rem;
   font-weight: 700;
-  color: var(--brand-error);
+  color: var(--bg-error-500);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-top: 8px;
@@ -217,7 +386,7 @@
   font-size: 0.75em;
   font-weight: 700;
   background: rgba(34, 197, 94, 0.12);
-  color: #15803D;
+  color: var(--bg-success-700);
 }
 
 .contrast-fail {
@@ -227,10 +396,62 @@
   font-size: 0.75em;
   font-weight: 700;
   background: rgba(239, 68, 68, 0.12);
-  color: #B91C1C;
+  color: var(--bg-error-700);
 }
 
-/* ─── Cards / Feature Grid ─── */
+/* ─── Home intro / section blocks (moved out of page-level <style>) ─── */
+.home-intro {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 16px 24px 8px;
+}
+
+.home-intro h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 40px 0 8px;
+  border: none;
+}
+
+.home-intro .lead {
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
+  max-width: 760px;
+}
+
+.home-intro .note {
+  margin-top: 24px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  border-left: 3px solid var(--bg-orange-500);
+  font-size: 0.9em;
+  color: var(--vp-c-text-2);
+}
+
+.home-section {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.home-section .kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bg-orange-600);
+  margin: 32px 0 0;
+}
+
+.home-section h2 {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 4px 0 4px;
+  border: none;
+}
+
+/* ─── Cards / Feature Grid (native VP) ─── */
 .VPFeatures .VPFeature {
   border-radius: 12px !important;
 }

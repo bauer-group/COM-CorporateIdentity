@@ -9,6 +9,17 @@ node_modules/
 docs/.vitepress/dist/
 docs/.vitepress/cache/
 
+# Generated design tokens (single source: scripts/tokens.json → npm run generate:tokens)
+docs/.vitepress/theme/tokens.css
+docs/public/downloads/tokens/
+
+# Generated raster assets (source SVGs live in docs/public/brand/ → npm run generate:assets)
+docs/public/downloads/png/
+docs/public/favicon-*.png
+docs/public/apple-touch-icon.png
+docs/public/icon-*.png
+docs/public/og-image.png
+
 # npm
 npm-debug.log*
 .npm/
