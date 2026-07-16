@@ -137,7 +137,7 @@ export const en: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
           text: 'Resources',
           items: [
             { text: 'Downloads', link: '/en/downloads/' },
-            { text: 'CSS Variables', link: '/en/downloads/css-variables' },
+            { text: 'Design Tokens', link: '/en/downloads/tokens' },
           ]
         },
       ]

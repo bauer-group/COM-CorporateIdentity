@@ -5,7 +5,7 @@ hero:
   text: Corporate Identity & Brand Guide
   tagline: Verbindliche Gestaltungsrichtlinien für die einheitliche Markenkommunikation — digital, print und barrierefrei.
   image:
-    src: /logo.svg
+    src: /brand/bauer-group-icon.svg
     alt: BAUER GROUP Logo
   actions:
     - theme: brand

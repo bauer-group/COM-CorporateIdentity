@@ -1,5 +1,12 @@
 # E-Mail-Signatur
 
+::: tip Signaturen erstellen — automatisch im Portal
+Persönliche, markenkonforme Signaturen werden **automatisch** über das Mitarbeiter-Portal erzeugt:
+**[mail-signature.app.bauer-group.com](https://mail-signature.app.bauer-group.com/)**
+
+Diese Seite dokumentiert den verbindlichen **Aufbau und Standard** der Signatur (Referenz) — sie muss **nicht** von Hand nachgebaut werden.
+:::
+
 ## Aufbau
 
 Die E-Mail-Signatur folgt einem einheitlichen, tabellenbasierten HTML-Layout mit folgenden Bereichen:

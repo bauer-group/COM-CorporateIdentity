@@ -5,7 +5,7 @@ hero:
   text: Corporate Identity & Brand Guide
   tagline: Binding design guidelines for consistent brand communication — digital, print and accessible.
   image:
-    src: /logo.svg
+    src: /brand/bauer-group-icon.svg
     alt: BAUER GROUP Logo
   actions:
     - theme: brand

@@ -11,7 +11,8 @@
     "outdated": "npm outdated",
     "audit": "npm audit",
     "generate:tokens": "node scripts/generate-tokens.mjs",
-    "generate": "npm run generate:tokens",
+    "generate:assets": "node scripts/generate-assets.mjs",
+    "generate": "npm run generate:tokens && npm run generate:assets",
     "predocs:dev": "npm run generate",
     "predocs:build": "npm run generate",
     "docs:dev": "vitepress dev docs",
@@ -39,6 +40,7 @@
     "lint-staged": "^16.4.0",
     "markdownlint-cli2": "^0.22.0",
     "rimraf": "^6.1.3",
+    "sharp": "^0.35.3",
     "vitepress": "^1.6.4",
     "vitepress-plugin-rss": "^0.4.3"
   }

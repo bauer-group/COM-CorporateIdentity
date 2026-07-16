@@ -7,7 +7,7 @@
 The standard variant for all applications on a light background.
 
 <div class="logo-stage light">
-  <img src="/logo-wide.svg" alt="BAUER GROUP Logo Standard" style="max-width: 380px" />
+  <img src="/brand/bauer-group-logo-wide.svg" alt="BAUER GROUP Logo Standard" style="max-width: 380px" />
 </div>
 
 | Element | Color |
@@ -21,7 +21,7 @@ The standard variant for all applications on a light background.
 On a dark background, the type is rendered in white. The icon remains unchanged.
 
 <div class="logo-stage dark">
-  <img src="/logo-wide-white.svg" alt="BAUER GROUP Logo on dark" style="max-width: 380px" />
+  <img src="/brand/bauer-group-logo-wide-white.svg" alt="BAUER GROUP Logo on dark" style="max-width: 380px" />
 </div>
 
 | Element | Color |
@@ -36,10 +36,10 @@ The icon alone is used when space is limited.
 
 <div style="display:flex;gap:24px;flex-wrap:wrap;margin:24px 0;">
   <div class="logo-stage light" style="min-height:140px;padding:32px;flex:1;min-width:160px;">
-    <img src="/logo.svg" alt="Icon on light" style="max-width:80px" />
+    <img src="/brand/bauer-group-icon.svg" alt="Icon on light" style="max-width:80px" />
   </div>
   <div class="logo-stage dark" style="min-height:140px;padding:32px;flex:1;min-width:160px;">
-    <img src="/logo.svg" alt="Icon on dark" style="max-width:80px" />
+    <img src="/brand/bauer-group-icon.svg" alt="Icon on dark" style="max-width:80px" />
   </div>
 </div>
 

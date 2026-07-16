@@ -7,7 +7,7 @@
 Die Standardvariante für alle Anwendungen auf hellem Hintergrund.
 
 <div class="logo-stage light">
-  <img src="/logo-wide.svg" alt="BAUER GROUP Logo Standard" style="max-width: 380px" />
+  <img src="/brand/bauer-group-logo-wide.svg" alt="BAUER GROUP Logo Standard" style="max-width: 380px" />
 </div>
 
 | Element | Farbe |
@@ -21,7 +21,7 @@ Die Standardvariante für alle Anwendungen auf hellem Hintergrund.
 Auf dunklem Hintergrund wird die Schrift in Weiß dargestellt. Die Bildmarke bleibt unverändert.
 
 <div class="logo-stage dark">
-  <img src="/logo-wide-white.svg" alt="BAUER GROUP Logo auf Dunkel" style="max-width: 380px" />
+  <img src="/brand/bauer-group-logo-wide-white.svg" alt="BAUER GROUP Logo auf Dunkel" style="max-width: 380px" />
 </div>
 
 | Element | Farbe |
@@ -36,10 +36,10 @@ Die Bildmarke allein wird verwendet, wenn der Platz begrenzt ist.
 
 <div style="display:flex;gap:24px;flex-wrap:wrap;margin:24px 0;">
   <div class="logo-stage light" style="min-height:140px;padding:32px;flex:1;min-width:160px;">
-    <img src="/logo.svg" alt="Bildmarke auf Hell" style="max-width:80px" />
+    <img src="/brand/bauer-group-icon.svg" alt="Bildmarke auf Hell" style="max-width:80px" />
   </div>
   <div class="logo-stage dark" style="min-height:140px;padding:32px;flex:1;min-width:160px;">
-    <img src="/logo.svg" alt="Bildmarke auf Dunkel" style="max-width:80px" />
+    <img src="/brand/bauer-group-icon.svg" alt="Bildmarke auf Dunkel" style="max-width:80px" />
   </div>
 </div>
 

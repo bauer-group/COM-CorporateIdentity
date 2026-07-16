@@ -52,17 +52,22 @@ export default defineConfig({
   head: [
     ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'Brand Guide (DE)', href: `${baseUrl}/feed-de.xml`, hreflang: 'de' }],
     ['link', { rel: 'alternate', type: 'application/rss+xml', title: 'Brand Guide (EN)', href: `${baseUrl}/feed-en.xml`, hreflang: 'en' }],
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/brand/bauer-group-icon.svg' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
     ['meta', { name: 'theme-color', content: '#FF8500' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:title', content: 'Brand Guide – BAUER GROUP' }],
     ['meta', { name: 'og:description', content: 'Offizielle Markenrichtlinien der BAUER GROUP' }],
+    ['meta', { name: 'og:image', content: `${baseUrl}/og-image.png` }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: `${baseUrl}/og-image.png` }],
   ],
 
   locales: { de, en },
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/brand/bauer-group-icon.svg',
     siteTitle: 'BAUER GROUP Brand Guide',
 
     socialLinks: [

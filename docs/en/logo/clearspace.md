@@ -29,7 +29,7 @@ The clear space defines the minimum distance between the logo and other graphic 
       <span style="font-size:0.65rem;font-weight:700;color:#FF8500;background:rgba(255,133,0,0.1);padding:2px 8px;border-radius:4px;">1× X</span>
     </div>
     <!-- Logo -->
-    <img src="/logo-wide.svg" alt="Logo with clear space" style="max-width:320px;display:block;" />
+    <img src="/brand/bauer-group-logo-wide.svg" alt="Logo with clear space" style="max-width:320px;display:block;" />
   </div>
 </div>
 
@@ -50,14 +50,14 @@ The clear space is mandatory. No other graphic element, no text and no page edge
   <div style="flex:1;min-width:220px;border-radius:12px;border:2px solid #22C55E;padding:24px;text-align:center;">
     <div style="font-size:0.7rem;font-weight:700;color:#15803D;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;">✓ Correct</div>
     <div style="background:#F4F4F5;border-radius:8px;padding:32px;">
-      <img src="/logo-wide.svg" alt="Logo correct" style="max-width:200px;" />
+      <img src="/brand/bauer-group-logo-wide.svg" alt="Logo correct" style="max-width:200px;" />
     </div>
     <div style="font-size:0.8rem;color:#52525B;margin-top:8px;">Sufficient free space around the logo</div>
   </div>
   <div style="flex:1;min-width:220px;border-radius:12px;border:2px solid #EF4444;padding:24px;text-align:center;">
     <div style="font-size:0.7rem;font-weight:700;color:#B91C1C;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;">✗ Incorrect</div>
     <div style="background:#F4F4F5;border-radius:8px;padding:8px 4px;display:flex;align-items:center;gap:4px;">
-      <img src="/logo-wide.svg" alt="Logo too tight" style="max-width:120px;" />
+      <img src="/brand/bauer-group-logo-wide.svg" alt="Logo too tight" style="max-width:120px;" />
       <span style="font-size:0.65rem;color:#52525B;font-weight:600;">Text too close to the logo</span>
     </div>
     <div style="font-size:0.8rem;color:#52525B;margin-top:8px;">Elements intrude into the clear space</div>
@@ -73,7 +73,7 @@ To ensure legibility and recognizability, the following minimum sizes apply:
 <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-end;margin:24px 0;">
   <div style="text-align:center;">
     <div style="background:#F4F4F5;border-radius:12px;padding:24px 32px;display:inline-block;">
-      <img src="/logo-wide.svg" alt="Wide logo minimum size" style="width:160px;" />
+      <img src="/brand/bauer-group-logo-wide.svg" alt="Wide logo minimum size" style="width:160px;" />
     </div>
     <div style="font-size:0.75rem;color:#52525B;margin-top:8px;font-weight:600;">160px / 40mm <span style="background:#DCFCE7;color:#15803D;padding:1px 6px;border-radius:4px;font-size:0.7rem;">Min</span></div>
   </div>
@@ -89,7 +89,7 @@ To ensure legibility and recognizability, the following minimum sizes apply:
 <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:flex-end;margin:24px 0;">
   <div style="text-align:center;">
     <div style="background:#F4F4F5;border-radius:12px;padding:20px;display:inline-block;">
-      <img src="/logo.svg" alt="Icon minimum size" style="width:40px;" />
+      <img src="/brand/bauer-group-icon.svg" alt="Icon minimum size" style="width:40px;" />
     </div>
     <div style="font-size:0.75rem;color:#52525B;margin-top:8px;font-weight:600;">40px / 12mm <span style="background:#DCFCE7;color:#15803D;padding:1px 6px;border-radius:4px;font-size:0.7rem;">Min</span></div>
   </div>

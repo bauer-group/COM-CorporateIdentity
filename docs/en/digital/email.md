@@ -1,5 +1,12 @@
 # Email Signature
 
+::: tip Create signatures — automatically in the portal
+Personal, on-brand signatures are generated **automatically** via the employee portal:
+**[mail-signature.app.bauer-group.com](https://mail-signature.app.bauer-group.com/)**
+
+This page documents the binding **structure and standard** of the signature (reference) — it does **not** need to be rebuilt by hand.
+:::
+
 ## Structure
 
 The email signature follows a consistent, table-based HTML layout with the following sections:
