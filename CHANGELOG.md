@@ -1,3 +1,19 @@
+## [0.8.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.7.1...v0.8.0) (2026-07-16)
+
+### 🚀 Features
+
+* **downloads:** rebuilt asset & token delivery system ([2d2f5c7](https://github.com/bauer-group/COM-CorporateIdentity/commit/2d2f5c7a539c044d9f3069ae417ad459e1ca7111))
+* **tokens:** unified design tokens into single source ([fc358ca](https://github.com/bauer-group/COM-CorporateIdentity/commit/fc358cab7210706243bb16c19219f2907189c013))
+
+### 🐛 Bug Fixes
+
+* **home:** added no-JS language fallback on redirect page ([53cab70](https://github.com/bauer-group/COM-CorporateIdentity/commit/53cab70c3c59ae8ce4ae74ea8f71ff3d810a8a16))
+
+### ♻️ Refactoring
+
+* **content:** unified token names and download cards ([9c2da99](https://github.com/bauer-group/COM-CorporateIdentity/commit/9c2da995bf0b619f589740222d92945ee613ff63))
+* **nav:** aligned navigation, sidebar and home tiles ([7aadbdd](https://github.com/bauer-group/COM-CorporateIdentity/commit/7aadbddbcc3d603285af0ccdf171fb3909a69d69))
+
 ## [0.7.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.7.0...v0.7.1) (2026-07-16)
 
 ### 🐛 Bug Fixes
