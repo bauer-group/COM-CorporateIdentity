@@ -1,3 +1,9 @@
+## [0.7.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.7.0...v0.7.1) (2026-07-16)
+
+### 🐛 Bug Fixes
+
+* **config:** correct site title formatting in brand guide ([fdf5cac](https://github.com/bauer-group/COM-CorporateIdentity/commit/fdf5cacb36179b23fb2b27f4e57b39184eaac8ac))
+
 ## [0.7.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.6.0...v0.7.0) (2026-07-16)
 
 ### 🚀 Features
