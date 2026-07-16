@@ -2,6 +2,23 @@
 
 Color specifications for professional print production.
 
+## In this chapter
+
+<div class="feature-grid">
+  <a class="feature-card" href="/en/print/paper">
+    <div class="title">Paper Specs</div>
+    <div class="desc">Paper stocks and weights.</div>
+  </a>
+  <a class="feature-card" href="/en/print/business-cards">
+    <div class="title">Business Cards</div>
+    <div class="desc">Format, grid and print specs.</div>
+  </a>
+  <a class="feature-card" href="/en/print/stamps">
+    <div class="title">Stamps</div>
+    <div class="desc">Stamp template and dimensions.</div>
+  </a>
+</div>
+
 ## CMYK Primary Colors
 
 | Color | CMYK | Application |

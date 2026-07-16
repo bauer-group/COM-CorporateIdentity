@@ -2,6 +2,39 @@
 
 The primary color of BAUER GROUP is **Orange (#FF8500)**. It stands for energy, innovation, and warmth and is the central identity feature of the brand.
 
+## In this chapter
+
+<div class="feature-grid">
+  <a class="feature-card" href="/en/colors/secondary">
+    <div class="title">Secondary Colors</div>
+    <div class="desc">Warm grays as the supporting palette.</div>
+  </a>
+  <a class="feature-card" href="/en/colors/neutrals">
+    <div class="title">Neutral Colors</div>
+    <div class="desc">Neutral gray for print and technical use.</div>
+  </a>
+  <a class="feature-card" href="/en/colors/scales">
+    <div class="title">Color Scales</div>
+    <div class="desc">10-step scales in HEX and OKLCH.</div>
+  </a>
+  <a class="feature-card" href="/en/colors/semantic">
+    <div class="title">Semantic Colors</div>
+    <div class="desc">Success, warning, error, information.</div>
+  </a>
+  <a class="feature-card" href="/en/colors/accent">
+    <div class="title">Accent Colors</div>
+    <div class="desc">Tertiary accents, used sparingly.</div>
+  </a>
+  <a class="feature-card" href="/en/colors/aliases">
+    <div class="title">Semantic Aliases</div>
+    <div class="desc">Role tokens like text and surface.</div>
+  </a>
+  <a class="feature-card" href="/en/colors/methodology">
+    <div class="title">Methodology & Conventions</div>
+    <div class="desc">Notation hierarchy and scale logic.</div>
+  </a>
+</div>
+
 ## BAUER Orange — #FF8500
 
 <div style="background:#FF8500;color:white;padding:40px;border-radius:16px;text-align:center;font-size:2em;font-weight:700;margin:16px 0;">

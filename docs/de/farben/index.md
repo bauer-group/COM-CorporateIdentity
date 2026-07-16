@@ -2,6 +2,39 @@
 
 Die Primärfarbe der BAUER GROUP ist **Orange (#FF8500)**. Sie steht für Energie, Innovation und Wärme und ist das zentrale Identitätsmerkmal der Marke.
 
+## In diesem Kapitel
+
+<div class="feature-grid">
+  <a class="feature-card" href="/de/farben/sekundaer">
+    <div class="title">Sekundärfarben</div>
+    <div class="desc">Warme Grautöne als unterstützende Palette.</div>
+  </a>
+  <a class="feature-card" href="/de/farben/neutrale">
+    <div class="title">Neutrale Farben</div>
+    <div class="desc">Neutralgrau für Print und Technik.</div>
+  </a>
+  <a class="feature-card" href="/de/farben/skalen">
+    <div class="title">Farbskalen</div>
+    <div class="desc">10-stufige Skalen mit HEX und OKLCH.</div>
+  </a>
+  <a class="feature-card" href="/de/farben/semantisch">
+    <div class="title">Semantische Farben</div>
+    <div class="desc">Erfolg, Warnung, Fehler, Information.</div>
+  </a>
+  <a class="feature-card" href="/de/farben/akzent">
+    <div class="title">Akzentfarben</div>
+    <div class="desc">Tertiäre Akzente, sparsam einsetzen.</div>
+  </a>
+  <a class="feature-card" href="/de/farben/aliase">
+    <div class="title">Semantische Aliase</div>
+    <div class="desc">Rollen-Tokens wie text und surface.</div>
+  </a>
+  <a class="feature-card" href="/de/farben/methodik">
+    <div class="title">Methodik & Konventionen</div>
+    <div class="desc">Notations-Hierarchie und Skalen-Logik.</div>
+  </a>
+</div>
+
 ## BAUER Orange — #FF8500
 
 <div style="background:#FF8500;color:white;padding:40px;border-radius:16px;text-align:center;font-size:2em;font-weight:700;margin:16px 0;">

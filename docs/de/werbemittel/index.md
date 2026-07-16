@@ -2,6 +2,35 @@
 
 Richtlinien und Spezifikationen für physische Markenmaterialien der BAUER GROUP. Für digitale Medien siehe [Digitale Medien](/de/digital/).
 
+## In diesem Kapitel
+
+<div class="feature-grid">
+  <a class="feature-card" href="/de/werbemittel/bloecke">
+    <div class="title">Schreibblöcke</div>
+    <div class="desc">DIN A5 und A6 Druckvorlagen.</div>
+  </a>
+  <a class="feature-card" href="/de/werbemittel/klebezettel">
+    <div class="title">Klebezettel</div>
+    <div class="desc">7,2 × 7,2 cm Haftnotizen.</div>
+  </a>
+  <a class="feature-card" href="/de/werbemittel/kugelschreiber">
+    <div class="title">Kugelschreiber</div>
+    <div class="desc">Schaft- und Clip-Gestaltung.</div>
+  </a>
+  <a class="feature-card" href="/de/werbemittel/mappen">
+    <div class="title">Mappen</div>
+    <div class="desc">DIN-Lang und DIN-A4 Mappen.</div>
+  </a>
+  <a class="feature-card" href="/de/werbemittel/feuerzeuge">
+    <div class="title">Feuerzeuge</div>
+    <div class="desc">Zweifarbiger Pantone-Druck.</div>
+  </a>
+  <a class="feature-card" href="/de/werbemittel/taschen">
+    <div class="title">Taschen</div>
+    <div class="desc">Baumwolltasche mit Bildmarke.</div>
+  </a>
+</div>
+
 ## Produktübersicht
 
 ### Geschäftsausstattung

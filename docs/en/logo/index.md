@@ -2,6 +2,23 @@
 
 The BAUER GROUP logo is the central element of our brand identity. It consists of the **icon** (orange diamond symbol with white "B") and the **wordmark** (BAUER GROUP).
 
+## In this chapter
+
+<div class="feature-grid">
+  <a class="feature-card" href="/en/logo/variants">
+    <div class="title">Logo Variants</div>
+    <div class="desc">Horizontal, square and reversed variants.</div>
+  </a>
+  <a class="feature-card" href="/en/logo/clearspace">
+    <div class="title">Clear Space & Sizes</div>
+    <div class="desc">Minimum clear space and sizes.</div>
+  </a>
+  <a class="feature-card" href="/en/logo/donts">
+    <div class="title">Misuse Examples</div>
+    <div class="desc">What you must never do with the logo.</div>
+  </a>
+</div>
+
 ## Primary logo — Horizontal (Wide)
 
 The horizontal logo is the primary variant for all applications where sufficient horizontal space is available.

@@ -2,13 +2,26 @@
 
 Richtlinien für die konsistente Markendarstellung in digitalen Kanälen — Social Media, Web und E-Mail.
 
-## Übersicht
+## In diesem Kapitel
 
-| Kanal | Formate | Status |
-|-------|---------|--------|
-| Social Media | Beiträge, Stories, Banner, Profilbilder | In Arbeit |
-| Web | Header, Banner, Open Graph Images | In Arbeit |
-| E-Mail | Signaturen, Newsletter-Templates | In Arbeit |
+<div class="feature-grid">
+  <a class="feature-card" href="/de/digital/social-media">
+    <div class="title">Social Media</div>
+    <div class="desc">Formate für Beiträge, Stories und Profile.</div>
+  </a>
+  <a class="feature-card" href="/de/digital/web-banner">
+    <div class="title">Web Banner & Layouts</div>
+    <div class="desc">Header, Banner und Open-Graph-Bilder.</div>
+  </a>
+  <a class="feature-card" href="/de/digital/email">
+    <div class="title">E-Mail & Newsletter</div>
+    <div class="desc">Signatur-Standard und Newsletter.</div>
+  </a>
+  <a class="feature-card" href="/de/digital/canva">
+    <div class="title">Canva Design-Workflow</div>
+    <div class="desc">Design-Workflow und Vorlagen.</div>
+  </a>
+</div>
 
 ## Grundprinzipien
 

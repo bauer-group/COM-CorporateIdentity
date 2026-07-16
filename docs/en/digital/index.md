@@ -2,13 +2,26 @@
 
 Guidelines for consistent brand representation across digital channels — social media, web and email.
 
-## Overview
+## In this chapter
 
-| Channel | Formats | Status |
-|---------|---------|--------|
-| Social Media | Posts, Stories, Banners, Profile Images | In Progress |
-| Web | Headers, Banners, Open Graph Images | In Progress |
-| Email | Signatures, Newsletter Templates | In Progress |
+<div class="feature-grid">
+  <a class="feature-card" href="/en/digital/social-media">
+    <div class="title">Social Media</div>
+    <div class="desc">Formats for posts, stories and profiles.</div>
+  </a>
+  <a class="feature-card" href="/en/digital/web-banners">
+    <div class="title">Web Banners & Layouts</div>
+    <div class="desc">Headers, banners and Open Graph images.</div>
+  </a>
+  <a class="feature-card" href="/en/digital/email">
+    <div class="title">Email & Newsletter</div>
+    <div class="desc">Signature standard and newsletters.</div>
+  </a>
+  <a class="feature-card" href="/en/digital/canva">
+    <div class="title">Canva Design Workflow</div>
+    <div class="desc">Design workflow and templates.</div>
+  </a>
+</div>
 
 ## Core Principles
 

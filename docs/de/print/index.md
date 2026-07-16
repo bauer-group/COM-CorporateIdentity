@@ -2,6 +2,23 @@
 
 Farbspezifikationen für die professionelle Druckproduktion.
 
+## In diesem Kapitel
+
+<div class="feature-grid">
+  <a class="feature-card" href="/de/print/papier">
+    <div class="title">Papierempfehlungen</div>
+    <div class="desc">Papiersorten und Grammaturen.</div>
+  </a>
+  <a class="feature-card" href="/de/print/visitenkarten">
+    <div class="title">Visitenkarten</div>
+    <div class="desc">Format, Raster und Druckvorgaben.</div>
+  </a>
+  <a class="feature-card" href="/de/print/stempel">
+    <div class="title">Stempel</div>
+    <div class="desc">Stempelvorlage und Maße.</div>
+  </a>
+</div>
+
 ## CMYK Primärfarben
 
 | Farbe | CMYK | Anwendung |

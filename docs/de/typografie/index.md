@@ -2,6 +2,19 @@
 
 BAUER GROUP verwendet **System Fonts** — die nativen Schriftarten jedes Betriebssystems. Das garantiert maximale Kompatibilität, optimale Performance und keine externen Font-Abhängigkeiten.
 
+## In diesem Kapitel
+
+<div class="feature-grid">
+  <a class="feature-card" href="/de/typografie/hierarchie">
+    <div class="title">Hierarchie</div>
+    <div class="desc">Überschriften, Fließtext und Abstände.</div>
+  </a>
+  <a class="feature-card" href="/de/typografie/font-stack">
+    <div class="title">Font Stack</div>
+    <div class="desc">System Font Stack ohne externe Fonts.</div>
+  </a>
+</div>
+
 ## Font Stack
 
 ```css

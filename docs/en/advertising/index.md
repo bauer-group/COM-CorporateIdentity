@@ -2,6 +2,35 @@
 
 Guidelines and specifications for physical brand materials of BAUER GROUP. For digital media, see [Digital Media](/en/digital/).
 
+## In this chapter
+
+<div class="feature-grid">
+  <a class="feature-card" href="/en/advertising/notepads">
+    <div class="title">Notepads</div>
+    <div class="desc">A5 and A6 print templates.</div>
+  </a>
+  <a class="feature-card" href="/en/advertising/sticky-notes">
+    <div class="title">Sticky Notes</div>
+    <div class="desc">72 × 72 mm sticky notes.</div>
+  </a>
+  <a class="feature-card" href="/en/advertising/pens">
+    <div class="title">Pens</div>
+    <div class="desc">Barrel and clip design.</div>
+  </a>
+  <a class="feature-card" href="/en/advertising/folders">
+    <div class="title">Folders</div>
+    <div class="desc">DL and A4 folders.</div>
+  </a>
+  <a class="feature-card" href="/en/advertising/lighters">
+    <div class="title">Lighters</div>
+    <div class="desc">Two-color Pantone print.</div>
+  </a>
+  <a class="feature-card" href="/en/advertising/bags">
+    <div class="title">Bags</div>
+    <div class="desc">Cotton bag with the symbol.</div>
+  </a>
+</div>
+
 ## Product Overview
 
 ### Business Stationery

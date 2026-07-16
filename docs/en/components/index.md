@@ -11,11 +11,22 @@ Reusable interface elements in the BAUER GROUP design system for consistent digi
 | **Responsiveness** | Components adapt to every screen size |
 | **Reusability** | Defined once, applicable everywhere |
 
-## Overview
+## In this chapter
 
-- **[Buttons](./buttons)** — primary, secondary and outline variants in three sizes
-- **[Badges & Status](./badges)** — semantic status indicators with color coding
-- **[Forms](./forms)** — input fields, labels and validation
+<div class="feature-grid">
+  <a class="feature-card" href="/en/components/buttons">
+    <div class="title">Buttons</div>
+    <div class="desc">Primary, secondary and outline variants.</div>
+  </a>
+  <a class="feature-card" href="/en/components/badges">
+    <div class="title">Badges & Status</div>
+    <div class="desc">Semantic status indicators.</div>
+  </a>
+  <a class="feature-card" href="/en/components/forms">
+    <div class="title">Forms</div>
+    <div class="desc">Inputs, labels and validation.</div>
+  </a>
+</div>
 
 ## CSS Foundation
 

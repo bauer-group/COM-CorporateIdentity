@@ -2,6 +2,23 @@
 
 Das BAUER GROUP Logo ist das zentrale Element unserer Markenidentität. Es besteht aus der **Bildmarke** (oranges Diamant-Symbol mit weißem „B") und der **Wortmarke** (BAUER GROUP).
 
+## In diesem Kapitel
+
+<div class="feature-grid">
+  <a class="feature-card" href="/de/logo/varianten">
+    <div class="title">Logo-Varianten</div>
+    <div class="desc">Horizontal, quadratisch und Umkehrvarianten.</div>
+  </a>
+  <a class="feature-card" href="/de/logo/schutzzone">
+    <div class="title">Schutzzone & Größen</div>
+    <div class="desc">Mindestabstand und Mindestgrößen.</div>
+  </a>
+  <a class="feature-card" href="/de/logo/donts">
+    <div class="title">Falschanwendungen</div>
+    <div class="desc">Was mit dem Logo nicht erlaubt ist.</div>
+  </a>
+</div>
+
 ## Hauptlogo — Horizontal (Wide)
 
 Das horizontale Logo ist die primäre Variante für alle Anwendungen, bei denen ausreichend horizontaler Platz vorhanden ist.

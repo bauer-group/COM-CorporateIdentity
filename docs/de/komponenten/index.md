@@ -11,11 +11,22 @@ Wiederverwendbare Interface-Elemente im BAUER GROUP Designsystem für konsistent
 | **Responsivität** | Komponenten passen sich an jede Bildschirmgröße an |
 | **Wiederverwendbarkeit** | Einmal definiert, überall einsetzbar |
 
-## Übersicht
+## In diesem Kapitel
 
-- **[Buttons](./buttons)** — Primäre, sekundäre und Outline-Varianten in drei Größen
-- **[Badges & Status](./badges)** — Semantische Statusanzeigen mit Farbcodierung
-- **[Formulare](./formulare)** — Eingabefelder, Labels und Validierung
+<div class="feature-grid">
+  <a class="feature-card" href="/de/komponenten/buttons">
+    <div class="title">Buttons</div>
+    <div class="desc">Primär-, Sekundär- und Outline-Varianten.</div>
+  </a>
+  <a class="feature-card" href="/de/komponenten/badges">
+    <div class="title">Badges & Status</div>
+    <div class="desc">Semantische Statusanzeigen.</div>
+  </a>
+  <a class="feature-card" href="/de/komponenten/formulare">
+    <div class="title">Formulare</div>
+    <div class="desc">Eingabefelder, Labels und Validierung.</div>
+  </a>
+</div>
 
 ## CSS Basis
 
