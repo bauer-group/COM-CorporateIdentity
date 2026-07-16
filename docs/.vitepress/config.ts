@@ -63,7 +63,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/logo.svg',
-    siteTitle: 'BAUER-GROUP Brand Guide',
+    siteTitle: 'BAUER GROUP Brand Guide',
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/bauer-group/COM-CorporateIdentity' },
