@@ -49,6 +49,7 @@ jobs:
       run-audit: true
       audit-level: 'high'
       upload-artifacts: false
+      audit-production-only: true
 
   # ---------------------------------------------------------------------------
   # Semantic Release (only after successful validation)
