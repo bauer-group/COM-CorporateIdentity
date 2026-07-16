@@ -6,19 +6,19 @@ BAUER GROUP stands for technology that lasts — and partnerships that grow. Our
 
 <div style="display:flex;flex-direction:column;gap:12px;margin:32px 0;">
   <div style="padding:20px 28px;border-radius:10px;border-left:4px solid #FF8500;background:var(--vp-c-bg-soft);display:flex;align-items:center;gap:12px;">
-    <span style="font-size:0.7em;font-weight:700;color:#FF8500;background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Primary</span>
+    <span style="font-size:0.7em;font-weight:700;color:var(--bg-orange-500);background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Primary</span>
     <span style="font-size:1.1em;font-weight:700;color:var(--vp-c-text-1);">BAUER GROUP — Today. Tomorrow. Together.</span>
   </div>
   <div style="padding:20px 28px;border-radius:10px;border-left:4px solid #FF8500;background:var(--vp-c-bg-soft);display:flex;align-items:center;gap:12px;">
-    <span style="font-size:0.7em;font-weight:700;color:#FF8500;background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Technical</span>
+    <span style="font-size:0.7em;font-weight:700;color:var(--bg-orange-500);background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Technical</span>
     <span style="font-size:1.1em;font-weight:700;color:var(--vp-c-text-1);">BAUER GROUP — Building Better Software Together</span>
   </div>
   <div style="padding:20px 28px;border-radius:10px;border-left:4px solid #FF8500;background:var(--vp-c-bg-soft);display:flex;align-items:center;gap:12px;">
-    <span style="font-size:0.7em;font-weight:700;color:#FF8500;background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Stability</span>
+    <span style="font-size:0.7em;font-weight:700;color:var(--bg-orange-500);background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Stability</span>
     <span style="font-size:1.1em;font-weight:700;color:var(--vp-c-text-1);">BAUER GROUP — Technology for the Long Run</span>
   </div>
   <div style="padding:20px 28px;border-radius:10px;border-left:4px solid #FF8500;background:var(--vp-c-bg-soft);display:flex;align-items:center;gap:12px;">
-    <span style="font-size:0.7em;font-weight:700;color:#FF8500;background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Growth</span>
+    <span style="font-size:0.7em;font-weight:700;color:var(--bg-orange-500);background:rgba(255,133,0,0.1);padding:3px 10px;border-radius:6px;white-space:nowrap;">Growth</span>
     <span style="font-size:1.1em;font-weight:700;color:var(--vp-c-text-1);">BAUER GROUP — Technology That Scales With You</span>
   </div>
 </div>

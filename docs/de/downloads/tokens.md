@@ -48,10 +48,10 @@ Für die Primärfarbe gelten im Druck: **CMYK** `C0 M48 Y100 K0` · **Pantone** 
 ## Orange-Skala
 
 <div class="color-scale">
-  <div style="background:var(--bg-orange-50);color:#7C3A0A">50</div>
-  <div style="background:var(--bg-orange-100);color:#7C3A0A">100</div>
-  <div style="background:var(--bg-orange-200);color:#7C3A0A">200</div>
-  <div style="background:var(--bg-orange-300);color:#7C3A0A">300</div>
+  <div style="background:var(--bg-orange-50);color:var(--bg-orange-900)">50</div>
+  <div style="background:var(--bg-orange-100);color:var(--bg-orange-900)">100</div>
+  <div style="background:var(--bg-orange-200);color:var(--bg-orange-900)">200</div>
+  <div style="background:var(--bg-orange-300);color:var(--bg-orange-900)">300</div>
   <div style="background:var(--bg-orange-400);color:#fff">400</div>
   <div style="background:var(--bg-orange-500);color:#fff">500</div>
   <div style="background:var(--bg-orange-600);color:#fff">600</div>

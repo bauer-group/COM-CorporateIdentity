@@ -24,7 +24,7 @@
   <div style="flex:1;min-width:180px;">
     <label style="font-size:0.75rem;font-weight:600;color:#52525B;margin-bottom:6px;display:block;">Fehlerhaft</label>
     <div style="padding:12px 16px;border:1.5px solid #EF4444;border-radius:10px;font-size:0.875rem;background:white;color:#18181B;">ungültige-email</div>
-    <span style="font-size:12px;color:#EF4444;margin-top:4px;display:block;">Bitte geben Sie eine gültige E-Mail-Adresse ein.</span>
+    <span style="font-size:12px;color:var(--bg-error-500);margin-top:4px;display:block;">Bitte geben Sie eine gültige E-Mail-Adresse ein.</span>
   </div>
 </div>
 
@@ -36,7 +36,7 @@
 | **Border** | 1.5px solid #E4E4E7 |
 | **Border-Radius** | 10px |
 | **Font-Size** | 14px |
-| **Focus-Border** | <span style="display:inline-block;width:12px;height:12px;background:#FF8500;border-radius:2px;vertical-align:middle;"></span> #FF8500 |
+| **Focus-Border** | <span style="display:inline-block;width:12px;height:12px;background:var(--bg-orange-500);border-radius:2px;vertical-align:middle;"></span> #FF8500 |
 | **Focus-Shadow** | 0 0 0 3px rgba(255, 133, 0, 0.12) |
 
 ### CSS
@@ -82,10 +82,10 @@
 | Status | Border-Farbe | Vorschau | Anwendung |
 |--------|-------------|----------|-----------|
 | **Default** | #E4E4E7 | <span style="display:inline-block;width:48px;height:4px;background:#E4E4E7;border-radius:2px;vertical-align:middle;"></span> | Standardzustand |
-| **Focus** | #FF8500 | <span style="display:inline-block;width:48px;height:4px;background:#FF8500;border-radius:2px;vertical-align:middle;"></span> | Aktives Feld |
-| **Success** | #22C55E | <span style="display:inline-block;width:48px;height:4px;background:#22C55E;border-radius:2px;vertical-align:middle;"></span> | Valide Eingabe |
-| **Error** | #EF4444 | <span style="display:inline-block;width:48px;height:4px;background:#EF4444;border-radius:2px;vertical-align:middle;"></span> | Fehlerhafte Eingabe |
+| **Focus** | #FF8500 | <span style="display:inline-block;width:48px;height:4px;background:var(--bg-orange-500);border-radius:2px;vertical-align:middle;"></span> | Aktives Feld |
+| **Success** | #22C55E | <span style="display:inline-block;width:48px;height:4px;background:var(--bg-success-500);border-radius:2px;vertical-align:middle;"></span> | Valide Eingabe |
+| **Error** | #EF4444 | <span style="display:inline-block;width:48px;height:4px;background:var(--bg-error-500);border-radius:2px;vertical-align:middle;"></span> | Fehlerhafte Eingabe |
 
 ::: info Fehlermeldungen
-Fehlermeldungen werden unterhalb des Feldes in <span style="color:#EF4444;font-weight:600;">Error-Rot (#EF4444)</span> mit 12px Schriftgröße angezeigt.
+Fehlermeldungen werden unterhalb des Feldes in <span style="color:var(--bg-error-500);font-weight:600;">Error-Rot (#EF4444)</span> mit 12px Schriftgröße angezeigt.
 :::

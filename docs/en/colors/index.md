@@ -37,7 +37,7 @@ The primary color of BAUER GROUP is **Orange (#FF8500)**. It stands for energy, 
 
 ## BAUER Orange — #FF8500
 
-<div style="background:#FF8500;color:white;padding:40px;border-radius:16px;text-align:center;font-size:2em;font-weight:700;margin:16px 0;">
+<div style="background:var(--bg-orange-500);color:white;padding:40px;border-radius:16px;text-align:center;font-size:2em;font-weight:700;margin:16px 0;">
   #FF8500
 </div>
 
@@ -63,9 +63,9 @@ The primary color of BAUER GROUP is **Orange (#FF8500)**. It stands for energy, 
 ### As background color
 
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;">
-  <div style="background:#FF8500;color:white;padding:16px 32px;border-radius:10px;font-weight:600;">Primary button</div>
-  <div style="background:#FF8500;color:white;padding:16px 32px;border-radius:10px;font-weight:600;">Header area</div>
-  <div style="background:#FF8500;color:white;padding:16px 32px;border-radius:10px;font-weight:600;">Call-to-action</div>
+  <div style="background:var(--bg-orange-500);color:white;padding:16px 32px;border-radius:10px;font-weight:600;">Primary button</div>
+  <div style="background:var(--bg-orange-500);color:white;padding:16px 32px;border-radius:10px;font-weight:600;">Header area</div>
+  <div style="background:var(--bg-orange-500);color:white;padding:16px 32px;border-radius:10px;font-weight:600;">Call-to-action</div>
 </div>
 
 ### As text color
@@ -75,8 +75,8 @@ Orange 500 (#FF8500) has a **contrast ratio of only 3.1:1** on white — that's 
 
 For text, use these instead:
 
-- <span style="color:#C2570A;font-weight:700;font-size:1.1em;">Orange 700 (#C2570A)</span> — 4.6:1 contrast → AA compliant
-- <span style="color:#9A4509;font-weight:700;font-size:1.1em;">Orange 800 (#9A4509)</span> — 6.4:1 contrast → AA+ compliant
+- <span style="color:var(--bg-orange-700);font-weight:700;font-size:1.1em;">Orange 700 (#C2570A)</span> — 4.6:1 contrast → AA compliant
+- <span style="color:var(--bg-orange-800);font-weight:700;font-size:1.1em;">Orange 800 (#9A4509)</span> — 6.4:1 contrast → AA+ compliant
 :::
 
 ## Supporting Colors — Warm Grays
@@ -84,9 +84,9 @@ For text, use these instead:
 BAUER GROUP follows a **monochromatic color scheme**: orange is the only chromatic color. All supporting tones are based on warm-tinted grays (hue ≈28°), which harmonize naturally with orange.
 
 <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0;">
-  <div style="background:#524B45;color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:100px;text-align:center;">Warm 700<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#524B45</span></div>
-  <div style="background:#3A3430;color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:100px;text-align:center;">Warm 800<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#3A3430</span></div>
-  <div style="background:#231F1C;color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:100px;text-align:center;">Warm 900<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#231F1C</span></div>
+  <div style="background:var(--bg-warm-700);color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:100px;text-align:center;">Warm 700<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#524B45</span></div>
+  <div style="background:var(--bg-brand-dark);color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:100px;text-align:center;">Warm 800<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#3A3430</span></div>
+  <div style="background:var(--bg-brand-black);color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:100px;text-align:center;">Warm 900<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#231F1C</span></div>
 </div>
 
 → [Full warm-gray documentation with scale and application rules](/en/colors/secondary)

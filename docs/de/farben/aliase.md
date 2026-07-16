@@ -30,10 +30,10 @@ Hierarchie der Text-Sichtbarkeit. Alle Aliase sind WCAG-validiert auf Brand-Whit
 | `--bg-text-disabled` | `--bg-warm-400` | `#A69E97` | Deaktivierte Buttons, Placeholders | — (2.6:1, dekorativ) |
 
 <div style="display:flex;flex-direction:column;gap:8px;background:white;padding:24px;border:1px solid #E0DBD6;border-radius:12px;margin:24px 0;">
-  <div style="color:#231F1C;font-weight:700;font-size:1.5em;">Headline (text-primary)</div>
-  <div style="color:#6B635C;font-size:1.05em;">Lead-Text mit etwas mehr Kontext (text-secondary).</div>
-  <div style="color:#887F78;font-size:0.85em;">Caption mit Metadaten · 06.05.2026 · 3 Min Lesedauer (text-muted)</div>
-  <div style="color:#A69E97;font-size:0.95em;">Deaktivierter Button-Text oder Placeholder (text-disabled)</div>
+  <div style="color:var(--bg-brand-black);font-weight:700;font-size:1.5em;">Headline (text-primary)</div>
+  <div style="color:var(--bg-warm-600);font-size:1.05em;">Lead-Text mit etwas mehr Kontext (text-secondary).</div>
+  <div style="color:var(--bg-warm-500);font-size:0.85em;">Caption mit Metadaten · 06.05.2026 · 3 Min Lesedauer (text-muted)</div>
+  <div style="color:var(--bg-warm-400);font-size:0.95em;">Deaktivierter Button-Text oder Placeholder (text-disabled)</div>
 </div>
 
 ## Background-Rollen
@@ -45,17 +45,17 @@ Hierarchie der Text-Sichtbarkeit. Alle Aliase sind WCAG-validiert auf Brand-Whit
 | `--bg-surface-muted` | `--bg-warm-100` | `--bg-warm-700` | Tertiäre Surfaces, Code-Block-Background |
 
 <div style="border-radius:12px;overflow:hidden;border:1px solid #E0DBD6;margin:24px 0;">
-  <div style="background:#FFFFFF;padding:20px;border-bottom:1px solid #E0DBD6;">
-    <div style="color:#3A3430;font-weight:600;">bg-primary (#FFFFFF)</div>
-    <div style="color:#6B635C;font-size:0.85em;">Standard Page-Background</div>
+  <div style="background:var(--bg-brand-white);padding:20px;border-bottom:1px solid #E0DBD6;">
+    <div style="color:var(--bg-brand-dark);font-weight:600;">bg-primary (#FFFFFF)</div>
+    <div style="color:var(--bg-warm-600);font-size:0.85em;">Standard Page-Background</div>
   </div>
-  <div style="background:#F9F8F6;padding:20px;border-bottom:1px solid #E0DBD6;">
-    <div style="color:#3A3430;font-weight:600;">bg-subtle (Warm 50)</div>
-    <div style="color:#6B635C;font-size:0.85em;">Card-Background, Hover-States, sekundäre Sektionen</div>
+  <div style="background:var(--bg-brand-light);padding:20px;border-bottom:1px solid #E0DBD6;">
+    <div style="color:var(--bg-brand-dark);font-weight:600;">bg-subtle (Warm 50)</div>
+    <div style="color:var(--bg-warm-600);font-size:0.85em;">Card-Background, Hover-States, sekundäre Sektionen</div>
   </div>
-  <div style="background:#F0EDEA;padding:20px;">
-    <div style="color:#3A3430;font-weight:600;">bg-muted (Warm 100)</div>
-    <div style="color:#6B635C;font-size:0.85em;">Tertiäre Surfaces, Code-Blocks, eingedrückte Bereiche</div>
+  <div style="background:var(--bg-warm-100);padding:20px;">
+    <div style="color:var(--bg-brand-dark);font-weight:600;">bg-muted (Warm 100)</div>
+    <div style="color:var(--bg-warm-600);font-size:0.85em;">Tertiäre Surfaces, Code-Blocks, eingedrückte Bereiche</div>
   </div>
 </div>
 
@@ -68,12 +68,12 @@ Hierarchie der Text-Sichtbarkeit. Alle Aliase sind WCAG-validiert auf Brand-Whit
 
 <div style="display:flex;gap:16px;flex-wrap:wrap;margin:24px 0;">
   <div style="flex:1;min-width:200px;background:white;border:1px solid #E0DBD6;border-radius:8px;padding:20px;">
-    <div style="color:#3A3430;font-weight:600;margin-bottom:6px;">Standard-Card</div>
-    <div style="color:#6B635C;font-size:0.85em;">border (Warm 200) — die Standard-Hairline</div>
+    <div style="color:var(--bg-brand-dark);font-weight:600;margin-bottom:6px;">Standard-Card</div>
+    <div style="color:var(--bg-warm-600);font-size:0.85em;">border (Warm 200) — die Standard-Hairline</div>
   </div>
   <div style="flex:1;min-width:200px;background:white;border:1.5px solid #C4BDB7;border-radius:8px;padding:20px;">
-    <div style="color:#3A3430;font-weight:600;margin-bottom:6px;">Aktive Card</div>
-    <div style="color:#6B635C;font-size:0.85em;">border-strong (Warm 300) — betonte Trennung</div>
+    <div style="color:var(--bg-brand-dark);font-weight:600;margin-bottom:6px;">Aktive Card</div>
+    <div style="color:var(--bg-warm-600);font-size:0.85em;">border-strong (Warm 300) — betonte Trennung</div>
   </div>
 </div>
 

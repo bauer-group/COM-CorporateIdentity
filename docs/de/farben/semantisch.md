@@ -6,28 +6,28 @@ Semantische Farben kommunizieren Status und Bedeutung in der Benutzeroberfläche
 
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin:24px 0;">
   <div style="flex:1;min-width:140px;border-radius:12px;overflow:hidden;border:1.5px solid #E4E4E7;">
-    <div style="background:#22C55E;height:48px;"></div>
+    <div style="background:var(--bg-success-500);height:48px;"></div>
     <div style="padding:12px;text-align:center;">
       <div style="font-weight:700;font-size:0.85rem;color:#18181B;">Success</div>
       <div style="font-size:0.75rem;color:#71717A;">#22C55E</div>
     </div>
   </div>
   <div style="flex:1;min-width:140px;border-radius:12px;overflow:hidden;border:1.5px solid #E4E4E7;">
-    <div style="background:#EAB308;height:48px;"></div>
+    <div style="background:var(--bg-warning-500);height:48px;"></div>
     <div style="padding:12px;text-align:center;">
       <div style="font-weight:700;font-size:0.85rem;color:#18181B;">Warning</div>
       <div style="font-size:0.75rem;color:#71717A;">#EAB308</div>
     </div>
   </div>
   <div style="flex:1;min-width:140px;border-radius:12px;overflow:hidden;border:1.5px solid #E4E4E7;">
-    <div style="background:#EF4444;height:48px;"></div>
+    <div style="background:var(--bg-error-500);height:48px;"></div>
     <div style="padding:12px;text-align:center;">
       <div style="font-weight:700;font-size:0.85rem;color:#18181B;">Error</div>
       <div style="font-size:0.75rem;color:#71717A;">#EF4444</div>
     </div>
   </div>
   <div style="flex:1;min-width:140px;border-radius:12px;overflow:hidden;border:1.5px solid #E4E4E7;">
-    <div style="background:#3B82F6;height:48px;"></div>
+    <div style="background:var(--bg-info-500);height:48px;"></div>
     <div style="padding:12px;text-align:center;">
       <div style="font-weight:700;font-size:0.85rem;color:#18181B;">Info</div>
       <div style="font-size:0.75rem;color:#71717A;">#3B82F6</div>
@@ -37,10 +37,10 @@ Semantische Farben kommunizieren Status und Bedeutung in der Benutzeroberfläche
 
 | Status | Farbe | HEX | Hintergrund | Anwendung |
 |--------|-------|-----|-------------|-----------|
-| **Success** | <span style="display:inline-block;width:16px;height:16px;background:#22C55E;border-radius:3px;vertical-align:middle;"></span> Grün | `#22C55E` | `#DCFCE7` | Erfolgsmeldungen, Bestätigungen |
-| **Warning** | <span style="display:inline-block;width:16px;height:16px;background:#EAB308;border-radius:3px;vertical-align:middle;"></span> Gelb | `#EAB308` | `#FEF9C3` | Warnungen, Hinweise |
-| **Error** | <span style="display:inline-block;width:16px;height:16px;background:#EF4444;border-radius:3px;vertical-align:middle;"></span> Rot | `#EF4444` | `#FEE2E2` | Fehler, kritische Meldungen |
-| **Info** | <span style="display:inline-block;width:16px;height:16px;background:#3B82F6;border-radius:3px;vertical-align:middle;"></span> Blau | `#3B82F6` | `#DBEAFE` | Informationen, Tipps |
+| **Success** | <span style="display:inline-block;width:16px;height:16px;background:var(--bg-success-500);border-radius:3px;vertical-align:middle;"></span> Grün | `#22C55E` | `#DCFCE7` | Erfolgsmeldungen, Bestätigungen |
+| **Warning** | <span style="display:inline-block;width:16px;height:16px;background:var(--bg-warning-500);border-radius:3px;vertical-align:middle;"></span> Gelb | `#EAB308` | `#FEF9C3` | Warnungen, Hinweise |
+| **Error** | <span style="display:inline-block;width:16px;height:16px;background:var(--bg-error-500);border-radius:3px;vertical-align:middle;"></span> Rot | `#EF4444` | `#FEE2E2` | Fehler, kritische Meldungen |
+| **Info** | <span style="display:inline-block;width:16px;height:16px;background:var(--bg-info-500);border-radius:3px;vertical-align:middle;"></span> Blau | `#3B82F6` | `#DBEAFE` | Informationen, Tipps |
 
 ## Die Triade `-100` / `-500` / `-700`
 
@@ -56,18 +56,18 @@ Jede Statusfarbe folgt einer **dreistufigen Token-Triade**, die den Standard-Anw
 
 | Token | HEX | OKLCH | Vorschau |
 |-------|-----|-------|----------|
-| `--success-100` | `#DCFCE7` | `oklch(94% 0.06 150)` | <span style="display:inline-block;width:48px;height:24px;background:#DCFCE7;border-radius:4px;vertical-align:middle;"></span> |
-| `--success-500` | `#22C55E` | `oklch(70% 0.16 150)` | <span style="display:inline-block;width:48px;height:24px;background:#22C55E;border-radius:4px;vertical-align:middle;"></span> |
-| `--success-700` | `#15803D` | `oklch(50% 0.14 150)` | <span style="display:inline-block;width:48px;height:24px;background:#15803D;border-radius:4px;vertical-align:middle;"></span> |
-| `--warning-100` | `#FEF9C3` | `oklch(95% 0.07 90)` | <span style="display:inline-block;width:48px;height:24px;background:#FEF9C3;border-radius:4px;vertical-align:middle;"></span> |
-| `--warning-500` | `#EAB308` | `oklch(78% 0.16 80)` | <span style="display:inline-block;width:48px;height:24px;background:#EAB308;border-radius:4px;vertical-align:middle;"></span> |
-| `--warning-700` | `#A16207` | `oklch(58% 0.14 75)` | <span style="display:inline-block;width:48px;height:24px;background:#A16207;border-radius:4px;vertical-align:middle;"></span> |
-| `--error-100` | `#FEE2E2` | `oklch(94% 0.04 25)` | <span style="display:inline-block;width:48px;height:24px;background:#FEE2E2;border-radius:4px;vertical-align:middle;"></span> |
-| `--error-500` | `#EF4444` | `oklch(64% 0.22 25)` | <span style="display:inline-block;width:48px;height:24px;background:#EF4444;border-radius:4px;vertical-align:middle;"></span> |
-| `--error-700` | `#B91C1C` | `oklch(50% 0.20 25)` | <span style="display:inline-block;width:48px;height:24px;background:#B91C1C;border-radius:4px;vertical-align:middle;"></span> |
-| `--info-100` | `#DBEAFE` | `oklch(94% 0.04 230)` | <span style="display:inline-block;width:48px;height:24px;background:#DBEAFE;border-radius:4px;vertical-align:middle;"></span> |
-| `--info-500` | `#3B82F6` | `oklch(70% 0.13 230)` | <span style="display:inline-block;width:48px;height:24px;background:#3B82F6;border-radius:4px;vertical-align:middle;"></span> |
-| `--info-700` | `#1D4ED8` | `oklch(48% 0.16 255)` | <span style="display:inline-block;width:48px;height:24px;background:#1D4ED8;border-radius:4px;vertical-align:middle;"></span> |
+| `--success-100` | `#DCFCE7` | `oklch(94% 0.06 150)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-success-100);border-radius:4px;vertical-align:middle;"></span> |
+| `--success-500` | `#22C55E` | `oklch(70% 0.16 150)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-success-500);border-radius:4px;vertical-align:middle;"></span> |
+| `--success-700` | `#15803D` | `oklch(50% 0.14 150)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-success-700);border-radius:4px;vertical-align:middle;"></span> |
+| `--warning-100` | `#FEF9C3` | `oklch(95% 0.07 90)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warning-100);border-radius:4px;vertical-align:middle;"></span> |
+| `--warning-500` | `#EAB308` | `oklch(78% 0.16 80)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warning-500);border-radius:4px;vertical-align:middle;"></span> |
+| `--warning-700` | `#A16207` | `oklch(58% 0.14 75)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warning-700);border-radius:4px;vertical-align:middle;"></span> |
+| `--error-100` | `#FEE2E2` | `oklch(94% 0.04 25)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-error-100);border-radius:4px;vertical-align:middle;"></span> |
+| `--error-500` | `#EF4444` | `oklch(64% 0.22 25)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-error-500);border-radius:4px;vertical-align:middle;"></span> |
+| `--error-700` | `#B91C1C` | `oklch(50% 0.20 25)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-error-700);border-radius:4px;vertical-align:middle;"></span> |
+| `--info-100` | `#DBEAFE` | `oklch(94% 0.04 230)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-info-100);border-radius:4px;vertical-align:middle;"></span> |
+| `--info-500` | `#3B82F6` | `oklch(70% 0.13 230)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-info-500);border-radius:4px;vertical-align:middle;"></span> |
+| `--info-700` | `#1D4ED8` | `oklch(48% 0.16 255)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-info-700);border-radius:4px;vertical-align:middle;"></span> |
 
 ::: tip Warum genau diese drei Stufen?
 Mit `-100`-Background und `-700`-Text deckt eine Triade in der Praxis ~80 % aller Status-Komponenten ab: Badges, Toasts, Callouts, Form-Validierungs-Inline-Hints, Status-Cells in Tabellen. `-500` liefert die Mittel-Helligkeit für Icons, Status-Dots und Borders. Weitere Zwischenstufen sind selten nötig — wenn doch, lassen sie sich aus der OKLCH-Skalen-Methodik ableiten ([Methodik](/de/farben/methodik)).
@@ -80,29 +80,29 @@ Mit `-100`-Background und `-700`-Text deckt eine Triade in der Praxis ~80 % alle
 Semantische Farben werden in Badges als Kombination aus **hellem Hintergrund + dunkler Textfarbe** der jeweiligen Farbe verwendet:
 
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin:24px 0;">
-  <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:8px;font-size:0.8125rem;font-weight:600;background:#DCFCE7;color:#15803D;"><span style="width:6px;height:6px;border-radius:50%;background:currentColor;"></span> Erfolgreich</span>
-  <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:8px;font-size:0.8125rem;font-weight:600;background:#FEF9C3;color:#A16207;"><span style="width:6px;height:6px;border-radius:50%;background:currentColor;"></span> Warnung</span>
-  <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:8px;font-size:0.8125rem;font-weight:600;background:#FEE2E2;color:#B91C1C;"><span style="width:6px;height:6px;border-radius:50%;background:currentColor;"></span> Fehler</span>
-  <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:8px;font-size:0.8125rem;font-weight:600;background:#DBEAFE;color:#1D4ED8;"><span style="width:6px;height:6px;border-radius:50%;background:currentColor;"></span> Information</span>
+  <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:8px;font-size:0.8125rem;font-weight:600;background:var(--bg-success-100);color:var(--bg-success-700);"><span style="width:6px;height:6px;border-radius:50%;background:currentColor;"></span> Erfolgreich</span>
+  <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:8px;font-size:0.8125rem;font-weight:600;background:var(--bg-warning-100);color:var(--bg-warning-700);"><span style="width:6px;height:6px;border-radius:50%;background:currentColor;"></span> Warnung</span>
+  <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:8px;font-size:0.8125rem;font-weight:600;background:var(--bg-error-100);color:var(--bg-error-700);"><span style="width:6px;height:6px;border-radius:50%;background:currentColor;"></span> Fehler</span>
+  <span style="display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:8px;font-size:0.8125rem;font-weight:600;background:var(--bg-info-100);color:var(--bg-info-700);"><span style="width:6px;height:6px;border-radius:50%;background:currentColor;"></span> Information</span>
 </div>
 
 ### Hinweis-Boxen
 
 <div style="display:flex;flex-direction:column;gap:16px;margin:24px 0;">
   <div style="border-left:4px solid #22C55E;background:rgba(34,197,94,0.08);border-radius:0 8px 8px 0;padding:16px 20px;">
-    <div style="font-weight:700;color:#15803D;margin-bottom:4px;">Erfolg</div>
+    <div style="font-weight:700;color:var(--bg-success-700);margin-bottom:4px;">Erfolg</div>
     <div style="color:#18181B;font-size:0.9rem;">Dieser Vorgang wurde erfolgreich abgeschlossen.</div>
   </div>
   <div style="border-left:4px solid #EAB308;background:rgba(234,179,8,0.08);border-radius:0 8px 8px 0;padding:16px 20px;">
-    <div style="font-weight:700;color:#A16207;margin-bottom:4px;">Warnung</div>
+    <div style="font-weight:700;color:var(--bg-warning-700);margin-bottom:4px;">Warnung</div>
     <div style="color:#18181B;font-size:0.9rem;">Bitte überprüfen Sie die eingegebenen Daten.</div>
   </div>
   <div style="border-left:4px solid #EF4444;background:rgba(239,68,68,0.08);border-radius:0 8px 8px 0;padding:16px 20px;">
-    <div style="font-weight:700;color:#B91C1C;margin-bottom:4px;">Fehler</div>
+    <div style="font-weight:700;color:var(--bg-error-700);margin-bottom:4px;">Fehler</div>
     <div style="color:#18181B;font-size:0.9rem;">Der Vorgang konnte nicht abgeschlossen werden.</div>
   </div>
   <div style="border-left:4px solid #3B82F6;background:rgba(59,130,246,0.08);border-radius:0 8px 8px 0;padding:16px 20px;">
-    <div style="font-weight:700;color:#1D4ED8;margin-bottom:4px;">Information</div>
+    <div style="font-weight:700;color:var(--bg-info-700);margin-bottom:4px;">Information</div>
     <div style="color:#18181B;font-size:0.9rem;">Weitere Details finden Sie in der Dokumentation.</div>
   </div>
 </div>
@@ -111,10 +111,10 @@ Semantische Farben werden in Badges als Kombination aus **hellem Hintergrund + d
 
 | Status | Hintergrund | Textfarbe | Vorschau |
 |--------|-------------|-----------|----------|
-| **Success** | #DCFCE7 | #15803D | <span style="background:#DCFCE7;color:#15803D;padding:4px 12px;border-radius:6px;font-weight:600;font-size:0.85em;">Aktiv</span> |
-| **Warning** | #FEF9C3 | #A16207 | <span style="background:#FEF9C3;color:#A16207;padding:4px 12px;border-radius:6px;font-weight:600;font-size:0.85em;">Ausstehend</span> |
-| **Error** | #FEE2E2 | #B91C1C | <span style="background:#FEE2E2;color:#B91C1C;padding:4px 12px;border-radius:6px;font-weight:600;font-size:0.85em;">Kritisch</span> |
-| **Info** | #DBEAFE | #1D4ED8 | <span style="background:#DBEAFE;color:#1D4ED8;padding:4px 12px;border-radius:6px;font-weight:600;font-size:0.85em;">Standard</span> |
+| **Success** | #DCFCE7 | #15803D | <span style="background:var(--bg-success-100);color:var(--bg-success-700);padding:4px 12px;border-radius:6px;font-weight:600;font-size:0.85em;">Aktiv</span> |
+| **Warning** | #FEF9C3 | #A16207 | <span style="background:var(--bg-warning-100);color:var(--bg-warning-700);padding:4px 12px;border-radius:6px;font-weight:600;font-size:0.85em;">Ausstehend</span> |
+| **Error** | #FEE2E2 | #B91C1C | <span style="background:var(--bg-error-100);color:var(--bg-error-700);padding:4px 12px;border-radius:6px;font-weight:600;font-size:0.85em;">Kritisch</span> |
+| **Info** | #DBEAFE | #1D4ED8 | <span style="background:var(--bg-info-100);color:var(--bg-info-700);padding:4px 12px;border-radius:6px;font-weight:600;font-size:0.85em;">Standard</span> |
 
 ## CSS Custom Properties
 

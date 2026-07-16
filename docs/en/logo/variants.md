@@ -52,7 +52,7 @@ The icon (orange diamond with white B) does **not** change — it works the same
 The logo may be placed on the following backgrounds:
 
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin:24px 0;">
-  <div style="background:#FFFFFF;border:1.5px solid #E4E4E7;border-radius:12px;padding:24px 20px;display:flex;align-items:center;justify-content:center;min-width:120px;flex:1;">
+  <div style="background:var(--bg-brand-white);border:1.5px solid #E4E4E7;border-radius:12px;padding:24px 20px;display:flex;align-items:center;justify-content:center;min-width:120px;flex:1;">
     <div style="text-align:center;">
       <div style="font-weight:700;font-size:0.8rem;color:#18181B;">White</div>
       <div style="font-size:0.7rem;color:#71717A;">#FFFFFF</div>

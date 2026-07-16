@@ -5,18 +5,18 @@ Accent colors complement the orange-gray system for visualizations, charts, tags
 ## Color palette
 
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin:24px 0;">
-  <div style="background:#2563EB;color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:120px;text-align:center;">Blue<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#2563EB</span></div>
-  <div style="background:#0D9488;color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:120px;text-align:center;">Teal<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#0D9488</span></div>
-  <div style="background:#D97706;color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:120px;text-align:center;">Amber<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#D97706</span></div>
-  <div style="background:#6366F1;color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:120px;text-align:center;">Indigo<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#6366F1</span></div>
+  <div style="background:var(--bg-accent-blue);color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:120px;text-align:center;">Blue<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#2563EB</span></div>
+  <div style="background:var(--bg-accent-teal);color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:120px;text-align:center;">Teal<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#0D9488</span></div>
+  <div style="background:var(--bg-accent-amber);color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:120px;text-align:center;">Amber<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#D97706</span></div>
+  <div style="background:var(--bg-accent-indigo);color:white;padding:20px 24px;border-radius:12px;font-weight:700;min-width:120px;text-align:center;">Indigo<br><span style="font-weight:400;font-size:0.85em;opacity:0.85;">#6366F1</span></div>
 </div>
 
 | Name | HEX | OKLCH | Preview | Usage |
 |------|-----|-------|---------|-------|
-| **Blue** | `#2563EB` | `oklch(58% 0.20 255)` | <span style="display:inline-block;width:48px;height:24px;background:#2563EB;border-radius:4px;vertical-align:middle;"></span> | Links, trust signals (banking, compliance), interactive elements, charts |
-| **Teal** | `#0D9488` | `oklch(60% 0.13 195)` | <span style="display:inline-block;width:48px;height:24px;background:#0D9488;border-radius:4px;vertical-align:middle;"></span> | Secondary markers, checkpoints in process flows, alternative category |
-| **Amber** | `#D97706` | `oklch(68% 0.18 60)` | <span style="display:inline-block;width:48px;height:24px;background:#D97706;border-radius:4px;vertical-align:middle;"></span> | Reserved (do NOT confuse with Brand Orange) — see warning |
-| **Indigo** | `#6366F1` | `oklch(58% 0.21 285)` | <span style="display:inline-block;width:48px;height:24px;background:#6366F1;border-radius:4px;vertical-align:middle;"></span> | Premium markers, enterprise features, creative accents |
+| **Blue** | `#2563EB` | `oklch(58% 0.20 255)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-accent-blue);border-radius:4px;vertical-align:middle;"></span> | Links, trust signals (banking, compliance), interactive elements, charts |
+| **Teal** | `#0D9488` | `oklch(60% 0.13 195)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-accent-teal);border-radius:4px;vertical-align:middle;"></span> | Secondary markers, checkpoints in process flows, alternative category |
+| **Amber** | `#D97706` | `oklch(68% 0.18 60)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-accent-amber);border-radius:4px;vertical-align:middle;"></span> | Reserved (do NOT confuse with Brand Orange) — see warning |
+| **Indigo** | `#6366F1` | `oklch(58% 0.21 285)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-accent-indigo);border-radius:4px;vertical-align:middle;"></span> | Premium markers, enterprise features, creative accents |
 
 ::: info Note
 **Slate (#475569)** has been removed from the accent palette. For neutral tones, use the [Warm Gray scale](/en/colors/secondary) instead.
@@ -25,11 +25,11 @@ Accent colors complement the orange-gray system for visualizations, charts, tags
 ## Interaction with orange
 
 <div style="display:flex;gap:0;border-radius:12px;overflow:hidden;height:56px;margin:24px 0;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-  <div style="flex:2;background:#FF8500;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Orange (primary)</div>
-  <div style="flex:1;background:#2563EB;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Blue</div>
-  <div style="flex:1;background:#0D9488;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Teal</div>
-  <div style="flex:1;background:#D97706;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Amber</div>
-  <div style="flex:1;background:#6366F1;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Indigo</div>
+  <div style="flex:2;background:var(--bg-orange-500);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Orange (primary)</div>
+  <div style="flex:1;background:var(--bg-accent-blue);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Blue</div>
+  <div style="flex:1;background:var(--bg-accent-teal);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Teal</div>
+  <div style="flex:1;background:var(--bg-accent-amber);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Amber</div>
+  <div style="flex:1;background:var(--bg-accent-indigo);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Indigo</div>
 </div>
 
 ### Why these colors?
@@ -44,11 +44,11 @@ Accent colors complement the orange-gray system for visualizations, charts, tags
 ## Chart ordering
 
 <div class="color-scale" style="height:40px;">
-  <div style="background:#FF8500;color:white;">1. Orange</div>
-  <div style="background:#2563EB;color:white;">2. Blue</div>
-  <div style="background:#0D9488;color:white;">3. Teal</div>
-  <div style="background:#D97706;color:white;">4. Amber</div>
-  <div style="background:#6366F1;color:white;">5. Indigo</div>
+  <div style="background:var(--bg-orange-500);color:white;">1. Orange</div>
+  <div style="background:var(--bg-accent-blue);color:white;">2. Blue</div>
+  <div style="background:var(--bg-accent-teal);color:white;">3. Teal</div>
+  <div style="background:var(--bg-accent-amber);color:white;">4. Amber</div>
+  <div style="background:var(--bg-accent-indigo);color:white;">5. Indigo</div>
 </div>
 
 ## Application rules

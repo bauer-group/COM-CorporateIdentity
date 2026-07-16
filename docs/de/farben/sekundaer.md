@@ -5,7 +5,7 @@ Die BAUER GROUP setzt auf ein **monochromatisches Farbschema**: Orange ist die e
 ## Designprinzip
 
 <div style="display:flex;gap:0;border-radius:12px;overflow:hidden;height:56px;margin:24px 0;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-  <div style="flex:2;background:#FF8500;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Orange (Primär)</div>
+  <div style="flex:2;background:var(--bg-orange-500);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Orange (Primär)</div>
   <div style="flex:3;background:linear-gradient(90deg, #C4BDB7, #887F78, #524B45, #3A3430, #231F1C);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.75rem;">Warme Grautöne (Unterstützend)</div>
 </div>
 
@@ -19,12 +19,12 @@ Die BAUER GROUP setzt auf ein **monochromatisches Farbschema**: Orange ist die e
 ## Referenzfarben
 
 <div style="display:flex;gap:16px;flex-wrap:wrap;margin:24px 0;">
-  <div style="flex:1;min-width:220px;background:#524B45;color:white;padding:40px 24px;border-radius:16px;text-align:center;box-shadow:0 4px 16px rgba(82,75,69,0.3);">
+  <div style="flex:1;min-width:220px;background:var(--bg-warm-700);color:white;padding:40px 24px;border-radius:16px;text-align:center;box-shadow:0 4px 16px rgba(82,75,69,0.3);">
     <div style="font-size:2em;font-weight:700;letter-spacing:0.02em;">#524B45</div>
     <div style="opacity:0.85;margin-top:8px;font-size:0.9em;">Warm 700 — Standard</div>
     <div style="margin-top:12px;font-size:0.75em;opacity:0.7;">RGB 82, 75, 69 · HSL 28°, 9%, 30%</div>
   </div>
-  <div style="flex:1;min-width:220px;background:#3A3430;color:white;padding:40px 24px;border-radius:16px;text-align:center;box-shadow:0 4px 16px rgba(58,52,48,0.3);">
+  <div style="flex:1;min-width:220px;background:var(--bg-brand-dark);color:white;padding:40px 24px;border-radius:16px;text-align:center;box-shadow:0 4px 16px rgba(58,52,48,0.3);">
     <div style="font-size:2em;font-weight:700;letter-spacing:0.02em;">#3A3430</div>
     <div style="opacity:0.85;margin-top:8px;font-size:0.9em;">Warm 800 — Dunkel</div>
     <div style="margin-top:12px;font-size:0.75em;opacity:0.7;">RGB 58, 52, 48 · HSL 24°, 9%, 21%</div>
@@ -36,32 +36,32 @@ Die BAUER GROUP setzt auf ein **monochromatisches Farbschema**: Orange ist die e
 Die 10-Stufen-Skala verwendet **OKLCH-basierte Helligkeitsverteilung** für perceptuell gleichmäßige Abstände. Alle Stufen teilen denselben warmen Grundton (Hue ≈28°).
 
 <div class="color-scale">
-  <div style="background:#F9F8F6;color:#3A3430;">50</div>
-  <div style="background:#F0EDEA;color:#3A3430;">100</div>
-  <div style="background:#E0DBD6;color:#3A3430;">200</div>
-  <div style="background:#C4BDB7;color:#3A3430;">300</div>
-  <div style="background:#A69E97;color:white;">400</div>
-  <div style="background:#887F78;color:white;">500</div>
-  <div style="background:#6B635C;color:white;">600</div>
-  <div style="background:#524B45;color:white;">700</div>
-  <div style="background:#3A3430;color:white;">800</div>
-  <div style="background:#231F1C;color:white;">900</div>
+  <div style="background:var(--bg-brand-light);color:var(--bg-brand-dark);">50</div>
+  <div style="background:var(--bg-warm-100);color:var(--bg-brand-dark);">100</div>
+  <div style="background:var(--bg-warm-200);color:var(--bg-brand-dark);">200</div>
+  <div style="background:var(--bg-warm-300);color:var(--bg-brand-dark);">300</div>
+  <div style="background:var(--bg-warm-400);color:white;">400</div>
+  <div style="background:var(--bg-warm-500);color:white;">500</div>
+  <div style="background:var(--bg-warm-600);color:white;">600</div>
+  <div style="background:var(--bg-warm-700);color:white;">700</div>
+  <div style="background:var(--bg-brand-dark);color:white;">800</div>
+  <div style="background:var(--bg-brand-black);color:white;">900</div>
 </div>
 
 ### Vollständige Werte
 
 | Stufe | HEX | Vorschau | RGB | OKLCH | CMYK | Anwendung |
 |-------|-----|----------|-----|-------|------|-----------|
-| **50** | `#F9F8F6` | <span style="display:inline-block;width:48px;height:24px;background:#F9F8F6;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | `249, 248, 246` | `oklch(98% 0.005 50)` | `C0 M0 Y1 K2` | Hintergründe, Hover-States |
-| **100** | `#F0EDEA` | <span style="display:inline-block;width:48px;height:24px;background:#F0EDEA;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | `240, 237, 234` | `oklch(95% 0.008 50)` | `C0 M1 Y2 K6` | Subtile Akzente, Sektionen |
-| **200** | `#E0DBD6` | <span style="display:inline-block;width:48px;height:24px;background:#E0DBD6;border-radius:4px;vertical-align:middle;"></span> | `224, 219, 214` | `oklch(89% 0.011 50)` | `C0 M2 Y4 K12` | Rahmen, Trennlinien |
-| **300** | `#C4BDB7` | <span style="display:inline-block;width:48px;height:24px;background:#C4BDB7;border-radius:4px;vertical-align:middle;"></span> | `196, 189, 183` | `oklch(80% 0.012 50)` | `C0 M3 Y5 K23` | Icons, Dekoration |
-| **400** | `#A69E97` | <span style="display:inline-block;width:48px;height:24px;background:#A69E97;border-radius:4px;vertical-align:middle;"></span> | `166, 158, 151` | `oklch(70% 0.013 50)` | `C0 M4 Y7 K35` | Deaktivierter Text, Platzhalter |
-| **500** | `#887F78` | <span style="display:inline-block;width:48px;height:24px;background:#887F78;border-radius:4px;vertical-align:middle;"></span> | `136, 127, 120` | `oklch(60% 0.013 50)` | `C0 M5 Y9 K47` | Sekundärtext (nur groß, AA Large) |
-| **600** | `#6B635C` | <span style="display:inline-block;width:48px;height:24px;background:#6B635C;border-radius:4px;vertical-align:middle;"></span> | `107, 99, 92` | `oklch(50% 0.013 50)` | `C0 M6 Y10 K58` | **Fließtext (WCAG AA)** |
-| **700** | `#524B45` | <span style="display:inline-block;width:48px;height:24px;background:#524B45;border-radius:4px;vertical-align:middle;"></span> | `82, 75, 69` | `oklch(40% 0.012 50)` | `C0 M7 Y12 K68` | **Starker Text (WCAG AAA)** |
-| **800** | `#3A3430` | <span style="display:inline-block;width:48px;height:24px;background:#3A3430;border-radius:4px;vertical-align:middle;"></span> | `58, 52, 48` | `oklch(30% 0.011 50)` | `C0 M8 Y13 K77` | **Headlines, dunkle Flächen** |
-| **900** | `#231F1C` | <span style="display:inline-block;width:48px;height:24px;background:#231F1C;border-radius:4px;vertical-align:middle;"></span> | `35, 31, 28` | `oklch(20% 0.009 50)` | `C0 M9 Y14 K86` | Maximaler Kontrast, Footer |
+| **50** | `#F9F8F6` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-brand-light);border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | `249, 248, 246` | `oklch(98% 0.005 50)` | `C0 M0 Y1 K2` | Hintergründe, Hover-States |
+| **100** | `#F0EDEA` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-100);border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | `240, 237, 234` | `oklch(95% 0.008 50)` | `C0 M1 Y2 K6` | Subtile Akzente, Sektionen |
+| **200** | `#E0DBD6` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-200);border-radius:4px;vertical-align:middle;"></span> | `224, 219, 214` | `oklch(89% 0.011 50)` | `C0 M2 Y4 K12` | Rahmen, Trennlinien |
+| **300** | `#C4BDB7` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-300);border-radius:4px;vertical-align:middle;"></span> | `196, 189, 183` | `oklch(80% 0.012 50)` | `C0 M3 Y5 K23` | Icons, Dekoration |
+| **400** | `#A69E97` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-400);border-radius:4px;vertical-align:middle;"></span> | `166, 158, 151` | `oklch(70% 0.013 50)` | `C0 M4 Y7 K35` | Deaktivierter Text, Platzhalter |
+| **500** | `#887F78` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-500);border-radius:4px;vertical-align:middle;"></span> | `136, 127, 120` | `oklch(60% 0.013 50)` | `C0 M5 Y9 K47` | Sekundärtext (nur groß, AA Large) |
+| **600** | `#6B635C` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-600);border-radius:4px;vertical-align:middle;"></span> | `107, 99, 92` | `oklch(50% 0.013 50)` | `C0 M6 Y10 K58` | **Fließtext (WCAG AA)** |
+| **700** | `#524B45` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-700);border-radius:4px;vertical-align:middle;"></span> | `82, 75, 69` | `oklch(40% 0.012 50)` | `C0 M7 Y12 K68` | **Starker Text (WCAG AAA)** |
+| **800** | `#3A3430` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-brand-dark);border-radius:4px;vertical-align:middle;"></span> | `58, 52, 48` | `oklch(30% 0.011 50)` | `C0 M8 Y13 K77` | **Headlines, dunkle Flächen** |
+| **900** | `#231F1C` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-brand-black);border-radius:4px;vertical-align:middle;"></span> | `35, 31, 28` | `oklch(20% 0.009 50)` | `C0 M9 Y14 K86` | Maximaler Kontrast, Footer |
 
 ::: tip OKLCH-Lesehilfe
 Format: `oklch(L% C H)` — **L**ightness in % (0–100), **C**hroma absolut (0–~0.4 in sRGB), **H**ue in Grad (0–360°).
@@ -108,16 +108,16 @@ Durchschnittlicher Schritt: ~0.086 OKLCH-L pro Stufe — gleichmäßige Verteilu
 ## Zusammenspiel mit Orange
 
 <div style="display:flex;gap:0;border-radius:12px;overflow:hidden;height:48px;margin:16px 0;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-  <div style="flex:1;background:#FFF7ED;"></div>
-  <div style="flex:1;background:#FFEDD5;"></div>
-  <div style="flex:1;background:#FF8500;"></div>
-  <div style="flex:1;background:#EA6D00;"></div>
+  <div style="flex:1;background:var(--bg-orange-50);"></div>
+  <div style="flex:1;background:var(--bg-orange-100);"></div>
+  <div style="flex:1;background:var(--bg-orange-500);"></div>
+  <div style="flex:1;background:var(--bg-orange-600);"></div>
   <div style="flex:1;background:linear-gradient(90deg, #C2570A, #A69E97);"></div>
-  <div style="flex:1;background:#A69E97;"></div>
-  <div style="flex:1;background:#887F78;"></div>
-  <div style="flex:1;background:#6B635C;"></div>
-  <div style="flex:1;background:#3A3430;"></div>
-  <div style="flex:1;background:#231F1C;"></div>
+  <div style="flex:1;background:var(--bg-warm-400);"></div>
+  <div style="flex:1;background:var(--bg-warm-500);"></div>
+  <div style="flex:1;background:var(--bg-warm-600);"></div>
+  <div style="flex:1;background:var(--bg-brand-dark);"></div>
+  <div style="flex:1;background:var(--bg-brand-black);"></div>
 </div>
 <div style="display:flex;justify-content:space-between;font-size:0.7rem;color:#71717A;padding:0 4px;">
   <span>← Orange (chromatisch)</span>
@@ -138,21 +138,21 @@ Durchschnittlicher Schritt: ~0.086 OKLCH-L pro Stufe — gleichmäßige Verteilu
 ### UI-Beispiel
 
 <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.1);margin:24px 0;">
-  <div style="background:#3A3430;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;">
+  <div style="background:var(--bg-brand-dark);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;">
     <div style="color:white;font-weight:700;font-size:0.9em;">BAUER GROUP</div>
-    <div style="display:flex;gap:16px;font-size:0.8em;color:#C4BDB7;">
+    <div style="display:flex;gap:16px;font-size:0.8em;color:var(--bg-warm-300);">
       <span>Produkte</span><span>Lösungen</span><span>Kontakt</span>
     </div>
   </div>
-  <div style="background:#F9F8F6;padding:32px 20px;">
-    <div style="color:#3A3430;font-size:1.1em;font-weight:700;margin-bottom:8px;">Willkommen bei BAUER GROUP</div>
-    <div style="color:#6B635C;font-size:0.85em;margin-bottom:16px;">Technology that scales with you — innovative Lösungen für Ihr Unternehmen.</div>
+  <div style="background:var(--bg-brand-light);padding:32px 20px;">
+    <div style="color:var(--bg-brand-dark);font-size:1.1em;font-weight:700;margin-bottom:8px;">Willkommen bei BAUER GROUP</div>
+    <div style="color:var(--bg-warm-600);font-size:0.85em;margin-bottom:16px;">Technology that scales with you — innovative Lösungen für Ihr Unternehmen.</div>
     <div style="display:flex;gap:8px;">
-      <span style="background:#FF8500;color:white;padding:8px 16px;border-radius:8px;font-size:0.8em;font-weight:600;">Jetzt starten</span>
-      <span style="background:white;color:#524B45;padding:8px 16px;border-radius:8px;font-size:0.8em;font-weight:600;border:1px solid #E0DBD6;">Mehr erfahren</span>
+      <span style="background:var(--bg-orange-500);color:white;padding:8px 16px;border-radius:8px;font-size:0.8em;font-weight:600;">Jetzt starten</span>
+      <span style="background:white;color:var(--bg-warm-700);padding:8px 16px;border-radius:8px;font-size:0.8em;font-weight:600;border:1px solid #E0DBD6;">Mehr erfahren</span>
     </div>
   </div>
-  <div style="background:#231F1C;padding:12px 20px;display:flex;justify-content:space-between;font-size:0.7em;color:#A69E97;">
+  <div style="background:var(--bg-brand-black);padding:12px 20px;display:flex;justify-content:space-between;font-size:0.7em;color:var(--bg-warm-400);">
     <span>© 2026 BAUER GROUP</span><span>Impressum · Datenschutz</span>
   </div>
 </div>
@@ -160,18 +160,18 @@ Durchschnittlicher Schritt: ~0.086 OKLCH-L pro Stufe — gleichmäßige Verteilu
 ### Als Hintergrundfarbe
 
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;">
-  <div style="background:#F9F8F6;color:#3A3430;padding:16px 32px;border-radius:10px;font-weight:600;border:1px solid #E0DBD6;">Seitenhintergrund (50)</div>
-  <div style="background:#3A3430;color:white;padding:16px 32px;border-radius:10px;font-weight:600;">Header / Navigation (800)</div>
-  <div style="background:#231F1C;color:white;padding:16px 32px;border-radius:10px;font-weight:600;">Footer / Dark Sections (900)</div>
+  <div style="background:var(--bg-brand-light);color:var(--bg-brand-dark);padding:16px 32px;border-radius:10px;font-weight:600;border:1px solid #E0DBD6;">Seitenhintergrund (50)</div>
+  <div style="background:var(--bg-brand-dark);color:white;padding:16px 32px;border-radius:10px;font-weight:600;">Header / Navigation (800)</div>
+  <div style="background:var(--bg-brand-black);color:white;padding:16px 32px;border-radius:10px;font-weight:600;">Footer / Dark Sections (900)</div>
 </div>
 
 ### Als Textfarbe
 
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;">
-  <div style="background:white;color:#3A3430;padding:16px 32px;border-radius:10px;font-weight:600;border:1.5px solid #E0DBD6;">Headlines (800)</div>
-  <div style="background:white;color:#524B45;padding:16px 32px;border-radius:10px;font-weight:600;border:1.5px solid #E0DBD6;">Starker Text (700)</div>
-  <div style="background:white;color:#6B635C;padding:16px 32px;border-radius:10px;font-weight:600;border:1.5px solid #E0DBD6;">Fließtext (600)</div>
-  <div style="background:white;color:#887F78;padding:16px 32px;border-radius:10px;font-weight:600;border:1.5px solid #E0DBD6;">Sekundärtext (500)</div>
+  <div style="background:white;color:var(--bg-brand-dark);padding:16px 32px;border-radius:10px;font-weight:600;border:1.5px solid #E0DBD6;">Headlines (800)</div>
+  <div style="background:white;color:var(--bg-warm-700);padding:16px 32px;border-radius:10px;font-weight:600;border:1.5px solid #E0DBD6;">Starker Text (700)</div>
+  <div style="background:white;color:var(--bg-warm-600);padding:16px 32px;border-radius:10px;font-weight:600;border:1.5px solid #E0DBD6;">Fließtext (600)</div>
+  <div style="background:white;color:var(--bg-warm-500);padding:16px 32px;border-radius:10px;font-weight:600;border:1.5px solid #E0DBD6;">Sekundärtext (500)</div>
 </div>
 
 ### Anwendungsregeln
@@ -188,16 +188,16 @@ Im Dark Mode werden hellere Warm-Töne verwendet, um Kontrast auf dunklen Hinter
 
 <div style="display:flex;gap:16px;flex-wrap:wrap;margin:24px 0;">
   <div style="flex:1;min-width:200px;background:#18181B;padding:24px;border-radius:12px;">
-    <div style="color:#C4BDB7;font-weight:700;margin-bottom:4px;">Warm 300</div>
-    <div style="color:#A69E97;font-size:0.85em;">Für Akzente auf<br>dunklem Hintergrund</div>
+    <div style="color:var(--bg-warm-300);font-weight:700;margin-bottom:4px;">Warm 300</div>
+    <div style="color:var(--bg-warm-400);font-size:0.85em;">Für Akzente auf<br>dunklem Hintergrund</div>
   </div>
   <div style="flex:1;min-width:200px;background:#18181B;padding:24px;border-radius:12px;">
-    <div style="color:#E0DBD6;font-weight:700;margin-bottom:4px;">Warm 200</div>
-    <div style="color:#A69E97;font-size:0.85em;">Für primären Text auf<br>dunklem Hintergrund</div>
+    <div style="color:var(--bg-warm-200);font-weight:700;margin-bottom:4px;">Warm 200</div>
+    <div style="color:var(--bg-warm-400);font-size:0.85em;">Für primären Text auf<br>dunklem Hintergrund</div>
   </div>
   <div style="flex:1;min-width:200px;background:#18181B;padding:24px;border-radius:12px;">
-    <div style="color:#F0EDEA;font-weight:700;margin-bottom:4px;">Warm 100</div>
-    <div style="color:#A69E97;font-size:0.85em;">Für helle Headlines auf<br>dunklem Hintergrund</div>
+    <div style="color:var(--bg-warm-100);font-weight:700;margin-bottom:4px;">Warm 100</div>
+    <div style="color:var(--bg-warm-400);font-size:0.85em;">Für helle Headlines auf<br>dunklem Hintergrund</div>
   </div>
 </div>
 

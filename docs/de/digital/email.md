@@ -198,8 +198,8 @@ Für Arabisch wird automatisch die Textrichtung `direction: rtl` gesetzt.
 
 | Verwendung | Farbe | Hex |
 |------------|-------|-----|
-| Akzentlinie | <span style="color:#FF8500">■</span> BAUER Orange | `#FF8500` |
-| Links (E-Mail, Web, Booking) | <span style="color:#C2570A">■</span> Dunkel-Orange | `#C2570A` |
+| Akzentlinie | <span style="color:var(--bg-orange-500)">■</span> BAUER Orange | `#FF8500` |
+| Links (E-Mail, Web, Booking) | <span style="color:var(--bg-orange-700)">■</span> Dunkel-Orange | `#C2570A` |
 | Name | <span style="color:#18181B">■</span> Fast-Schwarz | `#18181B` |
 | Position, Kontaktdaten | <span style="color:#3F3F46">■</span> Dunkelgrau | `#3F3F46` |
 | Unternehmensblock | <span style="color:#71717A">■</span> Mittelgrau | `#71717A` |

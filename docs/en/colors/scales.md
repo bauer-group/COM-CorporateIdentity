@@ -3,88 +3,88 @@
 ## Orange scale
 
 <div class="color-scale">
-  <div style="background:#FFF7ED;color:#7C3A0A;">50</div>
-  <div style="background:#FFEDD5;color:#7C3A0A;">100</div>
-  <div style="background:#FED7AA;color:#7C3A0A;">200</div>
-  <div style="background:#FDBA74;color:#7C3A0A;">300</div>
-  <div style="background:#FB923C;color:white;">400</div>
-  <div style="background:#FF8500;color:white;">500</div>
-  <div style="background:#EA6D00;color:white;">600</div>
-  <div style="background:#C2570A;color:white;">700</div>
-  <div style="background:#9A4509;color:white;">800</div>
-  <div style="background:#7C3A0A;color:white;">900</div>
+  <div style="background:var(--bg-orange-50);color:var(--bg-orange-900);">50</div>
+  <div style="background:var(--bg-orange-100);color:var(--bg-orange-900);">100</div>
+  <div style="background:var(--bg-orange-200);color:var(--bg-orange-900);">200</div>
+  <div style="background:var(--bg-orange-300);color:var(--bg-orange-900);">300</div>
+  <div style="background:var(--bg-orange-400);color:white;">400</div>
+  <div style="background:var(--bg-orange-500);color:white;">500</div>
+  <div style="background:var(--bg-orange-600);color:white;">600</div>
+  <div style="background:var(--bg-orange-700);color:white;">700</div>
+  <div style="background:var(--bg-orange-800);color:white;">800</div>
+  <div style="background:var(--bg-orange-900);color:white;">900</div>
 </div>
 
 | Step | HEX | OKLCH | Preview | Usage |
 |------|-----|-------|---------|-------|
-| **50** | `#FFF7ED` | `oklch(96% 0.03 60)` | <span style="display:inline-block;width:48px;height:24px;background:#FFF7ED;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Backgrounds, hover states |
-| **100** | `#FFEDD5` | `oklch(92% 0.06 60)` | <span style="display:inline-block;width:48px;height:24px;background:#FFEDD5;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Subtle accents, badges |
-| **200** | `#FED7AA` | `oklch(86% 0.11 58)` | <span style="display:inline-block;width:48px;height:24px;background:#FED7AA;border-radius:4px;vertical-align:middle;"></span> | Borders, decoration |
-| **300** | `#FDBA74` | `oklch(78% 0.15 55)` | <span style="display:inline-block;width:48px;height:24px;background:#FDBA74;border-radius:4px;vertical-align:middle;"></span> | Icons, illustrations |
-| **400** | `#FB923C` | `oklch(72% 0.18 50)` | <span style="display:inline-block;width:48px;height:24px;background:#FB923C;border-radius:4px;vertical-align:middle;"></span> | Dark-mode primary |
-| **500** | `#FF8500` | `oklch(68% 0.19 47)` | <span style="display:inline-block;width:48px;height:24px;background:#FF8500;border-radius:4px;vertical-align:middle;"></span> | **Brand Primary** |
-| **600** | `#EA6D00` | `oklch(62% 0.18 44)` | <span style="display:inline-block;width:48px;height:24px;background:#EA6D00;border-radius:4px;vertical-align:middle;"></span> | Hover state primary |
-| **700** | `#C2570A` | `oklch(54% 0.16 42)` | <span style="display:inline-block;width:48px;height:24px;background:#C2570A;border-radius:4px;vertical-align:middle;"></span> | Text (AA compliant) |
-| **800** | `#9A4509` | `oklch(44% 0.13 40)` | <span style="display:inline-block;width:48px;height:24px;background:#9A4509;border-radius:4px;vertical-align:middle;"></span> | Text (AAA compliant) |
-| **900** | `#7C3A0A` | `oklch(34% 0.10 38)` | <span style="display:inline-block;width:48px;height:24px;background:#7C3A0A;border-radius:4px;vertical-align:middle;"></span> | Strong accent |
+| **50** | `#FFF7ED` | `oklch(96% 0.03 60)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-orange-50);border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Backgrounds, hover states |
+| **100** | `#FFEDD5` | `oklch(92% 0.06 60)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-orange-100);border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Subtle accents, badges |
+| **200** | `#FED7AA` | `oklch(86% 0.11 58)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-orange-200);border-radius:4px;vertical-align:middle;"></span> | Borders, decoration |
+| **300** | `#FDBA74` | `oklch(78% 0.15 55)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-orange-300);border-radius:4px;vertical-align:middle;"></span> | Icons, illustrations |
+| **400** | `#FB923C` | `oklch(72% 0.18 50)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-orange-400);border-radius:4px;vertical-align:middle;"></span> | Dark-mode primary |
+| **500** | `#FF8500` | `oklch(68% 0.19 47)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-orange-500);border-radius:4px;vertical-align:middle;"></span> | **Brand Primary** |
+| **600** | `#EA6D00` | `oklch(62% 0.18 44)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-orange-600);border-radius:4px;vertical-align:middle;"></span> | Hover state primary |
+| **700** | `#C2570A` | `oklch(54% 0.16 42)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-orange-700);border-radius:4px;vertical-align:middle;"></span> | Text (AA compliant) |
+| **800** | `#9A4509` | `oklch(44% 0.13 40)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-orange-800);border-radius:4px;vertical-align:middle;"></span> | Text (AAA compliant) |
+| **900** | `#7C3A0A` | `oklch(34% 0.10 38)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-orange-900);border-radius:4px;vertical-align:middle;"></span> | Strong accent |
 
 ## Warm Gray scale
 
 <div class="color-scale">
-  <div style="background:#F9F8F6;color:#3A3430;">50</div>
-  <div style="background:#F0EDEA;color:#3A3430;">100</div>
-  <div style="background:#E0DBD6;color:#3A3430;">200</div>
-  <div style="background:#C4BDB7;color:#3A3430;">300</div>
-  <div style="background:#A69E97;color:white;">400</div>
-  <div style="background:#887F78;color:white;">500</div>
-  <div style="background:#6B635C;color:white;">600</div>
-  <div style="background:#524B45;color:white;">700</div>
-  <div style="background:#3A3430;color:white;">800</div>
-  <div style="background:#231F1C;color:white;">900</div>
+  <div style="background:var(--bg-brand-light);color:var(--bg-brand-dark);">50</div>
+  <div style="background:var(--bg-warm-100);color:var(--bg-brand-dark);">100</div>
+  <div style="background:var(--bg-warm-200);color:var(--bg-brand-dark);">200</div>
+  <div style="background:var(--bg-warm-300);color:var(--bg-brand-dark);">300</div>
+  <div style="background:var(--bg-warm-400);color:white;">400</div>
+  <div style="background:var(--bg-warm-500);color:white;">500</div>
+  <div style="background:var(--bg-warm-600);color:white;">600</div>
+  <div style="background:var(--bg-warm-700);color:white;">700</div>
+  <div style="background:var(--bg-brand-dark);color:white;">800</div>
+  <div style="background:var(--bg-brand-black);color:white;">900</div>
 </div>
 
 | Step | HEX | OKLCH | Preview | Usage |
 |------|-----|-------|---------|-------|
-| **50** | `#F9F8F6` | `oklch(98% 0.005 50)` | <span style="display:inline-block;width:48px;height:24px;background:#F9F8F6;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Page background, Brand Light |
-| **100** | `#F0EDEA` | `oklch(95% 0.008 50)` | <span style="display:inline-block;width:48px;height:24px;background:#F0EDEA;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Card background |
-| **200** | `#E0DBD6` | `oklch(89% 0.011 50)` | <span style="display:inline-block;width:48px;height:24px;background:#E0DBD6;border-radius:4px;vertical-align:middle;"></span> | Borders (standard) |
-| **300** | `#C4BDB7` | `oklch(80% 0.012 50)` | <span style="display:inline-block;width:48px;height:24px;background:#C4BDB7;border-radius:4px;vertical-align:middle;"></span> | Borders (strong), decoration |
-| **400** | `#A69E97` | `oklch(70% 0.013 50)` | <span style="display:inline-block;width:48px;height:24px;background:#A69E97;border-radius:4px;vertical-align:middle;"></span> | Disabled text |
-| **500** | `#887F78` | `oklch(60% 0.013 50)` | <span style="display:inline-block;width:48px;height:24px;background:#887F78;border-radius:4px;vertical-align:middle;"></span> | Secondary text |
-| **600** | `#6B635C` | `oklch(50% 0.013 50)` | <span style="display:inline-block;width:48px;height:24px;background:#6B635C;border-radius:4px;vertical-align:middle;"></span> | Body text (AA) |
-| **700** | `#524B45` | `oklch(40% 0.012 50)` | <span style="display:inline-block;width:48px;height:24px;background:#524B45;border-radius:4px;vertical-align:middle;"></span> | Strong text (AAA) |
-| **800** | `#3A3430` | `oklch(30% 0.011 50)` | <span style="display:inline-block;width:48px;height:24px;background:#3A3430;border-radius:4px;vertical-align:middle;"></span> | Headlines, Brand Dark |
-| **900** | `#231F1C` | `oklch(20% 0.009 50)` | <span style="display:inline-block;width:48px;height:24px;background:#231F1C;border-radius:4px;vertical-align:middle;"></span> | Maximum contrast, Brand Black |
+| **50** | `#F9F8F6` | `oklch(98% 0.005 50)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-brand-light);border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Page background, Brand Light |
+| **100** | `#F0EDEA` | `oklch(95% 0.008 50)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-100);border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Card background |
+| **200** | `#E0DBD6` | `oklch(89% 0.011 50)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-200);border-radius:4px;vertical-align:middle;"></span> | Borders (standard) |
+| **300** | `#C4BDB7` | `oklch(80% 0.012 50)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-300);border-radius:4px;vertical-align:middle;"></span> | Borders (strong), decoration |
+| **400** | `#A69E97` | `oklch(70% 0.013 50)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-400);border-radius:4px;vertical-align:middle;"></span> | Disabled text |
+| **500** | `#887F78` | `oklch(60% 0.013 50)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-500);border-radius:4px;vertical-align:middle;"></span> | Secondary text |
+| **600** | `#6B635C` | `oklch(50% 0.013 50)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-600);border-radius:4px;vertical-align:middle;"></span> | Body text (AA) |
+| **700** | `#524B45` | `oklch(40% 0.012 50)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-warm-700);border-radius:4px;vertical-align:middle;"></span> | Strong text (AAA) |
+| **800** | `#3A3430` | `oklch(30% 0.011 50)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-brand-dark);border-radius:4px;vertical-align:middle;"></span> | Headlines, Brand Dark |
+| **900** | `#231F1C` | `oklch(20% 0.009 50)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-brand-black);border-radius:4px;vertical-align:middle;"></span> | Maximum contrast, Brand Black |
 
 ## Neutral Gray scale
 
 Pure neutral grays (saturation 0%) — proven in print materials (raster lines, technical elements, accent bars). Reference values from the [notepads](/en/advertising/notepads).
 
 <div class="color-scale">
-  <div style="background:#F7F7F7;color:#1C1C1C;">50</div>
-  <div style="background:#EBEBEB;color:#1C1C1C;">100</div>
-  <div style="background:#D1D1D1;color:#1C1C1C;">200</div>
-  <div style="background:#B8B8B8;color:#1C1C1C;">300</div>
-  <div style="background:#9E9E9E;color:white;">400</div>
-  <div style="background:#7F7F7F;color:white;">500</div>
-  <div style="background:#666666;color:white;">600</div>
-  <div style="background:#4D4D4D;color:white;">700</div>
-  <div style="background:#333333;color:white;">800</div>
-  <div style="background:#1C1C1C;color:white;">900</div>
+  <div style="background:var(--bg-neutral-50);color:var(--bg-neutral-900);">50</div>
+  <div style="background:var(--bg-neutral-100);color:var(--bg-neutral-900);">100</div>
+  <div style="background:var(--bg-neutral-200);color:var(--bg-neutral-900);">200</div>
+  <div style="background:var(--bg-neutral-300);color:var(--bg-neutral-900);">300</div>
+  <div style="background:var(--bg-neutral-400);color:white;">400</div>
+  <div style="background:var(--bg-neutral-500);color:white;">500</div>
+  <div style="background:var(--bg-neutral-600);color:white;">600</div>
+  <div style="background:var(--bg-neutral-700);color:white;">700</div>
+  <div style="background:var(--bg-neutral-800);color:white;">800</div>
+  <div style="background:var(--bg-neutral-900);color:white;">900</div>
 </div>
 
 | Step | HEX | OKLCH | Preview | Usage |
 |------|-----|-------|---------|-------|
-| **50** | `#F7F7F7` | `oklch(97% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:#F7F7F7;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Light backgrounds |
-| **100** | `#EBEBEB` | `oklch(93% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:#EBEBEB;border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Subtle dividers |
-| **200** | `#D1D1D1` | `oklch(85% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:#D1D1D1;border-radius:4px;vertical-align:middle;"></span> | **Print raster**, guidelines |
-| **300** | `#B8B8B8` | `oklch(77% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:#B8B8B8;border-radius:4px;vertical-align:middle;"></span> | Borders, decoration |
-| **400** | `#9E9E9E` | `oklch(68% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:#9E9E9E;border-radius:4px;vertical-align:middle;"></span> | Disabled elements |
-| **500** | `#7F7F7F` | `oklch(58% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:#7F7F7F;border-radius:4px;vertical-align:middle;"></span> | **Print accent bars**, midtones |
-| **600** | `#666666` | `oklch(48% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:#666666;border-radius:4px;vertical-align:middle;"></span> | Secondary text (print) |
-| **700** | `#4D4D4D` | `oklch(38% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:#4D4D4D;border-radius:4px;vertical-align:middle;"></span> | Text (print) |
-| **800** | `#333333` | `oklch(28% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:#333333;border-radius:4px;vertical-align:middle;"></span> | Headlines (print) |
-| **900** | `#1C1C1C` | `oklch(18% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:#1C1C1C;border-radius:4px;vertical-align:middle;"></span> | Maximum contrast |
+| **50** | `#F7F7F7` | `oklch(97% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-neutral-50);border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Light backgrounds |
+| **100** | `#EBEBEB` | `oklch(93% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-neutral-100);border-radius:4px;border:1px solid #E4E4E7;vertical-align:middle;"></span> | Subtle dividers |
+| **200** | `#D1D1D1` | `oklch(85% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-neutral-200);border-radius:4px;vertical-align:middle;"></span> | **Print raster**, guidelines |
+| **300** | `#B8B8B8` | `oklch(77% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-neutral-300);border-radius:4px;vertical-align:middle;"></span> | Borders, decoration |
+| **400** | `#9E9E9E` | `oklch(68% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-neutral-400);border-radius:4px;vertical-align:middle;"></span> | Disabled elements |
+| **500** | `#7F7F7F` | `oklch(58% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-neutral-500);border-radius:4px;vertical-align:middle;"></span> | **Print accent bars**, midtones |
+| **600** | `#666666` | `oklch(48% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-neutral-600);border-radius:4px;vertical-align:middle;"></span> | Secondary text (print) |
+| **700** | `#4D4D4D` | `oklch(38% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-neutral-700);border-radius:4px;vertical-align:middle;"></span> | Text (print) |
+| **800** | `#333333` | `oklch(28% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-neutral-800);border-radius:4px;vertical-align:middle;"></span> | Headlines (print) |
+| **900** | `#1C1C1C` | `oklch(18% 0 0)` | <span style="display:inline-block;width:48px;height:24px;background:var(--bg-neutral-900);border-radius:4px;vertical-align:middle;"></span> | Maximum contrast |
 
 ::: info Warm Gray vs. Neutral Gray
 **Warm Gray** (hue ~28°, saturation ~6–14%) for digital interfaces and brand surfaces with emotional warmth. **Neutral Gray** (saturation 0%) for print rasters, technical drawings, and matter-of-fact presentations.

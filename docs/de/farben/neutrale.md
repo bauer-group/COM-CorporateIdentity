@@ -6,28 +6,28 @@ Die BAUER GROUP definiert vier Markenneutralen als feste Referenzpunkte. Diese s
 
 <div style="display:flex;gap:12px;flex-wrap:wrap;margin:24px 0;">
   <div style="flex:1;min-width:140px;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-    <div style="background:#FFFFFF;height:56px;border-bottom:1px solid #E4E4E7;"></div>
+    <div style="background:var(--bg-brand-white);height:56px;border-bottom:1px solid #E4E4E7;"></div>
     <div style="padding:14px;text-align:center;">
       <div style="font-weight:700;font-size:0.85rem;color:#18181B;">Brand White</div>
       <div style="font-family:ui-monospace,monospace;font-size:0.75rem;color:#71717A;margin-top:2px;">#FFFFFF</div>
     </div>
   </div>
   <div style="flex:1;min-width:140px;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-    <div style="background:#F9F8F6;height:56px;"></div>
+    <div style="background:var(--bg-brand-light);height:56px;"></div>
     <div style="padding:14px;text-align:center;">
       <div style="font-weight:700;font-size:0.85rem;color:#18181B;">Brand Light</div>
       <div style="font-family:ui-monospace,monospace;font-size:0.75rem;color:#71717A;margin-top:2px;">#F9F8F6</div>
     </div>
   </div>
   <div style="flex:1;min-width:140px;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-    <div style="background:#3A3430;height:56px;"></div>
+    <div style="background:var(--bg-brand-dark);height:56px;"></div>
     <div style="padding:14px;text-align:center;">
       <div style="font-weight:700;font-size:0.85rem;color:#18181B;">Brand Dark</div>
       <div style="font-family:ui-monospace,monospace;font-size:0.75rem;color:#71717A;margin-top:2px;">#3A3430</div>
     </div>
   </div>
   <div style="flex:1;min-width:140px;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-    <div style="background:#231F1C;height:56px;"></div>
+    <div style="background:var(--bg-brand-black);height:56px;"></div>
     <div style="padding:14px;text-align:center;">
       <div style="font-weight:700;font-size:0.85rem;color:#18181B;">Brand Black</div>
       <div style="font-family:ui-monospace,monospace;font-size:0.75rem;color:#71717A;margin-top:2px;">#231F1C</div>
@@ -50,19 +50,19 @@ Die Brand-Neutrals sind **direkte Referenzpunkte** aus der Warm-Gray-Skala — k
 
 <div style="display:flex;flex-direction:column;gap:8px;margin:24px 0;">
   <div style="display:flex;align-items:center;gap:0;border-radius:8px;overflow:hidden;height:40px;">
-    <div style="flex:1;background:#F9F8F6;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:#3A3430;">Brand Light #F9F8F6</div>
+    <div style="flex:1;background:var(--bg-brand-light);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:var(--bg-brand-dark);">Brand Light #F9F8F6</div>
     <div style="width:2px;background:white;height:100%;"></div>
-    <div style="flex:1;background:#F9F8F6;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:#3A3430;">= Warm 50 #F9F8F6</div>
+    <div style="flex:1;background:var(--bg-brand-light);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:var(--bg-brand-dark);">= Warm 50 #F9F8F6</div>
   </div>
   <div style="display:flex;align-items:center;gap:0;border-radius:8px;overflow:hidden;height:40px;">
-    <div style="flex:1;background:#3A3430;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:white;">Brand Dark #3A3430</div>
+    <div style="flex:1;background:var(--bg-brand-dark);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:white;">Brand Dark #3A3430</div>
     <div style="width:2px;background:white;height:100%;"></div>
-    <div style="flex:1;background:#3A3430;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:white;">= Warm 800 #3A3430</div>
+    <div style="flex:1;background:var(--bg-brand-dark);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:white;">= Warm 800 #3A3430</div>
   </div>
   <div style="display:flex;align-items:center;gap:0;border-radius:8px;overflow:hidden;height:40px;">
-    <div style="flex:1;background:#231F1C;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:white;">Brand Black #231F1C</div>
+    <div style="flex:1;background:var(--bg-brand-black);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:white;">Brand Black #231F1C</div>
     <div style="width:2px;background:white;height:100%;"></div>
-    <div style="flex:1;background:#231F1C;display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:white;">= Warm 900 #231F1C</div>
+    <div style="flex:1;background:var(--bg-brand-black);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:white;">= Warm 900 #231F1C</div>
   </div>
 </div>
 
@@ -90,32 +90,32 @@ Die Brand-Neutrals sind **direkte Referenzpunkte** aus der Warm-Gray-Skala — k
 ### Sektions-Wechsel
 
 <div style="border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.1);margin:24px 0;">
-  <div style="background:#FFFFFF;padding:24px 20px;">
-    <div style="color:#3A3430;font-weight:700;margin-bottom:4px;">Primärer Inhalt</div>
-    <div style="color:#6B635C;font-size:0.85em;">Brand White (#FFFFFF) als Standard-Hintergrund</div>
+  <div style="background:var(--bg-brand-white);padding:24px 20px;">
+    <div style="color:var(--bg-brand-dark);font-weight:700;margin-bottom:4px;">Primärer Inhalt</div>
+    <div style="color:var(--bg-warm-600);font-size:0.85em;">Brand White (#FFFFFF) als Standard-Hintergrund</div>
   </div>
-  <div style="background:#F9F8F6;padding:24px 20px;">
-    <div style="color:#3A3430;font-weight:700;margin-bottom:4px;">Sekundäre Sektion</div>
-    <div style="color:#6B635C;font-size:0.85em;">Brand Light (#F9F8F6) — warmer Hintergrund für visuelle Trennung</div>
+  <div style="background:var(--bg-brand-light);padding:24px 20px;">
+    <div style="color:var(--bg-brand-dark);font-weight:700;margin-bottom:4px;">Sekundäre Sektion</div>
+    <div style="color:var(--bg-warm-600);font-size:0.85em;">Brand Light (#F9F8F6) — warmer Hintergrund für visuelle Trennung</div>
   </div>
-  <div style="background:#3A3430;padding:24px 20px;">
-    <div style="color:#FFFFFF;font-weight:700;margin-bottom:4px;">Dunkle Sektion</div>
-    <div style="color:#C4BDB7;font-size:0.85em;">Brand Dark (#3A3430) für Kontrast und Tiefe</div>
+  <div style="background:var(--bg-brand-dark);padding:24px 20px;">
+    <div style="color:var(--bg-brand-white);font-weight:700;margin-bottom:4px;">Dunkle Sektion</div>
+    <div style="color:var(--bg-warm-300);font-size:0.85em;">Brand Dark (#3A3430) für Kontrast und Tiefe</div>
   </div>
-  <div style="background:#231F1C;padding:24px 20px;">
-    <div style="color:#FFFFFF;font-weight:700;margin-bottom:4px;">Footer-Bereich</div>
-    <div style="color:#A69E97;font-size:0.85em;">Brand Black (#231F1C) für tiefe Bereiche</div>
+  <div style="background:var(--bg-brand-black);padding:24px 20px;">
+    <div style="color:var(--bg-brand-white);font-weight:700;margin-bottom:4px;">Footer-Bereich</div>
+    <div style="color:var(--bg-warm-400);font-size:0.85em;">Brand Black (#231F1C) für tiefe Bereiche</div>
   </div>
 </div>
 
 ### Komplette Markenfarbpalette
 
 <div style="display:flex;gap:0;border-radius:12px;overflow:hidden;height:48px;margin:24px 0;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
-  <div style="flex:1;background:#FFFFFF;display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:600;color:#3A3430;border:1px solid #E0DBD6;border-right:0;border-radius:12px 0 0 12px;">White</div>
-  <div style="flex:1;background:#F9F8F6;display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:600;color:#3A3430;">Light</div>
-  <div style="flex:1;background:#FF8500;display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:600;color:white;">Orange</div>
-  <div style="flex:1;background:#3A3430;display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:600;color:white;">Dark</div>
-  <div style="flex:1;background:#231F1C;display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:600;color:white;border-radius:0 12px 12px 0;">Black</div>
+  <div style="flex:1;background:var(--bg-brand-white);display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:600;color:var(--bg-brand-dark);border:1px solid #E0DBD6;border-right:0;border-radius:12px 0 0 12px;">White</div>
+  <div style="flex:1;background:var(--bg-brand-light);display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:600;color:var(--bg-brand-dark);">Light</div>
+  <div style="flex:1;background:var(--bg-orange-500);display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:600;color:white;">Orange</div>
+  <div style="flex:1;background:var(--bg-brand-dark);display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:600;color:white;">Dark</div>
+  <div style="flex:1;background:var(--bg-brand-black);display:flex;align-items:center;justify-content:center;font-size:0.65rem;font-weight:600;color:white;border-radius:0 12px 12px 0;">Black</div>
 </div>
 
 ## Print & Produktion
