@@ -9,96 +9,104 @@ hero:
     alt: BAUER GROUP Logo
   actions:
     - theme: brand
-      text: Quick Start
-      link: /en/logo/
-    - theme: alt
-      text: Color System
-      link: /en/colors/
+      text: Foundations
+      link: /en/brand/
     - theme: alt
       text: Downloads
       link: /en/downloads/
-
-features:
-  - icon: 🏷️
-    title: Logo & Trademark
-    details: Logo variants, clear space, minimum sizes and binding usage rules for all media.
-    link: /en/logo/
-    linkText: Open logo guidelines
-  - icon: 🎨
-    title: Color System
-    details: Primary color Orange (#FF8500), gray scale, semantic colors and accent colors — with HEX, RGB, CMYK and Pantone.
-    link: /en/colors/
-    linkText: View color palette
-  - icon: ✏️
-    title: Typography
-    details: Type hierarchy, weights and system font stack — cross-platform without external dependencies.
-    link: /en/typography/
-    linkText: View typography rules
-  - icon: 🧩
-    title: UI Components
-    details: Buttons, badges, forms and cards — consistently designed in the BAUER GROUP design system.
-    link: /en/components/
-    linkText: Open component library
-  - icon: 📷
-    title: Photography
-    details: Photo style, image composition and color treatment — authentic, professional and brand-compliant.
-    link: /en/photography/
-    linkText: View image guidelines
-  - icon: 🔊
-    title: Audio Identity
-    details: Sound logo, soundscape and acoustic guidelines for videos, presentations and phone systems.
-    link: /en/audio/
-    linkText: View audio guidelines
-  - icon: 📱
-    title: Digital Media
-    details: Social media templates, web banners, email signatures and newsletter layouts.
-    link: /en/digital/
-    linkText: View digital templates
-  - icon: ♿
-    title: Accessibility
-    details: WCAG 2.1 AA/AAA compliance with verified contrast ratios and recommendations for all color combinations.
-    link: /en/accessibility/
-    linkText: Check accessibility
-  - icon: 🖨️
-    title: Print & Production
-    details: CMYK color values, Pantone PMS 144 C spot color, paper recommendations and print specifications.
-    link: /en/print/
-    linkText: Open print specifications
+    - theme: alt
+      text: Color System
+      link: /en/colors/
 ---
 
-<style>
-.overview-section {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 48px 24px 64px;
-}
-.overview-section h2 {
-  font-size: 1.35em;
-  font-weight: 700;
-  margin-bottom: 12px;
-  border: none;
-}
-.overview-section p {
-  color: var(--vp-c-text-2);
-  line-height: 1.7;
-  max-width: 720px;
-}
-.overview-section .note {
-  margin-top: 24px;
-  padding: 16px 20px;
-  border-radius: 8px;
-  background: var(--vp-c-bg-soft);
-  border-left: 3px solid var(--bg-orange-500);
-  font-size: 0.9em;
-  color: var(--vp-c-text-2);
-}
-</style>
+<!-- markdownlint-disable-next-line MD041 -->
+<div class="home-section">
+  <p class="kicker">Brand Identity</p>
+  <h2>Who we are</h2>
+  <div class="feature-grid">
+    <a class="feature-card" href="/en/brand/">
+      <div class="icon">🧭</div>
+      <div class="title">Brand & Values</div>
+      <div class="desc">Mission, values and the brand promise of BAUER GROUP.</div>
+    </a>
+    <a class="feature-card" href="/en/logo/">
+      <div class="icon">🏷️</div>
+      <div class="title">Logo & Trademark</div>
+      <div class="desc">Variants, clear space, minimum sizes and misuse examples.</div>
+    </a>
+    <a class="feature-card" href="/en/colors/">
+      <div class="icon">🎨</div>
+      <div class="title">Color System</div>
+      <div class="desc">BAUER Orange #FF8500, scales, semantic and accent colors.</div>
+    </a>
+    <a class="feature-card" href="/en/typography/">
+      <div class="icon">✏️</div>
+      <div class="title">Typography</div>
+      <div class="desc">Type hierarchy, weights and the system font stack.</div>
+    </a>
+    <a class="feature-card" href="/en/photography/">
+      <div class="icon">📷</div>
+      <div class="title">Photography</div>
+      <div class="desc">Photo style, image composition and color treatment.</div>
+    </a>
+    <a class="feature-card" href="/en/audio/">
+      <div class="icon">🔊</div>
+      <div class="title">Audio Identity</div>
+      <div class="desc">Sound logo, soundscape and acoustic guidelines.</div>
+    </a>
+  </div>
 
-<div class="overview-section">
+  <p class="kicker">Application</p>
+  <h2>How we show up</h2>
+  <div class="feature-grid">
+    <a class="feature-card" href="/en/digital/">
+      <div class="icon">📱</div>
+      <div class="title">Digital Media</div>
+      <div class="desc">Social media, web banners, email signature and newsletters.</div>
+    </a>
+    <a class="feature-card" href="/en/components/">
+      <div class="icon">🧩</div>
+      <div class="title">UI Components</div>
+      <div class="desc">Buttons, badges and forms in the BAUER GROUP design system.</div>
+    </a>
+    <a class="feature-card" href="/en/accessibility/">
+      <div class="icon">♿</div>
+      <div class="title">Accessibility</div>
+      <div class="desc">WCAG 2.1 AA/AAA with verified contrast ratios.</div>
+    </a>
+    <a class="feature-card" href="/en/print/">
+      <div class="icon">🖨️</div>
+      <div class="title">Print & Production</div>
+      <div class="desc">CMYK, Pantone PMS 144 C, paper and print specifications.</div>
+    </a>
+    <a class="feature-card" href="/en/advertising/">
+      <div class="icon">🎁</div>
+      <div class="title">Advertising</div>
+      <div class="desc">Notepads, sticky notes, pens, folders and bags.</div>
+    </a>
+  </div>
+
+  <p class="kicker">Resources</p>
+  <h2>Assets & tools</h2>
+  <div class="feature-grid">
+    <a class="feature-card" href="/en/downloads/">
+      <div class="icon">📦</div>
+      <div class="title">Downloads</div>
+      <div class="desc">Logos in SVG/PNG/EPS, favicons and print templates with previews.</div>
+    </a>
+    <a class="feature-card" href="/en/downloads/tokens">
+      <div class="icon">🎯</div>
+      <div class="title">Design Tokens</div>
+      <div class="desc">CSS, SCSS, JSON and Tailwind — ready to implement.</div>
+    </a>
+  </div>
+</div>
+
+<div class="home-intro">
 
 ## About This Brand Guide
 
-This guide defines the complete corporate identity of BAUER GROUP — from visual identity through photography and audio identity to digital media and print production. It serves as the binding reference for all internal and external communications.
+<p class="lead">This guide defines the complete corporate identity of BAUER GROUP — from visual identity through photography and audio identity to digital media and print production. It serves as the binding reference for all internal and external communications.</p>
 
 <div class="note">
   <strong>Note:</strong> For questions about applying these guidelines or for approvals, please contact the brand team.

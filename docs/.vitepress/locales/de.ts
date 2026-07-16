@@ -33,13 +33,20 @@ export const de: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
       { text: 'Downloads', link: '/de/downloads/' },
     ],
 
+    // Sidebar structure is identical to the EN locale (same 12 groups, same
+    // order, all expanded) so both languages share one mental model.
     sidebar: {
       '/de/': [
         {
-          text: 'Markenidentität',
+          text: 'Marke & Werte',
           items: [
             { text: 'Übersicht', link: '/de/' },
             { text: 'Werte & Leitbild', link: '/de/marke/' },
+          ]
+        },
+        {
+          text: 'Logo',
+          items: [
             { text: 'Logo', link: '/de/logo/' },
             { text: 'Logo-Varianten', link: '/de/logo/varianten' },
             { text: 'Schutzzone & Größen', link: '/de/logo/schutzzone' },
@@ -68,6 +75,28 @@ export const de: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
           ]
         },
         {
+          text: 'Bildsprache',
+          items: [
+            { text: 'Fotostil & Richtlinien', link: '/de/bildsprache/' },
+          ]
+        },
+        {
+          text: 'Audioidentität',
+          items: [
+            { text: 'Sound Logo & Klangwelt', link: '/de/audio/' },
+          ]
+        },
+        {
+          text: 'Digitale Medien',
+          items: [
+            { text: 'Übersicht', link: '/de/digital/' },
+            { text: 'Social Media', link: '/de/digital/social-media' },
+            { text: 'Web Banner & Layouts', link: '/de/digital/web-banner' },
+            { text: 'E-Mail & Newsletter', link: '/de/digital/email' },
+            { text: 'Canva Design-Workflow', link: '/de/digital/canva' },
+          ]
+        },
+        {
           text: 'UI Komponenten',
           items: [
             { text: 'Übersicht', link: '/de/komponenten/' },
@@ -90,30 +119,6 @@ export const de: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
             { text: 'Papierempfehlungen', link: '/de/print/papier' },
             { text: 'Visitenkarten', link: '/de/print/visitenkarten' },
             { text: 'Stempel', link: '/de/print/stempel' },
-          ]
-        },
-        {
-          text: 'Bildsprache',
-          collapsed: true,
-          items: [
-            { text: 'Fotostil & Richtlinien', link: '/de/bildsprache/' },
-          ]
-        },
-        {
-          text: 'Audioidentität',
-          collapsed: true,
-          items: [
-            { text: 'Sound Logo & Klangwelt', link: '/de/audio/' },
-          ]
-        },
-        {
-          text: 'Digitale Medien',
-          items: [
-            { text: 'Übersicht', link: '/de/digital/' },
-            { text: 'Social Media', link: '/de/digital/social-media' },
-            { text: 'Web Banner & Layouts', link: '/de/digital/web-banner' },
-            { text: 'E-Mail & Newsletter', link: '/de/digital/email' },
-            { text: 'Canva Design-Workflow', link: '/de/digital/canva' },
           ]
         },
         {

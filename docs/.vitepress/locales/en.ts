@@ -33,17 +33,19 @@ export const en: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
       { text: 'Downloads', link: '/en/downloads/' },
     ],
 
+    // Sidebar structure is identical to the DE locale (same 12 groups, same
+    // order, all expanded) so both languages share one mental model.
     sidebar: {
       '/en/': [
         {
-          text: 'Values & Mission',
+          text: 'Brand & Values',
           items: [
             { text: 'Overview', link: '/en/' },
             { text: 'Brand Values', link: '/en/brand/' },
           ]
         },
         {
-          text: 'Brand Identity',
+          text: 'Logo',
           items: [
             { text: 'Logo', link: '/en/logo/' },
             { text: 'Logo Variants', link: '/en/logo/variants' },
@@ -73,6 +75,28 @@ export const en: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
           ]
         },
         {
+          text: 'Photography',
+          items: [
+            { text: 'Image Style & Guidelines', link: '/en/photography/' },
+          ]
+        },
+        {
+          text: 'Audio Identity',
+          items: [
+            { text: 'Sound Logo & Soundscape', link: '/en/audio/' },
+          ]
+        },
+        {
+          text: 'Digital Media',
+          items: [
+            { text: 'Overview', link: '/en/digital/' },
+            { text: 'Social Media', link: '/en/digital/social-media' },
+            { text: 'Web Banners & Layouts', link: '/en/digital/web-banners' },
+            { text: 'Email & Newsletter', link: '/en/digital/email' },
+            { text: 'Canva Design Workflow', link: '/en/digital/canva' },
+          ]
+        },
+        {
           text: 'UI Components',
           items: [
             { text: 'Overview', link: '/en/components/' },
@@ -95,30 +119,6 @@ export const en: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
             { text: 'Paper Specs', link: '/en/print/paper' },
             { text: 'Business Cards', link: '/en/print/business-cards' },
             { text: 'Stamps', link: '/en/print/stamps' },
-          ]
-        },
-        {
-          text: 'Photography',
-          collapsed: true,
-          items: [
-            { text: 'Image Style & Guidelines', link: '/en/photography/' },
-          ]
-        },
-        {
-          text: 'Audio Identity',
-          collapsed: true,
-          items: [
-            { text: 'Sound Logo & Soundscape', link: '/en/audio/' },
-          ]
-        },
-        {
-          text: 'Digital Media',
-          items: [
-            { text: 'Overview', link: '/en/digital/' },
-            { text: 'Social Media', link: '/en/digital/social-media' },
-            { text: 'Web Banners & Layouts', link: '/en/digital/web-banners' },
-            { text: 'Email & Newsletter', link: '/en/digital/email' },
-            { text: 'Canva Design Workflow', link: '/en/digital/canva' },
           ]
         },
         {
