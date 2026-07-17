@@ -1,3 +1,13 @@
+## [0.9.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.8.0...v0.9.0) (2026-07-17)
+
+### 🚀 Features
+
+* **nav:** added consistent chapter grids to section landings ([5ce670e](https://github.com/bauer-group/COM-CorporateIdentity/commit/5ce670ed1e0f97fd1f932eb86c77d84b8fc9f32a))
+
+### ♻️ Refactoring
+
+* **content:** drove inline swatches from design tokens ([07f084c](https://github.com/bauer-group/COM-CorporateIdentity/commit/07f084ca13f4096c3fc7a52510a1793ce3a496d3))
+
 ## [0.8.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.7.1...v0.8.0) (2026-07-16)
 
 ### 🚀 Features
