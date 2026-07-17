@@ -15,7 +15,7 @@
  */
 
 import sharp from 'sharp'
-import { readFile, mkdir, readdir } from 'node:fs/promises'
+import { readFile, mkdir, readdir, copyFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import { dirname, join, resolve } from 'node:path'
 
@@ -38,6 +38,15 @@ const FAVICONS = [
   { size: 180, out: 'apple-touch-icon.png' },
   { size: 192, out: 'icon-192.png' },
   { size: 512, out: 'icon-512.png' },
+]
+
+// Convenience copies of brand master SVGs at the public root (git-ignored).
+// brand/ stays the single source of truth; these give stable, predictable URLs
+// (/favicon.svg, /logo.svg, /logo-dark.svg) for the site, READMEs and embeds.
+const ROOT_SVGS = [
+  { src: 'brand/bauer-group-icon.svg',            out: 'favicon.svg' },
+  { src: 'brand/bauer-group-logo-wide.svg',       out: 'logo.svg' },
+  { src: 'brand/bauer-group-logo-wide-white.svg', out: 'logo-dark.svg' },
 ]
 
 // ── Helpers ──────────────────────────────────────────────────────
@@ -77,6 +86,11 @@ async function emit(promise, label) {
 async function main() {
   console.log('BAUER GROUP · generating raster assets from SVG …')
   await mkdir(PNG_DIR, { recursive: true })
+
+  // Root convenience SVGs → /public root, copied from the brand masters
+  for (const s of ROOT_SVGS) {
+    await emit(copyFile(join(PUBLIC, s.src), join(PUBLIC, s.out)), s.out)
+  }
 
   // Logos → downloads/png/<name>-<width>.png
   for (const item of LOGOS) {

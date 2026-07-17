@@ -20,6 +20,11 @@ docs/public/apple-touch-icon.png
 docs/public/icon-*.png
 docs/public/og-image.png
 
+# Root convenience SVGs copied from docs/public/brand/ masters (npm run generate:assets)
+docs/public/favicon.svg
+docs/public/logo.svg
+docs/public/logo-dark.svg
+
 # npm
 npm-debug.log*
 .npm/
