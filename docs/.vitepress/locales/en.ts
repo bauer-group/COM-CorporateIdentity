@@ -161,7 +161,7 @@ export const en: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
     langMenuLabel: 'Language',
 
     footer: {
-      message: 'Documentation licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> · Code licensed under <a href="/LICENSE">MIT</a>',
+      message: 'Documentation licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> · Code licensed under <a href="https://github.com/bauer-group/COM-CorporateIdentity/blob/main/LICENSE" target="_blank">MIT</a>',
       copyright: `© 1999 - ${new Date().getFullYear()} BAUER GROUP. All rights reserved.`,
     },
   }
