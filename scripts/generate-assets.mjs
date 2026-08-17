@@ -92,8 +92,15 @@ async function main() {
     await emit(copyFile(join(PUBLIC, s.src), join(PUBLIC, s.out)), s.out)
   }
 
+  // Division lockups register themselves via brand/lockups/index.json
+  // (written by generate-lockups.mjs, which must run first — see npm run generate).
+  const lockups = await readFile(join(PUBLIC, 'brand', 'lockups', 'index.json'), 'utf8')
+    .then((s) => JSON.parse(s).files)
+    .catch(() => [])
+  if (lockups.length) console.log(`  · ${lockups.length} Lockup-SVGs aus brand/lockups/index.json`)
+
   // Logos → downloads/png/<name>-<width>.png
-  for (const item of LOGOS) {
+  for (const item of [...LOGOS, ...lockups]) {
     const svg = await readFile(join(PUBLIC, item.src))
     for (const width of item.sizes) {
       const out = join(PNG_DIR, `${item.name}-${width}.png`)

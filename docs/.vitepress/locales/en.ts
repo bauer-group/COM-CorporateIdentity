@@ -50,6 +50,7 @@ export const en: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
             { text: 'Logo', link: '/en/logo/' },
             { text: 'Logo Variants', link: '/en/logo/variants' },
             { text: 'Clear Space & Sizes', link: '/en/logo/clearspace' },
+            { text: 'Divisions', link: '/en/logo/lockup' },
             { text: 'Misuse Examples', link: '/en/logo/donts' },
           ]
         },
@@ -103,6 +104,7 @@ export const en: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
             { text: 'Buttons', link: '/en/components/buttons' },
             { text: 'Badges & Status', link: '/en/components/badges' },
             { text: 'Forms', link: '/en/components/forms' },
+            { text: 'Brand Lockup', link: '/en/components/lockup' },
           ]
         },
         {

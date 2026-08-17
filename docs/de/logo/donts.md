@@ -35,6 +35,15 @@ Das Logo darf nicht mit Effekten versehen werden:
 
 Das Logo darf nicht auf fotografischen Hintergründen, Mustern oder Texturen platziert werden, die die Lesbarkeit beeinträchtigen.
 
+## Keine eigenen Zusätze
+
+Zusatzbezeichnungen für Geschäftsbereiche gibt es ausschließlich als [offizielles Lockup](/de/logo/lockup). Selbst gesetzte Ergänzungen sind nicht zulässig.
+
+- ❌ Den Schriftzug „BAUER GROUP" nicht mit einer Systemschrift nachsetzen
+- ❌ Keine Zusatzzeile frei neben oder unter das Logo stellen
+- ❌ Zusatzbezeichnung nicht in Orange 500 — sie ist Text und muss WCAG AA erfüllen
+- ❌ Keine dritte Zeile, kein Claim, keine Rechtsform, kein Standort im Lockup
+
 ::: tip Best Practice
 Im Zweifelsfall das Logo auf weißem oder einfarbig dunklem Hintergrund verwenden.
 :::

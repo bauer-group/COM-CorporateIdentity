@@ -187,6 +187,106 @@
   height: auto;
 }
 
+/* ─── Brand Lockup (Geschäftsbereiche) ───────────────────────────
+   Web-Ausprägung des zweizeiligen Lockups. Bildmarke und Wortmarke sind
+   Artwork; nur die Zusatzzeile ist Text. Ein Stellknopf: --bg-lockup-size
+   (= Höhe der Bildmarke). Alle Faktoren stammen aus der vermessenen
+   Master-Geometrie (X = 26,930 · Versalhöhe Wortmarke = 17,871 bei
+   Logohöhe 59,72) und sind in docs/de/logo/lockup.md dokumentiert. */
+.bg-lockup {
+  --bg-lockup-size: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--bg-lockup-size) * 0.1616); /* 0,3583 X */
+  padding: calc(var(--bg-lockup-size) * 0.451); /* Schutzzone = 1 × X */
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.bg-lockup .mark {
+  inline-size: var(--bg-lockup-size);
+  block-size: var(--bg-lockup-size);
+  min-block-size: 40px; /* Mindestgröße — bricht das Layout statt sie zu unterschreiten */
+  flex: none;
+}
+
+.bg-lockup .text {
+  display: flex;
+  flex-direction: column;
+  /* Abstand ab UNTERKANTE der Wortmarken-Ink-Box: die Rundungen von G und O
+     reichen 0,16 Einheiten unter die Grundlinie. (4,847 − 0,160) / 59,72 */
+  gap: calc(var(--bg-lockup-size) * 0.0785);
+}
+
+.bg-lockup .wordmark {
+  block-size: calc(var(--bg-lockup-size) * 0.3046); /* Ink-Höhe 18,191 / 59,72 */
+  inline-size: auto;
+  max-width: none;
+}
+
+.bg-lockup .division {
+  font-family: var(--bg-font-body);
+  font-size: calc(var(--bg-lockup-size) * 0.29);
+  /* Fixiert die Versalhöhe über alle Systemfonts: Segoe UI 0,700 ·
+     Arial 0,716 · Calibri 0,632 cap/em würden sonst um 13 % auseinanderlaufen. */
+  font-size-adjust: cap-height 0.7;
+  font-synthesis: none;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--bg-orange-800); /* 5,58–6,50:1 auf allen freigegebenen hellen Gründen */
+}
+
+/* Trimmt die Zeilenbox exakt auf Versaloberkante/Grundlinie — damit ist der
+   Restversatz zwischen den Plattformen exakt 0 statt ≤ 1 px. */
+@supports (text-box: trim-both cap alphabetic) {
+  .bg-lockup .division {
+    text-box: trim-both cap alphabetic;
+  }
+}
+
+.bg-lockup .wordmark-dark {
+  display: none;
+}
+
+.dark .bg-lockup .wordmark-light {
+  display: none;
+}
+
+.dark .bg-lockup .wordmark-dark {
+  display: block;
+}
+
+.dark .bg-lockup .division {
+  color: var(--bg-orange-400); /* 7,23–9,28:1 auf allen freigegebenen dunklen Gründen */
+}
+
+.bg-lockup:focus-visible {
+  outline: 3px solid var(--bg-orange-500);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+@media (forced-colors: active) {
+  .bg-lockup:focus-visible {
+    outline-color: CanvasText;
+  }
+}
+
+/* Auf der dunklen Bühne der Doku-Seiten gilt dieselbe Umschaltung wie im Dark Mode. */
+.logo-stage.dark .bg-lockup .wordmark-light {
+  display: none;
+}
+
+.logo-stage.dark .bg-lockup .wordmark-dark {
+  display: block;
+}
+
+.logo-stage.dark .bg-lockup .division {
+  color: var(--bg-orange-400);
+}
+
 /* ─── Feature / Tile Grid (home + section landings) ─── */
 .feature-grid {
   display: grid;

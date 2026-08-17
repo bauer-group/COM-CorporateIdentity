@@ -26,6 +26,10 @@ Reusable interface elements in the BAUER GROUP design system for consistent digi
     <div class="title">Forms</div>
     <div class="desc">Inputs, labels and validation.</div>
   </a>
+  <a class="feature-card" href="/en/components/lockup">
+    <div class="title">Brand Lockup</div>
+    <div class="desc">Two-line division mark for headers and app bars.</div>
+  </a>
 </div>
 
 ## CSS Foundation

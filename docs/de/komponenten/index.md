@@ -26,6 +26,10 @@ Wiederverwendbare Interface-Elemente im BAUER GROUP Designsystem für konsistent
     <div class="title">Formulare</div>
     <div class="desc">Eingabefelder, Labels und Validierung.</div>
   </a>
+  <a class="feature-card" href="/de/komponenten/lockup">
+    <div class="title">Brand Lockup</div>
+    <div class="desc">Zweizeiliges Geschäftsbereichs-Logo für Header und App-Bars.</div>
+  </a>
 </div>
 
 ## CSS Basis

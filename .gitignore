@@ -25,6 +25,9 @@ docs/public/favicon.svg
 docs/public/logo.svg
 docs/public/logo-dark.svg
 
+# Generated division lockups (single source: scripts/lockups.json → npm run generate:lockups)
+docs/public/brand/lockups/
+
 # npm
 npm-debug.log*
 .npm/

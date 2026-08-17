@@ -50,6 +50,50 @@ Always start from these files. Never redraw the logo, re-type the wordmark or re
       </div>
     </div>
   </div>
+  <div class="download-card">
+    <div class="preview"><img src="/brand/bauer-group-wordmark.svg" alt="BAUER GROUP wordmark" /></div>
+    <div class="body">
+      <div class="title">Wordmark — without the mark</div>
+      <div class="note">For two-line lockups and layouts with a separate Bildmarke</div>
+      <div class="links">
+        <a href="/brand/bauer-group-wordmark.svg" download>SVG</a>
+        <a href="/brand/bauer-group-wordmark-white.svg" download>SVG on dark</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Divisions
+
+Two-line lockups per profit centre. Structure, measurements and rules are documented under [Lockup — Divisions](/en/logo/lockup).
+
+<div class="download-grid">
+  <div class="download-card">
+    <div class="preview"><img src="/brand/lockups/bauer-group-lockup-georgia-compact.svg" alt="BAUER GROUP Georgia, compact lockup" /></div>
+    <div class="body">
+      <div class="title">Georgia — Compact</div>
+      <div class="note">Website headers, app bars, signatures</div>
+      <div class="links">
+        <a href="/brand/lockups/bauer-group-lockup-georgia-compact.svg" download>SVG</a>
+        <a href="/brand/lockups/bauer-group-lockup-georgia-compact-white.svg" download>SVG on dark</a>
+        <a href="/downloads/png/bauer-group-lockup-georgia-compact-1440.png" download>PNG 1440</a>
+        <a href="/downloads/png/bauer-group-lockup-georgia-compact-2048.png" download>PNG 2048</a>
+      </div>
+    </div>
+  </div>
+  <div class="download-card">
+    <div class="preview"><img src="/brand/lockups/bauer-group-lockup-georgia-stacked.svg" alt="BAUER GROUP Georgia, stacked lockup" /></div>
+    <div class="body">
+      <div class="title">Georgia — Stacked</div>
+      <div class="note">Letterhead, business cards, print, trade fair</div>
+      <div class="links">
+        <a href="/brand/lockups/bauer-group-lockup-georgia-stacked.svg" download>SVG</a>
+        <a href="/brand/lockups/bauer-group-lockup-georgia-stacked-white.svg" download>SVG on dark</a>
+        <a href="/downloads/png/bauer-group-lockup-georgia-stacked-1440.png" download>PNG 1440</a>
+        <a href="/downloads/png/bauer-group-lockup-georgia-stacked-2048.png" download>PNG 2048</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 ## Favicon & app icons

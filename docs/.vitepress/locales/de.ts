@@ -50,6 +50,7 @@ export const de: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
             { text: 'Logo', link: '/de/logo/' },
             { text: 'Logo-Varianten', link: '/de/logo/varianten' },
             { text: 'Schutzzone & Größen', link: '/de/logo/schutzzone' },
+            { text: 'Geschäftsbereiche', link: '/de/logo/lockup' },
             { text: 'Falschanwendungen', link: '/de/logo/donts' },
           ]
         },
@@ -103,6 +104,7 @@ export const de: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
             { text: 'Buttons', link: '/de/komponenten/buttons' },
             { text: 'Badges & Status', link: '/de/komponenten/badges' },
             { text: 'Formulare', link: '/de/komponenten/formulare' },
+            { text: 'Brand Lockup', link: '/de/komponenten/lockup' },
           ]
         },
         {

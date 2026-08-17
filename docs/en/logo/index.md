@@ -13,6 +13,10 @@ The BAUER GROUP logo is the central element of our brand identity. It consists o
     <div class="title">Clear Space & Sizes</div>
     <div class="desc">Minimum clear space and sizes.</div>
   </a>
+  <a class="feature-card" href="/en/logo/lockup">
+    <div class="title">Divisions</div>
+    <div class="desc">Two-line lockup for profit centres and business divisions.</div>
+  </a>
   <a class="feature-card" href="/en/logo/donts">
     <div class="title">Misuse Examples</div>
     <div class="desc">What you must never do with the logo.</div>
