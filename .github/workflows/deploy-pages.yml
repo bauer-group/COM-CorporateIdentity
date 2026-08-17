@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'docs/**'
+      - 'scripts/**'
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/deploy-pages.yml'
@@ -28,6 +29,9 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          # .gitattributes tracks *.eps, *.pdf and *.tif via LFS. Without this the
+          # downloads ship as ~130-byte pointer files instead of the real assets.
+          lfs: true
 
       - name: 📦 Setup Node.js
         uses: actions/setup-node@v6
