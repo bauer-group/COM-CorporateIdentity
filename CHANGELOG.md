@@ -1,3 +1,14 @@
+## [0.10.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.9.0...v0.10.0) (2026-08-18)
+
+### 🚀 Features
+
+* **logo:** added two-line division lockup system ([d596dd1](https://github.com/bauer-group/COM-CorporateIdentity/commit/d596dd1888ebb0c8ced39a2a73ab9f4dcff94dac)), closes [#9A4509](https://github.com/bauer-group/COM-CorporateIdentity/issues/9A4509)
+
+### 🐛 Bug Fixes
+
+* **ci:** added LFS checkout and scripts path trigger ([5de6738](https://github.com/bauer-group/COM-CorporateIdentity/commit/5de673810ff96141cdefb577e00488897a4d4b05))
+* **ci:** added the missing permissions block ([0444370](https://github.com/bauer-group/COM-CorporateIdentity/commit/04443706e9e9e164bd1e8c9f833640da56e621eb))
+
 ## [0.9.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.8.0...v0.9.0) (2026-07-17)
 
 ### 🚀 Features
