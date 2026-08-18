@@ -37,12 +37,15 @@ Das Logo darf nicht auf fotografischen Hintergründen, Mustern oder Texturen pla
 
 ## Keine eigenen Zusätze
 
-Zusatzbezeichnungen für Geschäftsbereiche gibt es ausschließlich als [offizielles Lockup](/de/logo/lockup). Selbst gesetzte Ergänzungen sind nicht zulässig.
+Zusatzbezeichnungen und Taglines gibt es ausschließlich als [offizielles Lockup](/de/logo/lockup). Selbst gesetzte Ergänzungen sind nicht zulässig.
 
 - ❌ Den Schriftzug „BAUER GROUP" nicht mit einer Systemschrift nachsetzen
 - ❌ Keine Zusatzzeile frei neben oder unter das Logo stellen
 - ❌ Zusatzbezeichnung nicht in Orange 500 — sie ist Text und muss WCAG AA erfüllen
-- ❌ Keine dritte Zeile, kein Claim, keine Rechtsform, kein Standort im Lockup
+- ❌ Keine dritte Zeile, keine Rechtsform, kein Standort im Lockup
+- ❌ Zusatzbezeichnung und Tagline nicht kombinieren — ein Lockup trägt genau eine Zusatzzeile
+- ❌ Keine Trennlinie, kein Balken und kein Rahmen zwischen Logo und Tagline
+- ❌ Tagline nicht umfärben — sie trägt immer die Tinte der Wortmarke
 
 ::: tip Best Practice
 Im Zweifelsfall das Logo auf weißem oder einfarbig dunklem Hintergrund verwenden.

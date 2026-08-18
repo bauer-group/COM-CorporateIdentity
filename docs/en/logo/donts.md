@@ -37,12 +37,15 @@ The logo must not be placed on photographic backgrounds, patterns or textures th
 
 ## No home-made additions
 
-Division names exist only as the [official lockup](/en/logo/lockup). Self-assembled additions are not permitted.
+Division names and taglines exist only as the [official lockup](/en/logo/lockup). Self-assembled additions are not permitted.
 
 - ❌ Never re-typeset the "BAUER GROUP" wordmark in a system font
 - ❌ Never place a division line freely beside or below the logo
 - ❌ Never set the division name in Orange 500 — it is text and must meet WCAG AA
-- ❌ No third line, no claim, no legal form, no location inside the lockup
+- ❌ No third line, no legal form, no location inside the lockup
+- ❌ Never combine a division name and a tagline — a lockup carries exactly one added line
+- ❌ No divider rule, no bar and no frame between the logo and the tagline
+- ❌ Never recolour the tagline — it always carries the wordmark's ink
 
 ::: tip Best Practice
 When in doubt, use the logo on a white or solid dark background.

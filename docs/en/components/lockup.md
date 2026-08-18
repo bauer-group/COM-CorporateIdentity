@@ -5,23 +5,23 @@ The web expression of the [division lockup](/en/logo/lockup). The Bildmarke and 
 ## Preview
 
 <div class="logo-stage light">
-  <a class="bg-lockup" href="/en/" aria-label="BAUER GROUP Georgia — home" style="--bg-lockup-size: 56px">
+  <a class="bg-lockup" href="/en/" aria-label="BAUER GROUP Compliance — home" style="--bg-lockup-size: 56px">
     <img class="mark" src="/brand/bauer-group-icon.svg" alt="" width="60" height="60" decoding="async">
     <span class="text">
       <img class="wordmark wordmark-light" src="/brand/bauer-group-wordmark.svg" alt="" width="1003" height="91" decoding="async">
       <img class="wordmark wordmark-dark" src="/brand/bauer-group-wordmark-white.svg" alt="" width="1003" height="91" decoding="async">
-      <span class="division">Georgia</span>
+      <span class="division">Compliance</span>
     </span>
   </a>
 </div>
 
 <div class="logo-stage dark">
-  <a class="bg-lockup" href="/en/" aria-label="BAUER GROUP Georgia — home" style="--bg-lockup-size: 56px">
+  <a class="bg-lockup" href="/en/" aria-label="BAUER GROUP Compliance — home" style="--bg-lockup-size: 56px">
     <img class="mark" src="/brand/bauer-group-icon.svg" alt="" width="60" height="60" decoding="async">
     <span class="text">
       <img class="wordmark wordmark-light" src="/brand/bauer-group-wordmark.svg" alt="" width="1003" height="91" decoding="async">
       <img class="wordmark wordmark-dark" src="/brand/bauer-group-wordmark-white.svg" alt="" width="1003" height="91" decoding="async">
-      <span class="division">Georgia</span>
+      <span class="division">Compliance</span>
     </span>
   </a>
 </div>
@@ -41,7 +41,7 @@ The web expression of the [division lockup](/en/logo/lockup). The Bildmarke and 
 ## HTML
 
 ```html
-<a class="bg-lockup" href="/" aria-label="BAUER GROUP Georgia — home">
+<a class="bg-lockup" href="/" aria-label="BAUER GROUP Compliance — home">
   <img class="mark" src="/brand/bauer-group-icon.svg"
        alt="" width="60" height="60" decoding="async" fetchpriority="high">
   <span class="text">
@@ -49,7 +49,7 @@ The web expression of the [division lockup](/en/logo/lockup). The Bildmarke and 
          alt="" width="1003" height="91" decoding="async" fetchpriority="high">
     <img class="wordmark wordmark-dark" src="/brand/bauer-group-wordmark-white.svg"
          alt="" width="1003" height="91" decoding="async">
-    <span class="division">Georgia</span>
+    <span class="division">Compliance</span>
   </span>
 </a>
 ```
@@ -62,7 +62,7 @@ The accessible name sits on the link as `aria-label`; every image carries `alt="
 .bg-lockup {
   --bg-lockup-size: 40px;              /* the only knob: height of the Bildmarke */
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;      /* not center — see below */
   gap: calc(var(--bg-lockup-size) * 0.1616);
   padding: calc(var(--bg-lockup-size) * 0.451);   /* clear space = 1 × X */
   text-decoration: none;
@@ -79,6 +79,7 @@ The accessible name sits on the link as `aria-label`; every image carries `alt="
 .bg-lockup .text {
   display: flex;
   flex-direction: column;
+  margin-block-start: calc(var(--bg-lockup-size) * 0.33523);   /* 20.0195 / 59.72 */
   gap: calc(var(--bg-lockup-size) * 0.0785);
 }
 
@@ -125,6 +126,10 @@ The accessible name sits on the link as `aria-label`; every image carries `alt="
 }
 ```
 
+### Why `flex-start` and not `center`
+
+The wordmark sits exactly where it sits in the wide logo — its ink top at 20.0195 of 59.72, i.e. `0.33523 × size` below the top of the Bildmarke. An `align-items: center` would centre the text block and in doing so shift the wordmark relative to the Bildmarke. That would alter the registered mark's internal geometry without a single path being touched.
+
 ### Why `font-size-adjust` is not optional
 
 System fonts differ substantially in cap height per font size. Without correction the division line drifts by up to **13 %** depending on the operating system:
@@ -145,7 +150,6 @@ System fonts differ substantially in cap height per font size. Without correctio
 ---
 interface Props {
   division?: string
-  layout?: 'compact' | 'stacked'
   href?: string | null
   size?: string
   label?: string
@@ -153,7 +157,6 @@ interface Props {
 }
 const {
   division,
-  layout = 'compact',
   href = '/',
   size,
   label = division ? `BAUER GROUP ${division}` : 'BAUER GROUP',
@@ -165,8 +168,7 @@ const attrs = href ? { href } : { role: 'img' }
 const style = size ? `--bg-lockup-size: ${size}` : undefined
 ---
 
-<Tag class:list={['bg-lockup', layout !== 'compact' && `bg-lockup-${layout}`]}
-     aria-label={label} style={style} {...attrs}>
+<Tag class="bg-lockup" aria-label={label} style={style} {...attrs}>
   <img class="mark" src={`${base}/bauer-group-icon.svg`}
        alt="" width="60" height="60" decoding="async" fetchpriority="high" />
   <span class="text">

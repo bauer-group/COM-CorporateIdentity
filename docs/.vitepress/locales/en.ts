@@ -50,7 +50,7 @@ export const en: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
             { text: 'Logo', link: '/en/logo/' },
             { text: 'Logo Variants', link: '/en/logo/variants' },
             { text: 'Clear Space & Sizes', link: '/en/logo/clearspace' },
-            { text: 'Divisions', link: '/en/logo/lockup' },
+            { text: 'Lockups', link: '/en/logo/lockup' },
             { text: 'Misuse Examples', link: '/en/logo/donts' },
           ]
         },

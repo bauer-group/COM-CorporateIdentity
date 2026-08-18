@@ -50,7 +50,7 @@ export const de: LocaleSpecificConfig<DefaultTheme.Config> & { label: string; li
             { text: 'Logo', link: '/de/logo/' },
             { text: 'Logo-Varianten', link: '/de/logo/varianten' },
             { text: 'Schutzzone & Größen', link: '/de/logo/schutzzone' },
-            { text: 'Geschäftsbereiche', link: '/de/logo/lockup' },
+            { text: 'Lockups', link: '/de/logo/lockup' },
             { text: 'Falschanwendungen', link: '/de/logo/donts' },
           ]
         },

@@ -196,7 +196,11 @@
 .bg-lockup {
   --bg-lockup-size: 40px;
   display: inline-flex;
-  align-items: center;
+  /* flex-start, nicht center: die Wortmarke steht exakt dort, wo sie im
+     Wide-Logo steht (Ink-Oberkante 20,0195 / 59,72). Zentrieren wuerde sie
+     gegenueber der Bildmarke verschieben und damit die innere Geometrie der
+     eingetragenen Marke veraendern. */
+  align-items: flex-start;
   gap: calc(var(--bg-lockup-size) * 0.1616); /* 0,3583 X */
   padding: calc(var(--bg-lockup-size) * 0.451); /* Schutzzone = 1 × X */
   text-decoration: none !important;
@@ -213,6 +217,8 @@
 .bg-lockup .text {
   display: flex;
   flex-direction: column;
+  /* setzt die Wortmarke auf ihre Position aus dem Wide-Logo: 20,0195 / 59,72 */
+  margin-block-start: calc(var(--bg-lockup-size) * 0.33523);
   /* Abstand ab UNTERKANTE der Wortmarken-Ink-Box: die Rundungen von G und O
      reichen 0,16 Einheiten unter die Grundlinie. (4,847 − 0,160) / 59,72 */
   gap: calc(var(--bg-lockup-size) * 0.0785);
@@ -408,6 +414,45 @@
 .dark .download-card .links a {
   background: rgba(255, 133, 0, 0.16);
   color: var(--bg-orange-200);
+}
+
+/* Generated lockup galleries (LockupGallery.vue) — the card shows the tone
+   that matches the current theme, so both masters stay one click away. */
+.download-card .lockup-dark {
+  display: none;
+}
+
+.dark .download-card .lockup-light {
+  display: none;
+}
+
+.dark .download-card .lockup-dark {
+  display: block;
+}
+
+.download-card .body .title .role {
+  margin-left: 6px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 2px 7px;
+  border-radius: 5px;
+  background: var(--bg-orange-100);
+  color: var(--bg-orange-800);
+  vertical-align: 1px;
+}
+
+.dark .download-card .body .title .role {
+  background: rgba(255, 133, 0, 0.16);
+  color: var(--bg-orange-200);
+}
+
+.lockup-empty {
+  padding: 16px 18px;
+  border-radius: 10px;
+  border: 1px dashed var(--vp-c-divider);
+  color: var(--vp-c-text-3);
+  font-size: 0.88rem;
 }
 
 /* ─── Icon / Preview Gallery ─── */

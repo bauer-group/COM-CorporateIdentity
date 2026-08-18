@@ -14,8 +14,8 @@ Das BAUER GROUP Logo ist das zentrale Element unserer Markenidentität. Es beste
     <div class="desc">Mindestabstand und Mindestgrößen.</div>
   </a>
   <a class="feature-card" href="/de/logo/lockup">
-    <div class="title">Geschäftsbereiche</div>
-    <div class="desc">Zweizeiliges Lockup für Profit Center und Geschäftsbereiche.</div>
+    <div class="title">Lockups</div>
+    <div class="desc">Division-Lockup für Profit Center, Tagline-Lockup für Kampagnen.</div>
   </a>
   <a class="feature-card" href="/de/logo/donts">
     <div class="title">Falschanwendungen</div>

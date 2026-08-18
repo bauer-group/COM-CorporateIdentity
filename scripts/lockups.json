@@ -1,7 +1,7 @@
 {
   "meta": {
-    "name": "BAUER GROUP Division Lockups",
-    "description": "Single source of truth for the two-line division lockups. Add a division below and run `npm run generate:lockups`. Geometry is expressed as ratios of X (the height of the 'B' inside the Bildmarke) so every value survives scaling. Generated artifacts must never be hand-edited.",
+    "name": "BAUER GROUP Lockups",
+    "description": "Single source of truth for generated lockups: division lockups (BAUER GROUP + Zusatzbezeichnung) and tagline lockups (Wide-Logo + Claim). Add an entry below and run `npm run generate:lockups`. Geometry is expressed as ratios of X (the height of the 'B' inside the Bildmarke) so every value survives scaling. Generated artifacts must never be hand-edited.",
     "font": {
       "file": "fonts/Inter-SemiBold.ttf",
       "family": "Inter",
@@ -18,24 +18,69 @@
       "capGapRatio": 0.18,
       "trackingEm": 0.08,
       "case": "upper",
-      "stacked": {
-        "gapRatio": 0.22,
-        "ruleRatio": 0.06
-      }
+      "tagline": {
+        "capRatio": 0.3,
+        "gapRatio": 0.3,
+        "trackingEm": 0.1,
+        "case": "upper"
+      },
+      "compactAlignment": "wordmark-fixed"
     },
     "colors": {
       "divisionLight": "orange-800",
-      "divisionDark": "orange-400"
+      "divisionDark": "orange-400",
+      "tagline": "wordmark"
     },
     "png": {
-      "sizes": [960, 1440, 2048]
+      "sizes": [
+        960,
+        1440,
+        2048
+      ]
     }
   },
   "divisions": [
     {
-      "slug": "georgia",
-      "name": "Georgia",
-      "nameEn": "Georgia"
+      "slug": "compliance",
+      "name": "Compliance",
+      "nameEn": "Compliance",
+      "placeholder": true,
+      "note": "Platzhalter der Dokumentation — zeigt Aufbau und Maße, kein realer Geschäftsbereich",
+      "noteEn": "Documentation placeholder — shows construction and measurements, not a real division"
+    }
+  ],
+  "taglines": [
+    {
+      "slug": "today-tomorrow-together",
+      "text": "Today. Tomorrow. Together.",
+      "role": "Primär",
+      "roleEn": "Primary",
+      "note": "Website, Präsentationen, offizielle Kommunikation",
+      "noteEn": "Website, presentations, official communications"
+    },
+    {
+      "slug": "building-better-software-together",
+      "text": "Building Better Software Together",
+      "role": "Technisch",
+      "roleEn": "Technical",
+      "note": "Entwickler-Dokus, Tech-Blog, Recruiting",
+      "noteEn": "Developer docs, tech blog, recruiting"
+    },
+    {
+      "slug": "technology-for-the-long-run",
+      "text": "Technology for the Long Run",
+      "role": "Stabilität",
+      "roleEn": "Stability",
+      "note": "Enterprise-Kunden, Vertrauensaufbau",
+      "noteEn": "Enterprise customers, building trust"
+    },
+    {
+      "slug": "technology-that-scales-with-you",
+      "text": "Technology That Scales With You",
+      "role": "Wachstum",
+      "roleEn": "Growth",
+      "note": "Sales, Pitches, Skalierbarkeit betonen",
+      "noteEn": "Sales, pitches, emphasising scalability"
     }
   ]
 }

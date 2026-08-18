@@ -44,10 +44,10 @@ The clear space defines the minimum distance between the logo and other graphic 
 The clear space is mandatory. No other graphic element, no text and no page edge may intrude into the clear space.
 :::
 
-::: warning Sole exception — division lockup
-In the [two-line lockup](/en/logo/lockup) the division name is **part of the artwork**, not an element beside it. Clear space is measured there from the bounding box of the **entire lockup**, not from the wide logo's.
+::: warning Sole exception — lockups
+In the [generated lockups](/en/logo/lockup) the division name and the tagline are **part of the artwork**, not an element beside it. Clear space is measured there from the bounding box of the **entire lockup**, not from the wide logo's.
 
-The division line is therefore the only element ever permitted inside the logo's clear space, and only in the two positions defined there.
+They are therefore the only elements ever permitted inside the logo's clear space, and only in the two positions defined there.
 :::
 
 ### Correct vs. incorrect

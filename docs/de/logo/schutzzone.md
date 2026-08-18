@@ -44,10 +44,10 @@ Die Schutzzone definiert den Mindestabstand zwischen dem Logo und anderen grafis
 Die Schutzzone ist verbindlich. Kein anderes grafisches Element, kein Text und kein Seitenrand darf in die Schutzzone eindringen.
 :::
 
-::: warning Einzige Ausnahme — Geschäftsbereichs-Lockup
-Beim [zweizeiligen Lockup](/de/logo/lockup) ist die Zusatzbezeichnung **Bestandteil des Artworks**, nicht ein Element daneben. Die Schutzzone wird dort ab der Bounding-Box des **gesamten Lockups** gemessen, nicht ab der des Wide-Logos.
+::: warning Einzige Ausnahme — Lockups
+Bei den [erzeugten Lockups](/de/logo/lockup) sind Zusatzbezeichnung und Tagline **Bestandteil des Artworks**, nicht ein Element daneben. Die Schutzzone wird dort ab der Bounding-Box des **gesamten Lockups** gemessen, nicht ab der des Wide-Logos.
 
-Die Zusatzzeile ist damit das einzige Element, das jemals innerhalb der Logo-Schutzzone stehen darf — und ausschließlich in den beiden dort definierten Positionen.
+Sie sind damit die einzigen Elemente, die jemals innerhalb der Logo-Schutzzone stehen dürfen — und ausschließlich in den beiden dort definierten Positionen.
 :::
 
 ### Richtig vs. Falsch

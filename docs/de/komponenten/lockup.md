@@ -5,23 +5,23 @@ Die Web-Ausprägung des [Geschäftsbereichs-Lockups](/de/logo/lockup). Bildmarke
 ## Vorschau
 
 <div class="logo-stage light">
-  <a class="bg-lockup" href="/de/" aria-label="BAUER GROUP Georgia — Startseite" style="--bg-lockup-size: 56px">
+  <a class="bg-lockup" href="/de/" aria-label="BAUER GROUP Compliance — Startseite" style="--bg-lockup-size: 56px">
     <img class="mark" src="/brand/bauer-group-icon.svg" alt="" width="60" height="60" decoding="async">
     <span class="text">
       <img class="wordmark wordmark-light" src="/brand/bauer-group-wordmark.svg" alt="" width="1003" height="91" decoding="async">
       <img class="wordmark wordmark-dark" src="/brand/bauer-group-wordmark-white.svg" alt="" width="1003" height="91" decoding="async">
-      <span class="division">Georgia</span>
+      <span class="division">Compliance</span>
     </span>
   </a>
 </div>
 
 <div class="logo-stage dark">
-  <a class="bg-lockup" href="/de/" aria-label="BAUER GROUP Georgia — Startseite" style="--bg-lockup-size: 56px">
+  <a class="bg-lockup" href="/de/" aria-label="BAUER GROUP Compliance — Startseite" style="--bg-lockup-size: 56px">
     <img class="mark" src="/brand/bauer-group-icon.svg" alt="" width="60" height="60" decoding="async">
     <span class="text">
       <img class="wordmark wordmark-light" src="/brand/bauer-group-wordmark.svg" alt="" width="1003" height="91" decoding="async">
       <img class="wordmark wordmark-dark" src="/brand/bauer-group-wordmark-white.svg" alt="" width="1003" height="91" decoding="async">
-      <span class="division">Georgia</span>
+      <span class="division">Compliance</span>
     </span>
   </a>
 </div>
@@ -41,7 +41,7 @@ Die Web-Ausprägung des [Geschäftsbereichs-Lockups](/de/logo/lockup). Bildmarke
 ## HTML
 
 ```html
-<a class="bg-lockup" href="/" aria-label="BAUER GROUP Georgia — Startseite">
+<a class="bg-lockup" href="/" aria-label="BAUER GROUP Compliance — Startseite">
   <img class="mark" src="/brand/bauer-group-icon.svg"
        alt="" width="60" height="60" decoding="async" fetchpriority="high">
   <span class="text">
@@ -49,7 +49,7 @@ Die Web-Ausprägung des [Geschäftsbereichs-Lockups](/de/logo/lockup). Bildmarke
          alt="" width="1003" height="91" decoding="async" fetchpriority="high">
     <img class="wordmark wordmark-dark" src="/brand/bauer-group-wordmark-white.svg"
          alt="" width="1003" height="91" decoding="async">
-    <span class="division">Georgia</span>
+    <span class="division">Compliance</span>
   </span>
 </a>
 ```
@@ -62,7 +62,7 @@ Der barrierefreie Name steht als `aria-label` auf dem Link, alle Bilder tragen `
 .bg-lockup {
   --bg-lockup-size: 40px;              /* einziger Stellknopf: Höhe der Bildmarke */
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;      /* nicht center — siehe unten */
   gap: calc(var(--bg-lockup-size) * 0.1616);
   padding: calc(var(--bg-lockup-size) * 0.451);   /* Schutzzone = 1 × X */
   text-decoration: none;
@@ -79,6 +79,7 @@ Der barrierefreie Name steht als `aria-label` auf dem Link, alle Bilder tragen `
 .bg-lockup .text {
   display: flex;
   flex-direction: column;
+  margin-block-start: calc(var(--bg-lockup-size) * 0.33523);   /* 20,0195 / 59,72 */
   gap: calc(var(--bg-lockup-size) * 0.0785);
 }
 
@@ -125,6 +126,10 @@ Der barrierefreie Name steht als `aria-label` auf dem Link, alle Bilder tragen `
 }
 ```
 
+### Warum `flex-start` und kein `center`
+
+Die Wortmarke steht exakt dort, wo sie im Wide-Logo steht — ihre Ink-Oberkante bei 20,0195 von 59,72, also `0.33523 × size` unter der Oberkante der Bildmarke. Ein `align-items: center` würde den Textblock mittig setzen und die Wortmarke dabei gegenüber der Bildmarke verschieben. Das veränderte die innere Geometrie der eingetragenen Marke, ohne dass ein Pfad angefasst wird.
+
 ### Warum `font-size-adjust` nicht optional ist
 
 Systemschriften unterscheiden sich stark in der Versalhöhe pro Schriftgrad. Ohne Korrektur läuft die Zusatzzeile je nach Betriebssystem um bis zu **13 %** auseinander:
@@ -145,7 +150,6 @@ Systemschriften unterscheiden sich stark in der Versalhöhe pro Schriftgrad. Ohn
 ---
 interface Props {
   division?: string
-  layout?: 'compact' | 'stacked'
   href?: string | null
   size?: string
   label?: string
@@ -153,7 +157,6 @@ interface Props {
 }
 const {
   division,
-  layout = 'compact',
   href = '/',
   size,
   label = division ? `BAUER GROUP ${division}` : 'BAUER GROUP',
@@ -165,8 +168,7 @@ const attrs = href ? { href } : { role: 'img' }
 const style = size ? `--bg-lockup-size: ${size}` : undefined
 ---
 
-<Tag class:list={['bg-lockup', layout !== 'compact' && `bg-lockup-${layout}`]}
-     aria-label={label} style={style} {...attrs}>
+<Tag class="bg-lockup" aria-label={label} style={style} {...attrs}>
   <img class="mark" src={`${base}/bauer-group-icon.svg`}
        alt="" width="60" height="60" decoding="async" fetchpriority="high" />
   <span class="text">

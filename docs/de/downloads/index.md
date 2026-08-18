@@ -65,36 +65,15 @@ Immer von diesen Dateien ausgehen. Das Logo niemals neu zeichnen, den Schriftzug
 
 ## Geschäftsbereiche
 
-Zweizeilige Lockups je Profit Center. Aufbau, Maße und Regeln stehen unter [Lockup — Geschäftsbereiche](/de/logo/lockup).
+Zweizeilige Lockups je Profit Center. Aufbau, Maße und Regeln stehen unter [Lockups](/de/logo/lockup).
 
-<div class="download-grid">
-  <div class="download-card">
-    <div class="preview"><img src="/brand/lockups/bauer-group-lockup-georgia-compact.svg" alt="BAUER GROUP Georgia, Compact-Lockup" /></div>
-    <div class="body">
-      <div class="title">Georgia — Compact</div>
-      <div class="note">Website-Header, App-Bars, Signaturen</div>
-      <div class="links">
-        <a href="/brand/lockups/bauer-group-lockup-georgia-compact.svg" download>SVG</a>
-        <a href="/brand/lockups/bauer-group-lockup-georgia-compact-white.svg" download>SVG auf Dunkel</a>
-        <a href="/downloads/png/bauer-group-lockup-georgia-compact-1440.png" download>PNG 1440</a>
-        <a href="/downloads/png/bauer-group-lockup-georgia-compact-2048.png" download>PNG 2048</a>
-      </div>
-    </div>
-  </div>
-  <div class="download-card">
-    <div class="preview"><img src="/brand/lockups/bauer-group-lockup-georgia-stacked.svg" alt="BAUER GROUP Georgia, Stacked-Lockup" /></div>
-    <div class="body">
-      <div class="title">Georgia — Stacked</div>
-      <div class="note">Briefbogen, Visitenkarten, Print, Messestand</div>
-      <div class="links">
-        <a href="/brand/lockups/bauer-group-lockup-georgia-stacked.svg" download>SVG</a>
-        <a href="/brand/lockups/bauer-group-lockup-georgia-stacked-white.svg" download>SVG auf Dunkel</a>
-        <a href="/downloads/png/bauer-group-lockup-georgia-stacked-1440.png" download>PNG 1440</a>
-        <a href="/downloads/png/bauer-group-lockup-georgia-stacked-2048.png" download>PNG 2048</a>
-      </div>
-    </div>
-  </div>
-</div>
+<LockupGallery kind="divisions" lang="de" />
+
+## Taglines
+
+Das komplette Wide-Logo mit Tagline darunter — für Kampagnen, Titelfolien, Anzeigen und Messestand.
+
+<LockupGallery kind="taglines" lang="de" />
 
 ## Favicon & App-Icons
 

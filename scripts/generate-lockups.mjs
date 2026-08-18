@@ -1,12 +1,21 @@
 /**
- * BAUER GROUP Brand Guide — Division lockup generation
- * ----------------------------------------------------
- * Builds the two-line division lockups ("BAUER GROUP" over a division name)
- * in both layouts (compact, stacked) and both tones (light, white).
+ * BAUER GROUP Brand Guide — Lockup generation
+ * -------------------------------------------
+ * Builds the two generated lockup families, each in both tones (light, white):
+ *
+ *   division  Bildmarke left, "BAUER GROUP" over the division name right.
+ *             Same bounding box as the wide logo — a drop-in replacement.
+ *
+ *   tagline   The complete wide logo, with a brand tagline set flush left
+ *             underneath it, sharing the Bildmarke's left edge. No rule: the
+ *             shared left edge and a gap of exactly one cap height carry the
+ *             relationship. The tagline uses the wordmark's own ink colour,
+ *             because it is the smallest type in the system and therefore gets
+ *             the highest contrast.
  *
  * The Bildmarke and the wordmark are NEVER redrawn. Their path data is copied
  * byte-for-byte out of the masters in docs/public/brand/ and only translated.
- * Only the division line is new artwork, outlined from a bundled OFL font so
+ * Only the added line is new artwork, outlined from a bundled OFL font so
  * the result carries no font dependency and survives Illustrator/Canva/print.
  *
  * Source of truth:  scripts/lockups.json  (+ scripts/tokens.json for colours)
@@ -14,7 +23,7 @@
  *
  * Usage:  npm run generate:lockups          (runs automatically before dev/build)
  *         node scripts/generate-lockups.mjs --check       validate only, write nothing
- *         node scripts/generate-lockups.mjs --only=georgia
+ *         node scripts/generate-lockups.mjs --only=compliance
  */
 
 import opentype from 'opentype.js'
@@ -75,6 +84,22 @@ function splitMaster(svg, file) {
   }
 }
 
+/**
+ * The wordmark's own ink colour, straight out of the master.
+ * Taking it from the artwork rather than from a token guarantees the tagline
+ * line matches the wordmark exactly, even after the master is re-exported.
+ */
+function wordmarkFill(fragment, file) {
+  const fills = [...new Set([...fragment.matchAll(/fill="([^"]+)"/g)].map((m) => m[1]))]
+  if (fills.length !== 1) {
+    throw new Error(
+      `${file}: Wortmarke traegt ${fills.length} verschiedene Farben (${fills.join(', ')}), erwartet genau eine. ` +
+        `Die Tagline-Zeile kann ihre Farbe dann nicht eindeutig aus dem Master uebernehmen.`,
+    )
+  }
+  return fills[0]
+}
+
 /** True bbox of an absolute M/L/C/Z path, cubic extrema solved. */
 function pathBBox(d) {
   const toks = d.match(/[MLCZ]|-?\d*\.?\d+/g) ?? []
@@ -128,7 +153,7 @@ const pathData = (svg) => [...svg.matchAll(/\sd="([^"]+)"/g)].map((m) => m[1])
 
 /**
  * Guarantees the promise this generator makes: every path from the master
- * survives byte-for-byte, and exactly one new path (the division line) is added.
+ * survives byte-for-byte, and exactly one new path (the added line) is added.
  */
 function assertArtworkIntact(svg, masterSvg, label) {
   const want = pathData(masterSvg)
@@ -172,7 +197,7 @@ function assertGeometry(parts, file) {
   }
 }
 
-// ── Division line outlining ──────────────────────────────────────
+// ── Line outlining ───────────────────────────────────────────────
 function makeTypesetter(font, capTarget, trackingEm) {
   const upm = font.unitsPerEm
   const capRatio = font.tables.os2.sCapHeight / upm
@@ -194,7 +219,7 @@ function makeTypesetter(font, capTarget, trackingEm) {
     return { path, bbox: path.getBoundingBox() }
   }
 
-  // Round-glyph overshoot, measured once so every division shares one viewBox.
+  // Round-glyph overshoot, measured once so every line of this size shares one viewBox.
   const o = outline('OQ').bbox
   const overshootBelow = Math.max(0, o.y2)
   const overshootAbove = Math.max(0, -o.y1 - capTarget)
@@ -203,30 +228,23 @@ function makeTypesetter(font, capTarget, trackingEm) {
 }
 
 // ── SVG composition ──────────────────────────────────────────────
-function buildSvg({ layout, parts, divisionPath, divisionColor, width, height, ids }) {
-  const g = M // shorthand
-  const defs = layout === 'compact'
-    ? `${parts.clip0}\n${parts.clip1}`
-    : `${parts.clip0}\n${parts.clip1}`
-  const scopedDefs = defs
+function buildSvg({ family, parts, linePath, width, height, ids }) {
+  const scopedDefs = `${parts.clip0}\n${parts.clip1}`
     .replaceAll('id="clip-0"', `id="${ids.c0}"`)
     .replaceAll('id="clip-1"', `id="${ids.c1}"`)
   const scoped = (s) => s.replaceAll('url(#clip-0)', `url(#${ids.c0})`).replaceAll('url(#clip-1)', `url(#${ids.c1})`)
 
-  const body = layout === 'compact'
+  // division: the wordmark shifts up to make room for the second line.
+  // tagline:  the wide logo is used exactly as it is, the line hangs below it.
+  const body = family === 'division'
     ? [
         scoped(parts.icon),
-        `<g transform="translate(0 ${round(LAYOUT.compact.wordDy)})">`,
+        `<g transform="translate(0 ${round(LAYOUT.division.wordDy)})">`,
         scoped(parts.wordmark),
         `</g>`,
-        divisionPath,
+        linePath,
       ]
-    : [
-        scoped(parts.icon),
-        scoped(parts.wordmark),
-        `<rect x="0" y="${round(LAYOUT.stacked.ruleTop)}" width="${round(width)}" height="${round(LAYOUT.stacked.ruleH)}" fill="${divisionColor}"/>`,
-        divisionPath,
-      ]
+    : [scoped(parts.icon), scoped(parts.wordmark), linePath]
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <!-- BAUER GROUP Lockup — GENERATED from scripts/lockups.json. Do not edit by hand.
@@ -245,23 +263,36 @@ ${body.filter(Boolean).join('\n')}
 let LAYOUT
 
 function computeLayout(geo) {
+  // Division — two placements, chosen by geometry.compactAlignment:
+  //
+  //   wordmark-fixed (default) — the wordmark keeps the exact position it holds
+  //     in the wide logo and the Zusatzzeile hangs below it. The registered
+  //     mark's internal geometry is never altered, which is what makes the
+  //     lockup usable without a trademark review.
+  //
+  //   block-centered — the two-line block is centred on the "B" of the
+  //     Bildmarke. Optically calmer, but it shifts the wordmark upward relative
+  //     to the mark and therefore needs sign-off before use.
   const C2 = geo.divisionCapRatio * X
   const capGap = geo.capGapRatio * X
   const leading = capGap + C2
-  const blockH = C1 + leading
-  const line1CapTop = CY - blockH / 2
-  const b1 = line1CapTop + C1
+  const centered = geo.compactAlignment === 'block-centered'
+  const b1 = centered ? CY - (C1 + leading) / 2 + C1 : M.wordBaseline
   const b2 = b1 + leading
 
-  const gapA = geo.stacked.gapRatio * X
-  const ruleH = geo.stacked.ruleRatio * X
-  const ruleTop = M.logoH + gapA
-  const stackedCapTop = ruleTop + ruleH + gapA
+  // Tagline — the wide logo is untouched; the claim hangs below it, flush left
+  // with the Bildmarke. The gap equals the claim's own cap height, so the two
+  // numbers a designer has to remember collapse into one.
+  const C3 = geo.tagline.capRatio * X
+  const gap = geo.tagline.gapRatio * X
+  const capTop = M.logoH + gap
 
   return {
     C2,
-    compact: { wordDy: b1 - M.wordBaseline, baseline: b2, left: M.word.x1 },
-    stacked: { ruleTop, ruleH, baseline: stackedCapTop + C2, left: 0 },
+    C3,
+    alignment: centered ? 'block-centered' : 'wordmark-fixed',
+    division: { wordDy: b1 - M.wordBaseline, baseline: b2, left: M.word.x1 },
+    tagline: { gap, capTop, baseline: capTop + C3, left: 0 },
   }
 }
 
@@ -279,11 +310,11 @@ async function main() {
     return hex
   }
   const TONES = {
-    '': { master: 'bauer-group-logo-wide.svg', color: colorOf(cfg.meta.colors.divisionLight) },
-    '-white': { master: 'bauer-group-logo-wide-white.svg', color: colorOf(cfg.meta.colors.divisionDark) },
+    '': { master: 'bauer-group-logo-wide.svg', division: colorOf(cfg.meta.colors.divisionLight) },
+    '-white': { master: 'bauer-group-logo-wide-white.svg', division: colorOf(cfg.meta.colors.divisionDark) },
   }
 
-  console.log('BAUER GROUP · generating division lockups …')
+  console.log('BAUER GROUP · generating lockups …')
 
   // Parse + validate both masters before writing anything.
   const masters = {}
@@ -294,72 +325,140 @@ async function main() {
     assertGeometry(parts, t.master)
     masters[tone] = parts
     masterSvgs[tone] = svg
+    // "wordmark" means: inherit the wordmark's own ink colour from the master.
+    t.tagline = cfg.meta.colors.tagline === 'wordmark'
+      ? wordmarkFill(parts.wordmark, t.master)
+      : colorOf(cfg.meta.colors.tagline)
   }
+  console.log(`  ✓ Ausrichtung Division: ${LAYOUT.alignment}  (Wortmarke dy = ${round(LAYOUT.division.wordDy)})`)
   console.log(`  ✓ Master validiert  (X = ${round(X)}, C1 = ${round(C1)}, cy = ${round(CY)})`)
+  console.log(`  ✓ Tagline-Farbe aus der Wortmarke  hell ${TONES[''].tagline}  ·  dunkel ${TONES['-white'].tagline}`)
 
   const font = opentype.parse((await readFile(join(__dirname, cfg.meta.font.file))).buffer)
-  const type = makeTypesetter(font, LAYOUT.C2, geo.trackingEm)
+  const TYPE = {
+    division: makeTypesetter(font, LAYOUT.C2, geo.trackingEm),
+    tagline: makeTypesetter(font, LAYOUT.C3, geo.tagline.trackingEm),
+  }
   console.log(
-    `  ✓ Schrift ${cfg.meta.font.family} ${cfg.meta.font.subfamily}` +
-      `  cap ${type.capRatio.toFixed(6)} em → font-size ${round(type.size)}`,
+    `  ✓ Schrift ${cfg.meta.font.family} ${cfg.meta.font.subfamily}  cap ${TYPE.division.capRatio.toFixed(6)} em` +
+      `  →  Zusatzzeile ${round(TYPE.division.size)}, Tagline ${round(TYPE.tagline.size)}`,
   )
 
-  const divisions = cfg.divisions.filter((d) => !ONLY || d.slug === ONLY)
-  if (ONLY && !divisions.length) throw new Error(`Kein Geschaeftsbereich mit slug "${ONLY}" in lockups.json.`)
-
   const files = []
-  const meta = []
+  const out = { divisions: [], taglines: [] }
 
-  for (const d of divisions) {
-    const label = d.label ?? (geo.case === 'upper' ? d.name.toUpperCase() : d.name)
+  /**
+   * One lockup family, both tones. Everything that differs between the two
+   * families is passed in: where the line sits, how wide it may grow, how the
+   * files are named and which colour the line takes.
+   */
+  async function emitFamily({ family, entry, label, prefix, colorKey, maxInk, maxInkLabel }) {
+    const type = TYPE[family]
+    const L = LAYOUT[family]
     const { bbox } = type.outline(label)
     const inkW = bbox.x2 - bbox.x1
 
-    // The division line must never be wider than the wordmark it sits under.
-    if (inkW > M.word.x2 - M.word.x1) {
+    if (inkW > maxInk) {
       throw new Error(
-        `"${label}" ist ${round(inkW)} breit, die Wortmarke misst ${round(M.word.x2 - M.word.x1)}. ` +
-          `Kuerzere Bezeichnung waehlen oder divisionCapRatio senken.`,
+        `"${label}" ist ${round(inkW)} breit, ${maxInkLabel} misst ${round(maxInk)}. ` +
+          `Kuerzere Bezeichnung waehlen oder capRatio in scripts/lockups.json senken.`,
       )
     }
 
-    const entry = { slug: d.slug, name: d.name, nameEn: d.nameEn ?? d.name, label }
-
-    for (const layout of ['compact', 'stacked']) {
-      const L = LAYOUT[layout]
-      const width = layout === 'compact'
-        ? Math.max(M.logoW, L.left + inkW)
-        : Math.max(M.logoW, inkW)
-      const height = layout === 'compact'
-        ? M.logoH
+    const width = Math.max(M.logoW, L.left + inkW)
+    const height =
+      family === 'division'
+        ? Math.max(M.logoH, L.baseline + type.overshootBelow)
         : L.baseline + type.overshootBelow
 
-      entry[layout] = { width: round(width), height: round(height) }
+    const svgUrl = {}
+    const pngUrl = { light: {}, dark: {} }
 
-      for (const [tone, t] of Object.entries(TONES)) {
-        // Re-outline into this frame: ink left edge flush to L.left, baseline on L.baseline.
-        const { path } = type.outline(label, L.left - bbox.x1, L.baseline)
-        const divisionPath = `<path fill-rule="nonzero" fill="${t.color}" d="${path.toPathData(4)}"/>`
+    for (const [tone, t] of Object.entries(TONES)) {
+      // Re-outline into this frame: ink left edge flush to L.left, baseline on L.baseline.
+      const { path } = type.outline(label, L.left - bbox.x1, L.baseline)
+      const linePath = `<path fill-rule="nonzero" fill="${t[colorKey]}" d="${path.toPathData(4)}"/>`
 
-        const name = `bauer-group-lockup-${d.slug}-${layout}${tone}`
-        const svg = buildSvg({
-          layout,
-          parts: masters[tone],
-          divisionPath,
-          divisionColor: t.color,
-          width,
-          height,
-          ids: { c0: `bg-${d.slug}-${layout}${tone}-c0`, c1: `bg-${d.slug}-${layout}${tone}-c1` },
-        })
+      const name = `${prefix}-${entry.slug}${tone}`
+      const svg = buildSvg({
+        family,
+        parts: masters[tone],
+        linePath,
+        width,
+        height,
+        ids: { c0: `bg-${family}-${entry.slug}${tone}-c0`, c1: `bg-${family}-${entry.slug}${tone}-c1` },
+      })
 
-        assertArtworkIntact(svg, masterSvgs[tone], `${name}.svg`)
+      assertArtworkIntact(svg, masterSvgs[tone], `${name}.svg`)
+      if (!CHECK_ONLY) await writeFile(join(OUT, `${name}.svg`), svg, 'utf8')
 
-        if (!CHECK_ONLY) await writeFile(join(OUT, `${name}.svg`), svg, 'utf8')
-        files.push({ src: `brand/lockups/${name}.svg`, name, sizes: cfg.meta.png.sizes })
-      }
-      console.log(`  ✓ ${d.slug}/${layout}  ${round(width)} × ${round(height)}  (Zusatzzeile ${round(inkW)} breit)`)
+      const key = tone === '' ? 'light' : 'dark'
+      svgUrl[key] = `/brand/lockups/${name}.svg`
+      for (const size of cfg.meta.png.sizes) pngUrl[key][size] = `/downloads/png/${name}-${size}.png`
+      files.push({ family, slug: entry.slug, tone: key, src: `brand/lockups/${name}.svg`, name, sizes: cfg.meta.png.sizes })
     }
-    meta.push(entry)
+
+    console.log(
+      `  ✓ ${family}/${entry.slug}  ${round(width)} × ${round(height)}` +
+        `  (Zusatzzeile ${round(inkW)} breit — ${Math.round((inkW / maxInk) * 100)} % des Maximums)`,
+    )
+
+    return { width: round(width), height: round(height), ink: round(inkW), svg: svgUrl, png: pngUrl }
+  }
+
+  // ── Division lockups ───────────────────────────────────────────
+  const divisions = (cfg.divisions ?? []).filter((d) => !ONLY || d.slug === ONLY)
+  for (const d of divisions) {
+    const label = d.label ?? (geo.case === 'upper' ? d.name.toUpperCase() : d.name)
+    const built = await emitFamily({
+      family: 'division',
+      entry: d,
+      label,
+      prefix: 'bauer-group-lockup',
+      colorKey: 'division',
+      maxInk: M.word.x2 - M.word.x1,
+      maxInkLabel: 'die Wortmarke',
+    })
+    out.divisions.push({
+      slug: d.slug,
+      title: d.name,
+      titleEn: d.nameEn ?? d.name,
+      label,
+      note: d.note ?? null,
+      noteEn: d.noteEn ?? d.note ?? null,
+      placeholder: d.placeholder === true,
+      ...built,
+    })
+  }
+
+  // ── Tagline lockups ────────────────────────────────────────────
+  const taglines = (cfg.taglines ?? []).filter((t) => !ONLY || t.slug === ONLY)
+  for (const t of taglines) {
+    const label = t.label ?? (geo.tagline.case === 'upper' ? t.text.toUpperCase() : t.text)
+    const built = await emitFamily({
+      family: 'tagline',
+      entry: t,
+      label,
+      prefix: 'bauer-group-tagline',
+      colorKey: 'tagline',
+      maxInk: M.logoW,
+      maxInkLabel: 'das Wide-Logo',
+    })
+    out.taglines.push({
+      slug: t.slug,
+      title: t.text,
+      titleEn: t.text,
+      label,
+      role: t.role ?? null,
+      roleEn: t.roleEn ?? t.role ?? null,
+      note: t.note ?? null,
+      noteEn: t.noteEn ?? t.note ?? null,
+      ...built,
+    })
+  }
+
+  if (ONLY && !divisions.length && !taglines.length) {
+    throw new Error(`Kein Eintrag mit slug "${ONLY}" in lockups.json.`)
   }
 
   if (CHECK_ONLY) {
@@ -373,10 +472,18 @@ async function main() {
       {
         $comment: 'GENERATED from scripts/lockups.json — do not edit by hand.',
         geometry: {
-          X: round(X), wordmarkCap: round(C1), divisionCap: round(LAYOUT.C2),
-          fontSize: round(type.size), trackingEm: geo.trackingEm,
+          X: round(X),
+          wordmarkCap: round(C1),
+          divisionCap: round(LAYOUT.C2),
+          taglineCap: round(LAYOUT.C3),
+          taglineGap: round(LAYOUT.tagline.gap),
+          divisionFontSize: round(TYPE.division.size),
+          taglineFontSize: round(TYPE.tagline.size),
+          divisionTrackingEm: geo.trackingEm,
+          taglineTrackingEm: geo.tagline.trackingEm,
         },
-        divisions: meta,
+        divisions: out.divisions,
+        taglines: out.taglines,
         files,
       },
       null,
@@ -385,10 +492,13 @@ async function main() {
     'utf8',
   )
 
-  console.log(`\nDone. ${files.length} Lockup-SVGs für ${meta.length} Geschäftsbereich(e).`)
+  console.log(
+    `\nDone. ${files.length} Lockup-SVGs — ` +
+      `${out.divisions.length} Geschäftsbereich(e), ${out.taglines.length} Tagline(s).`,
+  )
 }
 
-// Rebuild the output directory so removed divisions cannot leave stale files behind.
+// Rebuild the output directory so removed entries cannot leave stale files behind.
 if (!CHECK_ONLY) {
   await rm(OUT, { recursive: true, force: true })
   await mkdir(OUT, { recursive: true })
