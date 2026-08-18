@@ -235,7 +235,9 @@
   letter-spacing: 0.08em;
   line-height: 1;
   text-transform: uppercase;
-  color: var(--bg-orange-800); /* 5,58–6,50:1 auf allen freigegebenen hellen Gründen */
+  /* Markenorange in beiden Tonwerten. Auf Hell 2,69–3,14:1 — zulässig über die
+     Logotype-Ausnahme in WCAG 2.1 SC 1.4.3, siehe /de/logo/lockup. */
+  color: var(--bg-orange-600);
 }
 
 /* Trimmt die Zeilenbox exakt auf Versaloberkante/Grundlinie — damit ist der
@@ -258,10 +260,6 @@
   display: block;
 }
 
-.dark .bg-lockup .division {
-  color: var(--bg-orange-400); /* 7,23–9,28:1 auf allen freigegebenen dunklen Gründen */
-}
-
 .bg-lockup:focus-visible {
   outline: 3px solid var(--bg-orange-500);
   outline-offset: 2px;
@@ -281,10 +279,6 @@
 
 .logo-stage.dark .bg-lockup .wordmark-dark {
   display: block;
-}
-
-.logo-stage.dark .bg-lockup .division {
-  color: var(--bg-orange-400);
 }
 
 /* ─── Feature / Tile Grid (home + section landings) ─── */

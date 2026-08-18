@@ -55,6 +55,27 @@ The alternative is ready: setting `compactAlignment` in `scripts/lockups.json` t
 The division line must **never be wider than the wordmark** (200.559 units). The generator aborts with a clear message otherwise. `COMPLIANCE` uses 61 % of it.
 :::
 
+### Colour of the division name
+
+The division line carries **Orange 600 `#EA6D00`** — the same ink on light and on dark, exactly like the Bildmarke, which stays unchanged across both tones.
+
+| Background | Contrast | Assessment |
+|------------|----------|------------|
+| White `#FFFFFF` | 3.14:1 | Logotype exception |
+| Warm 100 `#F0EDEA` | 2.69:1 | Logotype exception |
+| Warm 900 `#231F1C` | 5.21:1 | AA ✅ |
+| Black `#000000` | 6.69:1 | AA ✅ |
+
+::: warning On light backgrounds the logotype exception applies
+On light backgrounds Orange 600 stays below the 4.5:1 that WCAG 2.1 requires for body text. **SC 1.4.3 explicitly exempts logotypes:** "Text that is part of a logo or brand name has no contrast requirement." The division name is part of the brand, not body text — the exception applies.
+
+It applies **to the lockup only**. As an interface text colour Orange 600 remains off limits; there Orange 700 is the lightest approved step, see [Contrast Checks](/en/accessibility/contrast).
+:::
+
+::: tip Why not the darker step
+At 6.50:1 on white Orange 800 `#9A4509` would clear even the AAA threshold, but it is `oklch(44 % 0.13 40)`. Below roughly 50 % lightness orange tips perceptually into **brown** — plainly visible on less well calibrated screens. A division name that reads brown rather than orange on many devices fails at carrying the brand. Orange 600 holds the colour impression and sits just one step below the primary.
+:::
+
 ## Tagline lockup
 
 <LockupPreview kind="taglines" width="420px" lang="en" />
@@ -89,12 +110,14 @@ Its weight is **0.03 X**. At 220 px width that renders 0.66 px, at 60 mm 0.18 mm
 
 At 0.30 X the tagline is the **smallest type in the entire logo system**. It therefore gets the highest contrast, not the lowest: it inherits the wordmark's ink, so `#231F20` on light and white on dark.
 
-| Background | Wordmark ink `#231F20` | Orange 800 `#9A4509` |
+| Background | Wordmark ink `#231F20` | Orange 600 `#EA6D00` |
 |------------|------------------------|---------------------|
-| White `#FFFFFF` | **16.30 ✅** | 6.50 ✅ |
-| Grey 50 `#FAFAFA` | **15.62 ✅** | 6.23 ✅ |
-| Grey 100 `#F4F4F5` | **14.83 ✅** | 5.92 ✅ |
-| Warm 100 `#F0EDEA` | **13.98 ✅** | 5.58 ✅ |
+| White `#FFFFFF` | **16.30 ✅** | 3.14 ❌ |
+| Grey 50 `#FAFAFA` | **15.62 ✅** | 3.01 ❌ |
+| Grey 100 `#F4F4F5` | **14.83 ✅** | 2.86 ❌ |
+| Warm 100 `#F0EDEA` | **13.98 ✅** | 2.69 ❌ |
+
+The ❌ marks judge Orange 600 as **body text** — and that is exactly what a tagline is: a sentence, not a mark. For the division name, which is part of the brand name, the same colour falls under the [logotype exception](#colour-of-the-division-name).
 
 The generator reads that colour **out of the master** on every run rather than storing it. The tagline can therefore never drift from the wordmark — not even after the masters are re-exported.
 
@@ -177,7 +200,7 @@ Never assemble a lockup manually. If a master deviates, the generator aborts wit
 ::: danger Forbidden
 
 - Never **re-typeset the wordmark** — lockups come from the generator and nowhere else
-- Never set the division name **in Orange 500** or in any colour other than Orange 800 / Orange 400
+- Never set the division name **in any colour other than Orange 600** — identical on light and dark
 - Never **recolour the tagline** — it always carries the wordmark's ink
 - **No divider rule**, no frame, no bar between the logo and the tagline
 - **No third line**, no legal form, no location inside a lockup

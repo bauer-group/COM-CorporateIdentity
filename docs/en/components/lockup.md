@@ -96,7 +96,7 @@ The accessible name sits on the link as `aria-label`; every image carries `alt="
   letter-spacing: 0.08em;
   line-height: 1;
   text-transform: uppercase;
-  color: var(--bg-orange-800);
+  color: var(--bg-orange-600);
 }
 
 @supports (text-box: trim-both cap alphabetic) {
@@ -106,7 +106,7 @@ The accessible name sits on the link as `aria-label`; every image carries `alt="
 .bg-lockup .wordmark-dark { display: none; }
 .dark .bg-lockup .wordmark-light { display: none; }
 .dark .bg-lockup .wordmark-dark { display: block; }
-.dark .bg-lockup .division { color: var(--bg-orange-400); }
+/* The division line keeps the same ink in dark mode — like the Bildmarke. */
 
 .bg-lockup:focus-visible {
   outline: 3px solid var(--bg-orange-500);
@@ -186,8 +186,8 @@ The component deliberately has no default slot. Foreign content inside would lan
 
 | State | Behaviour |
 |-------|-----------|
-| **Default** | Wordmark dark, division line Orange 800 |
-| **Dark mode** | Wordmark white, division line Orange 400 |
+| **Default** | Wordmark dark, division line Orange 600 |
+| **Dark mode** | Wordmark white, division line Orange 600 — unchanged |
 | **Hover** | No change — the logo is not a button |
 | **Focus** | 3 px ring in Orange 500, 2 px offset |
 | **Forced colors** | Ring in `CanvasText` |
@@ -199,5 +199,5 @@ The component deliberately has no default slot. Foreign content inside would lan
 :::
 
 ::: warning Accessibility
-`aria-label` on the link, `alt=""` on every image. Division line in Orange 800 on light (5.58–6.50:1) and Orange 400 on dark (7.23–9.28:1) — both WCAG 2.1 AA. Orange 500 is excluded as a text colour, see [Contrast Checks](/en/accessibility/contrast).
+`aria-label` on the link, `alt=""` on every image. The division line carries Orange 600 in both tones: 5.21–6.69:1 on dark, which is WCAG 2.1 AA, and 2.69–3.14:1 on light, where the [logotype exception](/en/logo/lockup#colour-of-the-division-name) under WCAG 2.1 SC 1.4.3 applies. As an interface text colour Orange 600 remains excluded, see [Contrast Checks](/en/accessibility/contrast).
 :::

@@ -29,8 +29,8 @@
       "compactAlignment": "block-centered"
     },
     "colors": {
-      "divisionLight": "orange-800",
-      "divisionDark": "orange-400",
+      "divisionLight": "orange-600",
+      "divisionDark": "orange-600",
       "tagline": "wordmark",
       "taglineRule": "orange-500"
     },

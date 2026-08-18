@@ -44,6 +44,12 @@
 - ❌ Gray 400 as body text color
 - ❌ White on Orange 500 for text below 18px bold
 
+## Exception: logo and lockup
+
+The division name in the [division lockup](/en/logo/lockup#colour-of-the-division-name) carries **Orange 600** `#EA6D00` and lands at 2.69–3.14:1 on light backgrounds. **WCAG 2.1 SC 1.4.3 explicitly exempts logotypes from the contrast requirement:** "Text that is part of a logo or brand name has no contrast requirement."
+
+The exception covers the mark and the lockup only. For body text, interface elements and links the tables above apply unchanged — Orange 700 remains the lightest approved text step there.
+
 ## Contrast Testing Tools
 
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)

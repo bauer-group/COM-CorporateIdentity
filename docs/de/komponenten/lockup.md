@@ -96,7 +96,7 @@ Der barrierefreie Name steht als `aria-label` auf dem Link, alle Bilder tragen `
   letter-spacing: 0.08em;
   line-height: 1;
   text-transform: uppercase;
-  color: var(--bg-orange-800);
+  color: var(--bg-orange-600);
 }
 
 @supports (text-box: trim-both cap alphabetic) {
@@ -106,7 +106,7 @@ Der barrierefreie Name steht als `aria-label` auf dem Link, alle Bilder tragen `
 .bg-lockup .wordmark-dark { display: none; }
 .dark .bg-lockup .wordmark-light { display: none; }
 .dark .bg-lockup .wordmark-dark { display: block; }
-.dark .bg-lockup .division { color: var(--bg-orange-400); }
+/* Die Zusatzzeile behält im Dark Mode dieselbe Tinte — wie die Bildmarke. */
 
 .bg-lockup:focus-visible {
   outline: 3px solid var(--bg-orange-500);
@@ -186,8 +186,8 @@ Die Komponente hat bewusst keinen Default-Slot. Fremdinhalt im Inneren würde in
 
 | Zustand | Verhalten |
 |---------|-----------|
-| **Standard** | Wortmarke dunkel, Zusatzzeile Orange 800 |
-| **Dark Mode** | Wortmarke weiß, Zusatzzeile Orange 400 |
+| **Standard** | Wortmarke dunkel, Zusatzzeile Orange 600 |
+| **Dark Mode** | Wortmarke weiß, Zusatzzeile Orange 600 — unverändert |
 | **Hover** | keine Änderung — das Logo ist kein Button |
 | **Focus** | 3 px Ring in Orange 500, 2 px Abstand |
 | **Forced Colors** | Ring in `CanvasText` |
@@ -199,5 +199,5 @@ Die Komponente hat bewusst keinen Default-Slot. Fremdinhalt im Inneren würde in
 :::
 
 ::: warning Barrierefreiheit
-`aria-label` auf dem Link, `alt=""` auf allen Bildern. Zusatzzeile in Orange 800 auf Hell (5,58–6,50:1) beziehungsweise Orange 400 auf Dunkel (7,23–9,28:1) — beides WCAG 2.1 AA. Orange 500 ist als Textfarbe ausgeschlossen, siehe [Kontrastprüfung](/de/barrierefreiheit/kontrast).
+`aria-label` auf dem Link, `alt=""` auf allen Bildern. Die Zusatzzeile trägt in beiden Tonwerten Orange 600: auf Dunkel sind das 5,21–6,69:1 und damit WCAG 2.1 AA, auf Hell 2,69–3,14:1 — dort greift die [Logotype-Ausnahme](/de/logo/lockup#farbe-der-zusatzbezeichnung) nach WCAG 2.1 SC 1.4.3. Als Textfarbe im Interface bleibt Orange 600 ausgeschlossen, siehe [Kontrastprüfung](/de/barrierefreiheit/kontrast).
 :::

@@ -44,6 +44,12 @@
 - ❌ Gray 400 als Fließtextfarbe
 - ❌ Weiß auf Orange 500 für Text unter 18px bold
 
+## Ausnahme: Logo und Lockup
+
+Die Zusatzbezeichnung im [Division-Lockup](/de/logo/lockup#farbe-der-zusatzbezeichnung) trägt **Orange 600** `#EA6D00` und liegt auf hellem Grund bei 2,69–3,14:1. **WCAG 2.1 SC 1.4.3 nimmt Logotypen ausdrücklich von der Kontrastanforderung aus:** „Text that is part of a logo or brand name has no contrast requirement."
+
+Die Ausnahme deckt ausschließlich Marke und Lockup. Für Fließtext, Interface-Elemente und Links gelten die Tabellen oben unverändert — dort bleibt Orange 700 die hellste freigegebene Textstufe.
+
 ## Tools zur Kontrastprüfung
 
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)

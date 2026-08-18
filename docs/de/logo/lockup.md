@@ -55,6 +55,27 @@ Die Alternative liegt bereit: `compactAlignment` in `scripts/lockups.json` auf `
 Die Zusatzzeile darf **nie breiter als die Wortmarke** werden (200,559 Einheiten). Der Generator bricht sonst mit einer klaren Meldung ab. `COMPLIANCE` nutzt davon 61 %.
 :::
 
+### Farbe der Zusatzbezeichnung
+
+Die Zusatzzeile trägt **Orange 600 `#EA6D00`** — auf Hell und auf Dunkel dieselbe Tinte, genau wie die Bildmarke, die in beiden Tonwerten unverändert bleibt.
+
+| Grund | Kontrast | Bewertung |
+|-------|----------|-----------|
+| Weiß `#FFFFFF` | 3,14:1 | Logotype-Ausnahme |
+| Warm 100 `#F0EDEA` | 2,69:1 | Logotype-Ausnahme |
+| Warm 900 `#231F1C` | 5,21:1 | AA ✅ |
+| Schwarz `#000000` | 6,69:1 | AA ✅ |
+
+::: warning Auf hellem Grund greift die Logotype-Ausnahme
+Orange 600 bleibt auf hellem Grund unter den 4,5:1, die WCAG 2.1 für Fließtext verlangt. **SC 1.4.3 nimmt Logotypen ausdrücklich aus:** „Text that is part of a logo or brand name has no contrast requirement." Die Zusatzbezeichnung ist Bestandteil der Marke, nicht Fließtext — die Ausnahme greift.
+
+Sie gilt **ausschließlich für das Lockup**. Als Textfarbe im Interface bleibt Orange 600 unzulässig; dort ist Orange 700 die hellste freigegebene Stufe, siehe [Kontrastprüfung](/de/barrierefreiheit/kontrast).
+:::
+
+::: tip Warum nicht die dunklere Stufe
+Orange 800 `#9A4509` läge mit 6,50:1 auf Weiß über der AAA-Schwelle, ist aber `oklch(44 % 0,13 40)`. Unterhalb von rund 50 % Helligkeit kippt Orange perzeptuell in **Braun** — auf schwächer kalibrierten Bildschirmen deutlich sichtbar. Eine Zusatzbezeichnung, die auf vielen Geräten braun statt orange erscheint, verfehlt ihren Zweck als Markenträger. Orange 600 hält den Farbeindruck und liegt nur eine Stufe unter der Primärfarbe.
+:::
+
 ## Tagline-Lockup
 
 <LockupPreview kind="taglines" width="420px" />
@@ -89,12 +110,14 @@ Ihre Stärke beträgt **0,03 X**. Bei 220 px Breite ergibt das 0,66 px, bei 60 m
 
 Die Tagline ist mit 0,30 X die **kleinste Schrift im gesamten Logosystem**. Sie bekommt deshalb den höchsten Kontrast, nicht den niedrigsten: Sie übernimmt die Tinte der Wortmarke, wird also `#231F20` auf Hell und Weiß auf Dunkel.
 
-| Hintergrund | Wortmarken-Tinte `#231F20` | Orange 800 `#9A4509` |
+| Hintergrund | Wortmarken-Tinte `#231F20` | Orange 600 `#EA6D00` |
 |-------------|---------------------------|---------------------|
-| Weiß `#FFFFFF` | **16,30 ✅** | 6,50 ✅ |
-| Grau 50 `#FAFAFA` | **15,62 ✅** | 6,23 ✅ |
-| Grau 100 `#F4F4F5` | **14,83 ✅** | 5,92 ✅ |
-| Warm 100 `#F0EDEA` | **13,98 ✅** | 5,58 ✅ |
+| Weiß `#FFFFFF` | **16,30 ✅** | 3,14 ❌ |
+| Grau 50 `#FAFAFA` | **15,62 ✅** | 3,01 ❌ |
+| Grau 100 `#F4F4F5` | **14,83 ✅** | 2,86 ❌ |
+| Warm 100 `#F0EDEA` | **13,98 ✅** | 2,69 ❌ |
+
+Die ❌ bewerten Orange 600 als **Fließtext** — und genau das ist eine Tagline: ein Satz, keine Marke. Für die Zusatzbezeichnung, die Teil des Markennamens ist, gilt bei derselben Farbe die [Logotype-Ausnahme](#farbe-der-zusatzbezeichnung).
 
 Der Generator liest diese Farbe bei jedem Lauf **aus dem Master** aus, statt sie zu hinterlegen. Die Tagline kann dadurch nie von der Wortmarke abweichen — auch nicht nach einem Neuexport der Master.
 
@@ -176,7 +199,7 @@ Lockups niemals von Hand zusammensetzen. Weicht ein Master ab, bricht der Genera
 ::: danger Verboten
 
 - Die Wortmarke **nicht nachsetzen** — Lockups kommen ausschließlich aus dem Generator
-- Zusatzbezeichnung **nicht in Orange 500** und in keiner anderen Farbe als Orange 800 / Orange 400
+- Zusatzbezeichnung **in keiner anderen Farbe als Orange 600** — auf Hell und Dunkel identisch
 - Tagline **nicht einfärben** — sie trägt immer die Tinte der Wortmarke
 - **Keine Trennlinie**, kein Rahmen, kein Balken zwischen Logo und Tagline
 - **Keine dritte Zeile**, keine Rechtsform, kein Standort im Lockup
