@@ -21,7 +21,7 @@
       "tagline": {
         "capRatio": 0.3,
         "gapRatio": 0.22,
-        "ruleRatio": 0.05,
+        "ruleRatio": 0.04,
         "trackingEm": 0.1,
         "case": "upper",
         "align": "center"
@@ -31,7 +31,8 @@
     "colors": {
       "divisionLight": "orange-800",
       "divisionDark": "orange-400",
-      "tagline": "wordmark"
+      "tagline": "wordmark",
+      "taglineRule": "orange-500"
     },
     "png": {
       "sizes": [

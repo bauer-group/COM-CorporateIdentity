@@ -67,11 +67,11 @@ The wide logo stays **completely untouched**. Below it a thin rule sets the stat
 |-------------|---------|-------|
 | **Logo block** | unchanged | 269.940 × 59.720 |
 | **Logo → rule gap** | 0.22 X | 5.925 |
-| **Rule weight** | 0.05 X | 1.347 |
+| **Rule weight** | 0.04 X | 1.077 |
 | **Rule → tagline gap** | 0.22 X | 5.925 |
 | **Tagline cap height** | 0.30 X | 8.079 |
 | **Tracking** | 0.10 em | — |
-| **Total height** | 3.0334 X | 81.689 |
+| **Total height** | 3.0234 X | 81.419 |
 
 ::: tip Equal gap above and below
 At **0.22 X** the rule sits symmetrically between the logo and the tagline. It is no closer to either, so it reads as a separation rather than as something appended.
@@ -79,9 +79,11 @@ At **0.22 X** the rule sits symmetrically between the logo and the tagline. It i
 
 ### The divider rule
 
-The rule spans the **full width** of the lockup and carries the same colour as the tagline. It is **mandatory** and may be neither omitted nor recoloured.
+The rule spans the **full width** of the lockup and carries **BAUER Orange** `#FF8500` — identical in both tones, exactly like the Bildmarke. It is **mandatory** and may be neither omitted nor recoloured.
 
-Its weight of 0.05 X is set by the minimum sizes, not chosen freely: at 220 px width it renders at **1.10 px**, at 60 mm at **0.30 mm**. A finer rule — 0.03 X, say — would look more elegant at large sizes but would drop to 0.66 px at 220 px and 0.18 mm in print, and disappear. Making it finer means raising the minimum sizes.
+That puts it in line with what the brand already does: the email signature runs a 3 px orange line as its [primary branding element](/en/digital/email), and every section heading in this guide carries the same orange underline. A dark rule would have been the only separator in the system without orange.
+
+Its weight of 0.04 X is set by the minimum sizes, not chosen freely: at 220 px width it renders at **0.88 px**, at 60 mm at **0.24 mm**. A finer rule — 0.03 X, say — would drop to 0.18 mm in print, below what a press reliably holds. Making it finer means raising the minimum sizes.
 
 ### Why the tagline takes the wordmark's colour
 
@@ -96,13 +98,15 @@ At 0.30 X the tagline is the **smallest type in the entire logo system**. It the
 
 The generator reads that colour **out of the master** on every run rather than storing it. The tagline can therefore never drift from the wordmark — not even after the masters are re-exported.
 
-::: warning Orange is reserved for the division name
-A whole sentence in orange competes with the Bildmarke. Within the lockup system orange marks **the division name** — a name — not a statement.
+::: warning Orange as type stays reserved for the division name
+A whole sentence in orange competes with the Bildmarke. As a **type colour**, orange marks the division name within the lockup system — a name — not a statement.
+
+The divider rule is unaffected: it is **neither type nor statement but a decorative accent**, which is exactly what Orange 500 is intended for according to the [contrast checks](/en/accessibility/contrast).
 :::
 
 ### All taglines
 
-Every tagline in [Brand values & mission](/en/brand/) exists as a finished lockup. All four share **exactly the same bounding box** (269.940 × 81.689), because the descender of the "Q" is always reserved — which makes them interchangeable without re-tuning a single layout.
+Every tagline in [Brand values & mission](/en/brand/) exists as a finished lockup. All four share **exactly the same bounding box** (269.940 × 81.419), because the descender of the "Q" is always reserved — which makes them interchangeable without re-tuning a single layout.
 
 <LockupGallery kind="taglines" lang="en" />
 

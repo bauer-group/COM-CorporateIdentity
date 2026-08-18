@@ -67,11 +67,11 @@ Das Wide-Logo bleibt **vollständig unangetastet**. Darunter setzt eine dünne T
 |-----|-------------|-----------|
 | **Logoblock** | unverändert | 269,940 × 59,720 |
 | **Abstand Logo → Trennlinie** | 0,22 X | 5,925 |
-| **Stärke der Trennlinie** | 0,05 X | 1,347 |
+| **Stärke der Trennlinie** | 0,04 X | 1,077 |
 | **Abstand Trennlinie → Tagline** | 0,22 X | 5,925 |
 | **Versalhöhe Tagline** | 0,30 X | 8,079 |
 | **Laufweite** | 0,10 em | — |
-| **Gesamthöhe** | 3,0334 X | 81,689 |
+| **Gesamthöhe** | 3,0234 X | 81,419 |
 
 ::: tip Gleicher Abstand ober- und unterhalb
 Die Trennlinie sitzt mit **0,22 X** symmetrisch zwischen Logo und Tagline. Sie liegt damit nicht näher an einem der beiden Elemente und wirkt als Trennung, nicht als Anhängsel.
@@ -79,9 +79,11 @@ Die Trennlinie sitzt mit **0,22 X** symmetrisch zwischen Logo und Tagline. Sie l
 
 ### Die Trennlinie
 
-Die Linie läuft über die **volle Breite** des Lockups und trägt dieselbe Farbe wie die Tagline. Sie ist **verbindlich** und darf weder weggelassen noch umgefärbt werden.
+Die Linie läuft über die **volle Breite** des Lockups und trägt **BAUER Orange** `#FF8500` — in beiden Tonlagen identisch, genau wie die Bildmarke. Sie ist **verbindlich** und darf weder weggelassen noch umgefärbt werden.
 
-Ihre Stärke von 0,05 X ist nach unten durch die Mindestgrößen bestimmt, nicht frei gewählt: Bei 220 px Breite ergibt sie **1,10 px**, bei 60 mm **0,30 mm**. Eine feinere Linie — etwa 0,03 X — sähe bei großer Darstellung eleganter aus, fiele aber bei 220 px auf 0,66 px und im Druck auf 0,18 mm und verschwände damit. Wer sie feiner will, muss die Mindestgrößen anheben.
+Damit reiht sie sich in das ein, was die Marke ohnehin tut: Die E-Mail-Signatur führt eine 3 px starke Orange-Linie als [primäres Branding-Element](/de/digital/email), und jede Abschnittsüberschrift in diesem Guide trägt denselben Orange-Unterstrich. Eine dunkle Linie wäre das einzige Trennelement im System ohne Orange gewesen.
+
+Ihre Stärke von 0,04 X ist nach unten durch die Mindestgrößen bestimmt, nicht frei gewählt: Bei 220 px Breite ergibt sie **0,88 px**, bei 60 mm **0,24 mm**. Eine feinere Linie — etwa 0,03 X — fiele im Druck auf 0,18 mm und liegt damit unter dem, was eine Druckmaschine zuverlässig hält. Wer sie feiner will, muss die Mindestgrößen anheben.
 
 ### Warum die Tagline die Farbe der Wortmarke trägt
 
@@ -96,13 +98,15 @@ Die Tagline ist mit 0,30 X die **kleinste Schrift im gesamten Logosystem**. Sie 
 
 Der Generator liest diese Farbe bei jedem Lauf **aus dem Master** aus, statt sie zu hinterlegen. Die Tagline kann dadurch nie von der Wortmarke abweichen — auch nicht nach einem Neuexport der Master.
 
-::: warning Orange ist der Zusatzbezeichnung vorbehalten
-Ein ganzer Satz in Orange konkurriert mit der Bildmarke. Orange markiert im Lockup-System **die Zusatzbezeichnung** — also einen Namen — und nicht eine Aussage.
+::: warning Orange als Schrift bleibt der Zusatzbezeichnung vorbehalten
+Ein ganzer Satz in Orange konkurriert mit der Bildmarke. Als **Schriftfarbe** markiert Orange im Lockup-System die Zusatzbezeichnung — also einen Namen — und nicht eine Aussage.
+
+Die Trennlinie ist davon unberührt: Sie ist **weder Schrift noch Aussage, sondern ein dekorativer Akzent**, und genau dafür ist Orange 500 laut [Kontrastprüfung](/de/barrierefreiheit/kontrast) ausdrücklich vorgesehen.
 :::
 
 ### Alle Taglines
 
-Jede Tagline in [Markenwerte & Leitbild](/de/marke/) liegt als fertiges Lockup vor. Alle vier haben **exakt dieselbe Bounding-Box** (269,940 × 81,689), weil die Unterlänge des „Q" immer reserviert wird — sie sind damit gegeneinander austauschbar, ohne dass ein Layout nachjustiert werden muss.
+Jede Tagline in [Markenwerte & Leitbild](/de/marke/) liegt als fertiges Lockup vor. Alle vier haben **exakt dieselbe Bounding-Box** (269,940 × 81,419), weil die Unterlänge des „Q" immer reserviert wird — sie sind damit gegeneinander austauschbar, ohne dass ein Layout nachjustiert werden muss.
 
 <LockupGallery kind="taglines" lang="de" />
 

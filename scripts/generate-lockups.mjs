@@ -311,9 +311,22 @@ async function main() {
     if (!hex) throw new Error(`Farbtoken "${ref}" nicht in scripts/tokens.json gefunden.`)
     return hex
   }
+  // Die Trennlinie traegt BAUER Orange — dieselbe Rolle wie die 3-px-Linie der
+  // E-Mail-Signatur und der H2-Unterstrich dieses Guides. Sie ist in beiden Tonen
+  // identisch, genau wie die Bildmarke, und ist als dekorativer Akzent (keine
+  // Schrift) ausdruecklich zulaessig — siehe /de/barrierefreiheit/kontrast.
+  const ruleColor = colorOf(cfg.meta.colors.taglineRule ?? 'orange-500')
   const TONES = {
-    '': { master: 'bauer-group-logo-wide.svg', division: colorOf(cfg.meta.colors.divisionLight) },
-    '-white': { master: 'bauer-group-logo-wide-white.svg', division: colorOf(cfg.meta.colors.divisionDark) },
+    '': {
+      master: 'bauer-group-logo-wide.svg',
+      division: colorOf(cfg.meta.colors.divisionLight),
+      rule: ruleColor,
+    },
+    '-white': {
+      master: 'bauer-group-logo-wide-white.svg',
+      division: colorOf(cfg.meta.colors.divisionDark),
+      rule: ruleColor,
+    },
   }
 
   console.log('BAUER GROUP · generating lockups …')
@@ -385,7 +398,7 @@ async function main() {
 
       const name = `${prefix}-${entry.slug}${tone}`
       const rule = L.ruleH
-        ? `<rect x="0" y="${round(L.ruleTop)}" width="${round(width)}" height="${round(L.ruleH)}" fill="${t[colorKey]}"/>`
+        ? `<rect x="0" y="${round(L.ruleTop)}" width="${round(width)}" height="${round(L.ruleH)}" fill="${t.rule}"/>`
         : null
 
       const svg = buildSvg({
