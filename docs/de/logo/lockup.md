@@ -12,7 +12,9 @@ Es gibt genau **diese zwei** Lockups. Keine dritte Zeile, keine Kombination aus 
 :::
 
 ::: info Platzhalter in dieser Dokumentation
-Die Abbildungen zeigen den neutralen Platzhalter **COMPLIANCE**. Er dient ausschließlich der Demonstration von Aufbau und Maßen und ist **kein realer Geschäftsbereich**.
+Die **Aufbau- und Maßabbildungen** auf dieser Seite zeigen den neutralen Platzhalter **COMPLIANCE**. Er demonstriert ausschließlich Konstruktion und Maße und ist **kein realer Geschäftsbereich**.
+
+Die Galerie unter [Assets](#assets) listet dagegen alle tatsächlich erzeugten Lockups — dort steht der Platzhalter neben den realen Geschäftsbereichen und ist als solcher gekennzeichnet.
 :::
 
 ## Division-Lockup

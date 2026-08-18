@@ -12,7 +12,9 @@ There are exactly **these two** lockups. No third line, no combination of the tw
 :::
 
 ::: info Placeholder used throughout this documentation
-The examples show the neutral placeholder **COMPLIANCE**. It exists purely to demonstrate construction and measurements and is **not a real division**.
+The **construction and measurement figures** on this page show the neutral placeholder **COMPLIANCE**. It exists purely to demonstrate construction and measurements and is **not a real division**.
+
+The gallery under [Assets](#assets), by contrast, lists every lockup that is actually generated — there the placeholder sits alongside the real divisions and is labelled as such.
 :::
 
 ## Division lockup
