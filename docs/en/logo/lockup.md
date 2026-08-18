@@ -67,11 +67,11 @@ The wide logo stays **completely untouched**. Below it a thin rule sets the stat
 |-------------|---------|-------|
 | **Logo block** | unchanged | 269.940 × 59.720 |
 | **Logo → rule gap** | 0.22 X | 5.925 |
-| **Rule weight** | 0.04 X | 1.077 |
+| **Rule weight** | 0.03 X | 0.808 |
 | **Rule → tagline gap** | 0.22 X | 5.925 |
 | **Tagline cap height** | 0.30 X | 8.079 |
 | **Tracking** | 0.10 em | — |
-| **Total height** | 3.0234 X | 81.419 |
+| **Total height** | 3.0134 X | 81.150 |
 
 ::: tip Equal gap above and below
 At **0.22 X** the rule sits symmetrically between the logo and the tagline. It is no closer to either, so it reads as a separation rather than as something appended.
@@ -83,7 +83,7 @@ The rule spans the **full width** of the lockup and carries **BAUER Orange** `#F
 
 That puts it in line with what the brand already does: the email signature runs a 3 px orange line as its [primary branding element](/en/digital/email), and every section heading in this guide carries the same orange underline. A dark rule would have been the only separator in the system without orange.
 
-Its weight of 0.04 X is set by the minimum sizes, not chosen freely: at 220 px width it renders at **0.88 px**, at 60 mm at **0.24 mm**. A finer rule — 0.03 X, say — would drop to 0.18 mm in print, below what a press reliably holds. Making it finer means raising the minimum sizes.
+Its weight is **0.03 X**. At 220 px width that renders 0.66 px, at 60 mm 0.18 mm — a hairline. For the documented **offset printing** that is unproblematic, and the [advertising guidelines](/en/advertising/) use hairlines deliberately. It would only become critical in screen or pad printing, where the Bildmarke alone applies anyway.
 
 ### Why the tagline takes the wordmark's colour
 
@@ -106,7 +106,7 @@ The divider rule is unaffected: it is **neither type nor statement but a decorat
 
 ### All taglines
 
-Every tagline in [Brand values & mission](/en/brand/) exists as a finished lockup. All four share **exactly the same bounding box** (269.940 × 81.419), because the descender of the "Q" is always reserved — which makes them interchangeable without re-tuning a single layout.
+Every tagline in [Brand values & mission](/en/brand/) exists as a finished lockup. All four share **exactly the same bounding box** (269.940 × 81.150), because the descender of the "Q" is always reserved — which makes them interchangeable without re-tuning a single layout.
 
 <LockupGallery kind="taglines" lang="en" />
 

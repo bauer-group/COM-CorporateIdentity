@@ -21,7 +21,7 @@
       "tagline": {
         "capRatio": 0.3,
         "gapRatio": 0.22,
-        "ruleRatio": 0.04,
+        "ruleRatio": 0.03,
         "trackingEm": 0.1,
         "case": "upper",
         "align": "center"

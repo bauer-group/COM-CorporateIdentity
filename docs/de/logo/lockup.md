@@ -67,11 +67,11 @@ Das Wide-Logo bleibt **vollständig unangetastet**. Darunter setzt eine dünne T
 |-----|-------------|-----------|
 | **Logoblock** | unverändert | 269,940 × 59,720 |
 | **Abstand Logo → Trennlinie** | 0,22 X | 5,925 |
-| **Stärke der Trennlinie** | 0,04 X | 1,077 |
+| **Stärke der Trennlinie** | 0,03 X | 0,808 |
 | **Abstand Trennlinie → Tagline** | 0,22 X | 5,925 |
 | **Versalhöhe Tagline** | 0,30 X | 8,079 |
 | **Laufweite** | 0,10 em | — |
-| **Gesamthöhe** | 3,0234 X | 81,419 |
+| **Gesamthöhe** | 3,0134 X | 81,150 |
 
 ::: tip Gleicher Abstand ober- und unterhalb
 Die Trennlinie sitzt mit **0,22 X** symmetrisch zwischen Logo und Tagline. Sie liegt damit nicht näher an einem der beiden Elemente und wirkt als Trennung, nicht als Anhängsel.
@@ -83,7 +83,7 @@ Die Linie läuft über die **volle Breite** des Lockups und trägt **BAUER Orang
 
 Damit reiht sie sich in das ein, was die Marke ohnehin tut: Die E-Mail-Signatur führt eine 3 px starke Orange-Linie als [primäres Branding-Element](/de/digital/email), und jede Abschnittsüberschrift in diesem Guide trägt denselben Orange-Unterstrich. Eine dunkle Linie wäre das einzige Trennelement im System ohne Orange gewesen.
 
-Ihre Stärke von 0,04 X ist nach unten durch die Mindestgrößen bestimmt, nicht frei gewählt: Bei 220 px Breite ergibt sie **0,88 px**, bei 60 mm **0,24 mm**. Eine feinere Linie — etwa 0,03 X — fiele im Druck auf 0,18 mm und liegt damit unter dem, was eine Druckmaschine zuverlässig hält. Wer sie feiner will, muss die Mindestgrößen anheben.
+Ihre Stärke beträgt **0,03 X**. Bei 220 px Breite ergibt das 0,66 px, bei 60 mm 0,18 mm — eine Haarlinie. Für den dokumentierten **Offsetdruck** ist das unkritisch; die [Werbemittel-Richtlinien](/de/werbemittel/) setzen Haarlinien ausdrücklich ein. Kritisch würde es erst bei Sieb- oder Tampondruck, und dort gilt ohnehin die Bildmarke allein.
 
 ### Warum die Tagline die Farbe der Wortmarke trägt
 
@@ -106,7 +106,7 @@ Die Trennlinie ist davon unberührt: Sie ist **weder Schrift noch Aussage, sonde
 
 ### Alle Taglines
 
-Jede Tagline in [Markenwerte & Leitbild](/de/marke/) liegt als fertiges Lockup vor. Alle vier haben **exakt dieselbe Bounding-Box** (269,940 × 81,419), weil die Unterlänge des „Q" immer reserviert wird — sie sind damit gegeneinander austauschbar, ohne dass ein Layout nachjustiert werden muss.
+Jede Tagline in [Markenwerte & Leitbild](/de/marke/) liegt als fertiges Lockup vor. Alle vier haben **exakt dieselbe Bounding-Box** (269,940 × 81,150), weil die Unterlänge des „Q" immer reserviert wird — sie sind damit gegeneinander austauschbar, ohne dass ein Layout nachjustiert werden muss.
 
 <LockupGallery kind="taglines" lang="de" />
 
