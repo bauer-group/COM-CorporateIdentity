@@ -1,3 +1,9 @@
+## [0.11.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.10.1...v0.11.0) (2026-08-18)
+
+### 🚀 Features
+
+* **logo:** reworked lockups and fixed the wordmark shift ([f26686f](https://github.com/bauer-group/COM-CorporateIdentity/commit/f26686f8170d314784331754488ae557a1235083))
+
 ## [0.10.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.10.0...v0.10.1) (2026-08-18)
 
 ### 🐛 Bug Fixes
