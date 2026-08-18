@@ -50,6 +50,13 @@
       "placeholder": true,
       "note": "Platzhalter der Dokumentation — zeigt Aufbau und Maße, kein realer Geschäftsbereich",
       "noteEn": "Documentation placeholder — shows construction and measurements, not a real division"
+    },
+    {
+      "slug": "aerospace",
+      "name": "Aerospace",
+      "nameEn": "Aerospace",
+      "note": "Geschäftsbereich Aerospace — Website-Header, App-Bars, Signaturen, Briefbogen",
+      "noteEn": "Aerospace division — website headers, app bars, signatures, letterhead"
     }
   ],
   "taglines": [
