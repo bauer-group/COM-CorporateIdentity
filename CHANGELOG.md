@@ -1,3 +1,9 @@
+## [0.11.2](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.11.1...v0.11.2) (2026-08-18)
+
+### 🐛 Bug Fixes
+
+* **logo:** made the tagline rule orange and thinner ([5d2219f](https://github.com/bauer-group/COM-CorporateIdentity/commit/5d2219ff7407349f3633b03c9767ecad540fbab7)), closes [#FF8500](https://github.com/bauer-group/COM-CorporateIdentity/issues/FF8500)
+
 ## [0.11.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.11.0...v0.11.1) (2026-08-18)
 
 ### 🐛 Bug Fixes
