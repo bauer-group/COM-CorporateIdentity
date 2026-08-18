@@ -67,6 +67,12 @@ export default defineConfig({
   locales: { de, en },
 
   themeConfig: {
+    // Slugs are localised on purpose (typografie/typography, schutzzone/clearspace).
+    // VitePress's default locale switch only swaps the /de/ or /en/ prefix and keeps
+    // the source slug, which 404s on all 33 translated pages per locale. With routing
+    // off the language switch lands on the locale home page instead.
+    i18nRouting: false,
+
     logo: '/brand/bauer-group-icon.svg',
     siteTitle: 'BAUER GROUP Brand Guide',
 
