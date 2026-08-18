@@ -24,7 +24,7 @@
     "docs:serve": "vitepress serve docs --port 4173",
     "lint": "markdownlint-cli2 \"docs/**/*.md\"",
     "lint:fix": "markdownlint-cli2 --fix \"docs/**/*.md\"",
-    "check:links": "linkinator docs/.vitepress/dist --recurse --skip \"^(?!http://localhost)\"",
+    "check:links": "node scripts/check-links.mjs",
     "validate": "npm run lint && npm run docs:build && npm run check:links",
     "ci": "npm ci && npm run lint && npm run docs:build",
     "prepare": "husky"
