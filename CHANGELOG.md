@@ -1,3 +1,9 @@
+## [0.11.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.11.0...v0.11.1) (2026-08-18)
+
+### 🐛 Bug Fixes
+
+* **logo:** centred the lockup text and restored the rule ([f352c2c](https://github.com/bauer-group/COM-CorporateIdentity/commit/f352c2c0abc4f438270c65d84e6a4af62479406e))
+
 ## [0.11.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.10.1...v0.11.0) (2026-08-18)
 
 ### 🚀 Features
