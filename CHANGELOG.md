@@ -1,3 +1,9 @@
+## [0.11.3](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.11.2...v0.11.3) (2026-08-18)
+
+### 🐛 Bug Fixes
+
+* **logo:** thinned the tagline rule to 0.03 X ([719f6aa](https://github.com/bauer-group/COM-CorporateIdentity/commit/719f6aabde441dd162d7bc6a2798617e458b9666))
+
 ## [0.11.2](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.11.1...v0.11.2) (2026-08-18)
 
 ### 🐛 Bug Fixes
