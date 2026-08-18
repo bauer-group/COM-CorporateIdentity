@@ -1,3 +1,10 @@
+## [0.10.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.10.0...v0.10.1) (2026-08-18)
+
+### 🐛 Bug Fixes
+
+* **ci:** repaired link check for clean URLs and coverage ([968bb93](https://github.com/bauer-group/COM-CorporateIdentity/commit/968bb93ee95c6d30c3d188e8ae7540ef893e0cf4))
+* **i18n:** fixed language switcher linking to 404s ([b0c745f](https://github.com/bauer-group/COM-CorporateIdentity/commit/b0c745fc223b5e760a2c29ff9007341360baf2b8))
+
 ## [0.10.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.9.0...v0.10.0) (2026-08-18)
 
 ### 🚀 Features
