@@ -5,7 +5,7 @@ Neben Bildmarke und Wide-Logo gibt es **zwei erzeugte Lockups**. Beide **ergänz
 | Lockup | Aufbau | Anwendung |
 |--------|--------|-----------|
 | **Division-Lockup** | Bildmarke links, „BAUER GROUP" über der Zusatzbezeichnung rechts | Profit Center und Geschäftsbereiche: Website-Header, App-Bars, Signaturen, Briefbogen |
-| **Tagline-Lockup** | Komplettes Wide-Logo, darunter eine Tagline auf gemeinsamer linker Kante | Kampagnen, Titelfolien, Messestand, Anzeigen, Imagebroschüren |
+| **Tagline-Lockup** | Komplettes Wide-Logo, darunter eine Trennlinie und eine mittig gesetzte Tagline | Kampagnen, Titelfolien, Messestand, Anzeigen, Imagebroschüren |
 
 ::: danger Verbindlich
 Es gibt genau **diese zwei** Lockups. Keine dritte Zeile, keine Kombination aus beiden, keine Rechtsform und kein Standort im Lockup.
@@ -38,15 +38,17 @@ Alle Werte als Vielfaches von **X** — der Höhe des „B" in der Bildmarke, wi
 ### Ausrichtung
 
 - Die Zusatzzeile steht **linksbündig zur Wortmarke**, nicht zur Bildmarke.
-- **Bildmarke und Wortmarke bleiben unverändert** — beide stehen exakt dort, wo sie im Wide-Logo stehen. Die Zusatzzeile hängt darunter.
-- Der komplette Textblock bleibt innerhalb der Höhe der Bildmarke. Das Lockup ist deshalb genauso hoch wie das Wide-Logo.
+- Der zweizeilige Textblock ist optisch auf dem **„B" der Bildmarke** zentriert — nicht auf der Diamantmitte.
+- Die Bildmarke bleibt unverändert; die Wortmarke rückt um 8,481 Einheiten nach oben, damit der Block mittig steht.
 
-::: tip Warum die Wortmarke nicht nachrückt
-Ein optisch zentrierter Textblock würde die Wortmarke um **8,481 Einheiten** — 14,2 % der Höhe — nach oben schieben. Das verändert die innere Geometrie der eingetragenen Marke, auch wenn kein einziger Pfad angefasst wird. Das Lockup verzichtet darauf und ist dadurch ohne markenrechtliche Prüfung einsetzbar.
+::: tip Warum das „B" und nicht der Diamant
+Im Wide-Logo liegt die Mitte der Wortmarke bei 29,116 und die Mitte des „B" bei 29,117 — identisch auf ±0,0015 Einheiten. Das Logo war seit jeher am „B" ausgerichtet; das Lockup führt diese Regel für den zweizeiligen Block fort.
+:::
 
-Die Wortmarke ist im Wide-Logo am „B" der Bildmarke ausgerichtet: Ihre Mitte liegt bei 29,116, die Mitte des „B" bei 29,117 — identisch auf ±0,0015 Einheiten. Genau diese Ausrichtung bleibt erhalten.
+::: warning Markenrechtlich zu klären
+Die Zentrierung verschiebt die Wortmarke um **8,481 Einheiten** — 14,2 % der Höhe — gegenüber der Bildmarke. Kein Pfad wird verändert, die innere Geometrie der eingetragenen Marke aber schon. Das gehört vor die Markenverantwortung, bevor das Lockup nach außen geht.
 
-Wer die zentrierte Variante braucht, stellt `compactAlignment` in `scripts/lockups.json` auf `block-centered` — als bewusste Entscheidung, nicht als Voreinstellung.
+Die Alternative liegt bereit: `compactAlignment` in `scripts/lockups.json` auf `wordmark-fixed` gestellt lässt die Wortmarke exakt an ihrer Position aus dem Wide-Logo. Der zweizeilige Block sitzt dann sichtbar tiefer und wirkt angesetzt — deshalb ist es nicht die Voreinstellung.
 :::
 
 ::: warning Längenbegrenzung
@@ -57,25 +59,29 @@ Die Zusatzzeile darf **nie breiter als die Wortmarke** werden (200,559 Einheiten
 
 <LockupPreview kind="taglines" width="420px" />
 
-Das Wide-Logo bleibt **vollständig unangetastet**. Die Tagline hängt darunter und teilt sich mit der Bildmarke die **linke Kante** — das gesamte Lockup hat dadurch eine einzige, durchgehende linke Achse.
+Das Wide-Logo bleibt **vollständig unangetastet**. Darunter setzt eine dünne Trennlinie die Aussage optisch ab, die Tagline steht **mittig zur vollen Breite** des Lockups.
 
 ### Maße
 
 | Maß | X-Verhältnis | Einheiten |
 |-----|-------------|-----------|
 | **Logoblock** | unverändert | 269,940 × 59,720 |
-| **Abstand Logo → Tagline** | 0,30 X | 8,079 |
+| **Abstand Logo → Trennlinie** | 0,22 X | 5,925 |
+| **Stärke der Trennlinie** | 0,05 X | 1,347 |
+| **Abstand Trennlinie → Tagline** | 0,22 X | 5,925 |
 | **Versalhöhe Tagline** | 0,30 X | 8,079 |
 | **Laufweite** | 0,10 em | — |
-| **Gesamthöhe** | 2,8434 X | 76,572 |
+| **Gesamthöhe** | 3,0334 X | 81,689 |
 
-::: tip Eine Zahl statt zweier
-Abstand und Versalhöhe der Tagline sind **derselbe Wert**: 0,30 X. Wer den Abstand kennt, kennt die Schriftgröße — und umgekehrt.
+::: tip Gleicher Abstand ober- und unterhalb
+Die Trennlinie sitzt mit **0,22 X** symmetrisch zwischen Logo und Tagline. Sie liegt damit nicht näher an einem der beiden Elemente und wirkt als Trennung, nicht als Anhängsel.
 :::
 
-### Warum keine Trennlinie
+### Die Trennlinie
 
-Eine Trennlinie über die volle Breite trennt, was zusammengehört: Sie schiebt sich zwischen Marke und Aussage und erzeugt eine dritte, rein dekorative Ebene. Die Zusammengehörigkeit tragen hier **gemeinsame linke Kante** und **definierter Abstand** — beides ist Teil der Konstruktion und nicht wegzulassen.
+Die Linie läuft über die **volle Breite** des Lockups und trägt dieselbe Farbe wie die Tagline. Sie ist **verbindlich** und darf weder weggelassen noch umgefärbt werden.
+
+Ihre Stärke von 0,05 X ist nach unten durch die Mindestgrößen bestimmt, nicht frei gewählt: Bei 220 px Breite ergibt sie **1,10 px**, bei 60 mm **0,30 mm**. Eine feinere Linie — etwa 0,03 X — sähe bei großer Darstellung eleganter aus, fiele aber bei 220 px auf 0,66 px und im Druck auf 0,18 mm und verschwände damit. Wer sie feiner will, muss die Mindestgrößen anheben.
 
 ### Warum die Tagline die Farbe der Wortmarke trägt
 
@@ -96,7 +102,7 @@ Ein ganzer Satz in Orange konkurriert mit der Bildmarke. Orange markiert im Lock
 
 ### Alle Taglines
 
-Jede Tagline in [Markenwerte & Leitbild](/de/marke/) liegt als fertiges Lockup vor. Alle vier haben **exakt dieselbe Bounding-Box** (269,940 × 76,572), weil die Unterlänge des „Q" immer reserviert wird — sie sind damit gegeneinander austauschbar, ohne dass ein Layout nachjustiert werden muss.
+Jede Tagline in [Markenwerte & Leitbild](/de/marke/) liegt als fertiges Lockup vor. Alle vier haben **exakt dieselbe Bounding-Box** (269,940 × 81,689), weil die Unterlänge des „Q" immer reserviert wird — sie sind damit gegeneinander austauschbar, ohne dass ein Layout nachjustiert werden muss.
 
 <LockupGallery kind="taglines" lang="de" />
 

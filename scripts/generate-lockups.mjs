@@ -228,7 +228,7 @@ function makeTypesetter(font, capTarget, trackingEm) {
 }
 
 // ── SVG composition ──────────────────────────────────────────────
-function buildSvg({ family, parts, linePath, width, height, ids }) {
+function buildSvg({ family, parts, linePath, rule, width, height, ids }) {
   const scopedDefs = `${parts.clip0}\n${parts.clip1}`
     .replaceAll('id="clip-0"', `id="${ids.c0}"`)
     .replaceAll('id="clip-1"', `id="${ids.c1}"`)
@@ -244,7 +244,7 @@ function buildSvg({ family, parts, linePath, width, height, ids }) {
         `</g>`,
         linePath,
       ]
-    : [scoped(parts.icon), scoped(parts.wordmark), linePath]
+    : [scoped(parts.icon), scoped(parts.wordmark), rule, linePath]
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <!-- BAUER GROUP Lockup — GENERATED from scripts/lockups.json. Do not edit by hand.
@@ -280,19 +280,21 @@ function computeLayout(geo) {
   const b1 = centered ? CY - (C1 + leading) / 2 + C1 : M.wordBaseline
   const b2 = b1 + leading
 
-  // Tagline — the wide logo is untouched; the claim hangs below it, flush left
-  // with the Bildmarke. The gap equals the claim's own cap height, so the two
-  // numbers a designer has to remember collapse into one.
+  // Tagline — the wide logo is untouched. A thin rule sets the claim off
+  // optically, with the same gap above and below it, and the claim is centred
+  // under the full width of the lockup.
   const C3 = geo.tagline.capRatio * X
   const gap = geo.tagline.gapRatio * X
-  const capTop = M.logoH + gap
+  const ruleH = geo.tagline.ruleRatio * X
+  const ruleTop = M.logoH + gap
+  const capTop = ruleTop + ruleH + gap
 
   return {
     C2,
     C3,
     alignment: centered ? 'block-centered' : 'wordmark-fixed',
     division: { wordDy: b1 - M.wordBaseline, baseline: b2, left: M.word.x1 },
-    tagline: { gap, capTop, baseline: capTop + C3, left: 0 },
+    tagline: { gap, ruleTop, ruleH, capTop, baseline: capTop + C3, left: 0, align: 'center' },
   }
 }
 
@@ -366,6 +368,8 @@ async function main() {
     }
 
     const width = Math.max(M.logoW, L.left + inkW)
+    // Tagline mittig unter der vollen Breite, Zusatzzeile linksbuendig zur Wortmarke.
+    const lineLeft = L.align === 'center' ? (width - inkW) / 2 : L.left
     const height =
       family === 'division'
         ? Math.max(M.logoH, L.baseline + type.overshootBelow)
@@ -376,12 +380,17 @@ async function main() {
 
     for (const [tone, t] of Object.entries(TONES)) {
       // Re-outline into this frame: ink left edge flush to L.left, baseline on L.baseline.
-      const { path } = type.outline(label, L.left - bbox.x1, L.baseline)
+      const { path } = type.outline(label, lineLeft - bbox.x1, L.baseline)
       const linePath = `<path fill-rule="nonzero" fill="${t[colorKey]}" d="${path.toPathData(4)}"/>`
 
       const name = `${prefix}-${entry.slug}${tone}`
+      const rule = L.ruleH
+        ? `<rect x="0" y="${round(L.ruleTop)}" width="${round(width)}" height="${round(L.ruleH)}" fill="${t[colorKey]}"/>`
+        : null
+
       const svg = buildSvg({
         family,
+        rule,
         parts: masters[tone],
         linePath,
         width,

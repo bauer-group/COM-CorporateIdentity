@@ -62,7 +62,7 @@ The accessible name sits on the link as `aria-label`; every image carries `alt="
 .bg-lockup {
   --bg-lockup-size: 40px;              /* the only knob: height of the Bildmarke */
   display: inline-flex;
-  align-items: flex-start;      /* not center — see below */
+  align-items: center;
   gap: calc(var(--bg-lockup-size) * 0.1616);
   padding: calc(var(--bg-lockup-size) * 0.451);   /* clear space = 1 × X */
   text-decoration: none;
@@ -79,7 +79,6 @@ The accessible name sits on the link as `aria-label`; every image carries `alt="
 .bg-lockup .text {
   display: flex;
   flex-direction: column;
-  margin-block-start: calc(var(--bg-lockup-size) * 0.33523);   /* 20.0195 / 59.72 */
   gap: calc(var(--bg-lockup-size) * 0.0785);
 }
 
@@ -125,10 +124,6 @@ The accessible name sits on the link as `aria-label`; every image carries `alt="
   .bg-lockup .division { color: #000; print-color-adjust: exact; }
 }
 ```
-
-### Why `flex-start` and not `center`
-
-The wordmark sits exactly where it sits in the wide logo — its ink top at 20.0195 of 59.72, i.e. `0.33523 × size` below the top of the Bildmarke. An `align-items: center` would centre the text block and in doing so shift the wordmark relative to the Bildmarke. That would alter the registered mark's internal geometry without a single path being touched.
 
 ### Why `font-size-adjust` is not optional
 

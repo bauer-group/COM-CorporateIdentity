@@ -20,11 +20,13 @@
       "case": "upper",
       "tagline": {
         "capRatio": 0.3,
-        "gapRatio": 0.3,
+        "gapRatio": 0.22,
+        "ruleRatio": 0.05,
         "trackingEm": 0.1,
-        "case": "upper"
+        "case": "upper",
+        "align": "center"
       },
-      "compactAlignment": "wordmark-fixed"
+      "compactAlignment": "block-centered"
     },
     "colors": {
       "divisionLight": "orange-800",

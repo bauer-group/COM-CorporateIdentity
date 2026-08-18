@@ -62,7 +62,7 @@ Der barrierefreie Name steht als `aria-label` auf dem Link, alle Bilder tragen `
 .bg-lockup {
   --bg-lockup-size: 40px;              /* einziger Stellknopf: Höhe der Bildmarke */
   display: inline-flex;
-  align-items: flex-start;      /* nicht center — siehe unten */
+  align-items: center;
   gap: calc(var(--bg-lockup-size) * 0.1616);
   padding: calc(var(--bg-lockup-size) * 0.451);   /* Schutzzone = 1 × X */
   text-decoration: none;
@@ -79,7 +79,6 @@ Der barrierefreie Name steht als `aria-label` auf dem Link, alle Bilder tragen `
 .bg-lockup .text {
   display: flex;
   flex-direction: column;
-  margin-block-start: calc(var(--bg-lockup-size) * 0.33523);   /* 20,0195 / 59,72 */
   gap: calc(var(--bg-lockup-size) * 0.0785);
 }
 
@@ -125,10 +124,6 @@ Der barrierefreie Name steht als `aria-label` auf dem Link, alle Bilder tragen `
   .bg-lockup .division { color: #000; print-color-adjust: exact; }
 }
 ```
-
-### Warum `flex-start` und kein `center`
-
-Die Wortmarke steht exakt dort, wo sie im Wide-Logo steht — ihre Ink-Oberkante bei 20,0195 von 59,72, also `0.33523 × size` unter der Oberkante der Bildmarke. Ein `align-items: center` würde den Textblock mittig setzen und die Wortmarke dabei gegenüber der Bildmarke verschieben. Das veränderte die innere Geometrie der eingetragenen Marke, ohne dass ein Pfad angefasst wird.
 
 ### Warum `font-size-adjust` nicht optional ist
 

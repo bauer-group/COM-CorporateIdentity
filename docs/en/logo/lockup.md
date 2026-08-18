@@ -5,7 +5,7 @@ Alongside the Bildmarke and the wide logo there are **two generated lockups**. B
 | Lockup | Construction | Use |
 |--------|--------------|-----|
 | **Division lockup** | Bildmarke left, "BAUER GROUP" above the division name right | Profit centres and divisions: website headers, app bars, signatures, letterhead |
-| **Tagline lockup** | Full wide logo, with a tagline below it on a shared left edge | Campaigns, title slides, trade fair, advertising, image brochures |
+| **Tagline lockup** | Full wide logo, with a divider rule and a centred tagline below it | Campaigns, title slides, trade fair, advertising, image brochures |
 
 ::: danger Binding
 There are exactly **these two** lockups. No third line, no combination of the two, no legal form and no location inside a lockup.
@@ -38,15 +38,17 @@ All values are multiples of **X** — the height of the "B" inside the Bildmarke
 ### Alignment
 
 - The division line is **flush left with the wordmark**, not with the Bildmarke.
-- **The Bildmarke and the wordmark both stay untouched** — each sits exactly where it sits in the wide logo. The division line hangs below.
-- The whole text block stays within the Bildmarke's height, which is why the lockup is exactly as tall as the wide logo.
+- The two-line text block is optically centred on the **"B" of the Bildmarke** — not on the centre of the diamond.
+- The Bildmarke stays untouched; the wordmark moves up by 8.481 units so the block sits centred.
 
-::: tip Why the wordmark does not move up
-Optically centring the two-line block would push the wordmark up by **8.481 units** — 14.2 % of the height. That alters the registered mark's internal geometry even though not a single path is touched. The lockup declines to do that, which is what makes it usable without a trademark review.
+::: tip Why the "B" and not the diamond
+In the wide logo the centre of the wordmark sits at 29.116 and the centre of the "B" at 29.117 — identical to within ±0.0015 units. The logo has always aligned to the "B"; the lockup carries that rule over to the two-line block.
+:::
 
-In the wide logo the wordmark is aligned to the "B" of the Bildmarke: its centre sits at 29.116, the "B" centre at 29.117 — identical to within ±0.0015 units. That exact alignment is preserved.
+::: warning Needs trademark sign-off
+Centring shifts the wordmark by **8.481 units** — 14.2 % of the height — relative to the Bildmarke. No path is altered, but the registered mark's internal geometry is. That belongs with whoever owns the trademark before the lockup goes out.
 
-If the centred variant is ever needed, set `compactAlignment` in `scripts/lockups.json` to `block-centered` — as a deliberate decision, not a default.
+The alternative is ready: setting `compactAlignment` in `scripts/lockups.json` to `wordmark-fixed` keeps the wordmark exactly where it sits in the wide logo. The two-line block then sits visibly lower and reads as appended — which is why it is not the default.
 :::
 
 ::: warning Length limit
@@ -57,25 +59,29 @@ The division line must **never be wider than the wordmark** (200.559 units). The
 
 <LockupPreview kind="taglines" width="420px" lang="en" />
 
-The wide logo stays **completely untouched**. The tagline hangs below it and shares its **left edge** with the Bildmarke — giving the whole lockup a single, continuous left axis.
+The wide logo stays **completely untouched**. Below it a thin rule sets the statement off optically, and the tagline is **centred on the full width** of the lockup.
 
 ### Measurements
 
 | Measurement | X ratio | Units |
 |-------------|---------|-------|
 | **Logo block** | unchanged | 269.940 × 59.720 |
-| **Logo → tagline gap** | 0.30 X | 8.079 |
+| **Logo → rule gap** | 0.22 X | 5.925 |
+| **Rule weight** | 0.05 X | 1.347 |
+| **Rule → tagline gap** | 0.22 X | 5.925 |
 | **Tagline cap height** | 0.30 X | 8.079 |
 | **Tracking** | 0.10 em | — |
-| **Total height** | 2.8434 X | 76.572 |
+| **Total height** | 3.0334 X | 81.689 |
 
-::: tip One number instead of two
-The gap and the tagline's cap height are **the same value**: 0.30 X. Know the gap and you know the type size — and the other way round.
+::: tip Equal gap above and below
+At **0.22 X** the rule sits symmetrically between the logo and the tagline. It is no closer to either, so it reads as a separation rather than as something appended.
 :::
 
-### Why there is no divider rule
+### The divider rule
 
-A full-width rule separates what belongs together: it pushes itself between the mark and the statement and introduces a third, purely decorative layer. Here the relationship is carried by the **shared left edge** and a **defined gap** — both are part of the construction and cannot be left out.
+The rule spans the **full width** of the lockup and carries the same colour as the tagline. It is **mandatory** and may be neither omitted nor recoloured.
+
+Its weight of 0.05 X is set by the minimum sizes, not chosen freely: at 220 px width it renders at **1.10 px**, at 60 mm at **0.30 mm**. A finer rule — 0.03 X, say — would look more elegant at large sizes but would drop to 0.66 px at 220 px and 0.18 mm in print, and disappear. Making it finer means raising the minimum sizes.
 
 ### Why the tagline takes the wordmark's colour
 
@@ -96,7 +102,7 @@ A whole sentence in orange competes with the Bildmarke. Within the lockup system
 
 ### All taglines
 
-Every tagline in [Brand values & mission](/en/brand/) exists as a finished lockup. All four share **exactly the same bounding box** (269.940 × 76.572), because the descender of the "Q" is always reserved — which makes them interchangeable without re-tuning a single layout.
+Every tagline in [Brand values & mission](/en/brand/) exists as a finished lockup. All four share **exactly the same bounding box** (269.940 × 81.689), because the descender of the "Q" is always reserved — which makes them interchangeable without re-tuning a single layout.
 
 <LockupGallery kind="taglines" lang="en" />
 
