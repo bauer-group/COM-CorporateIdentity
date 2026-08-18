@@ -1,3 +1,9 @@
+## [0.12.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.11.3...v0.12.0) (2026-08-18)
+
+### 🚀 Features
+
+* **lockups:** added AEROSPACE division lockup ([0a8a9c2](https://github.com/bauer-group/COM-CorporateIdentity/commit/0a8a9c23d2f38ce231a01fbc15c5a8de42c0b62c))
+
 ## [0.11.3](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.11.2...v0.11.3) (2026-08-18)
 
 ### 🐛 Bug Fixes
