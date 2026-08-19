@@ -35,6 +35,11 @@ Offizielle Corporate Identity & Brand Guide Dokumentation der BAUER GROUP — er
 │       ├── config.ts              # VitePress-Konfiguration
 │       ├── locales/               # DE/EN Navigation + Sidebar
 │       └── theme/                 # Custom Theme (BAUER CI)
+├── scripts/                       # Generatoren (Tokens, Lockups, Assets, Linkcheck)
+│   ├── lockups.json               # Single Source of Truth der Lockups
+│   ├── tokens.json                # Single Source of Truth der Farben
+│   ├── fonts/                     # Gebündelte OFL-Schrift für den Lockup-Satz
+│   └── LOKALISIERUNG.md           # Untersuchung nicht-lateinischer Lockups (zurückgestellt)
 ├── .github/
 │   ├── workflows/                 # Deploy, Release, Notifications, AI Summary
 │   ├── config/                    # Semantic Release Config

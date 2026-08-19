@@ -18,6 +18,10 @@
  * Only the added line is new artwork, outlined from a bundled OFL font so
  * the result carries no font dependency and survives Illustrator/Canva/print.
  *
+ * The typesetter below is deliberately shaping-free and therefore Latin-only.
+ * Non-Latin scripts (Georgian, Thai, ...) were investigated and deferred — measurements,
+ * blockers and an implementation sketch live in scripts/LOKALISIERUNG.md.
+ *
  * Source of truth:  scripts/lockups.json  (+ scripts/tokens.json for colours)
  * Output:           docs/public/brand/lockups/   (git-ignored, never commit)
  *
