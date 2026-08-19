@@ -1,3 +1,9 @@
+## [0.12.1](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.12.0...v0.12.1) (2026-08-18)
+
+### 🐛 Bug Fixes
+
+* **logo:** replaced the brown division ink with orange 600 ([794bbcb](https://github.com/bauer-group/COM-CorporateIdentity/commit/794bbcbabd2ec99362a12d7606568ded6b0f8651)), closes [#EA6D00](https://github.com/bauer-group/COM-CorporateIdentity/issues/EA6D00)
+
 ## [0.12.0](https://github.com/bauer-group/COM-CorporateIdentity/compare/v0.11.3...v0.12.0) (2026-08-18)
 
 ### 🚀 Features
