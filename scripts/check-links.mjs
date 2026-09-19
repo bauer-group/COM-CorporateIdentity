@@ -65,7 +65,9 @@ const result = await check({
   serverRoot: DIST,
   recurse: true,
   cleanUrls: true, // extensionless links → <name>.html, wie GitHub Pages
-  linksToSkip: ['^(?!http://localhost)'], // nur interne Links, keine externen Aufrufe
+  linksToSkip: ['^https?://(?!(localhost|127\\.0\\.0\\.1))'], // nur interne Links, keine externen Aufrufe
+  concurrency: 10,
+  retryErrors: true,
 })
 
 const broken = result.links.filter((link) => link.state === 'BROKEN')
