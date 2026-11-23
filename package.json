@@ -45,6 +45,6 @@
     "rimraf": "^6.1.4",
     "sharp": "^0.35.5",
     "vitepress": "^1.6.4",
-    "vitepress-plugin-rss": "^0.4.5"
+    "vitepress-plugin-rss": "^0.4.6"
   }
 }
