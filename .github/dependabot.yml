@@ -42,10 +42,30 @@ updates:
     labels:
       - "dependencies"
       - "npm"
+    # Groups split by update type, so they never overlap:
+    # - npm-minor-and-patch: every minor and patch update in one PR per
+    #   run, merged by dependabot-maintenance.yml once nodejs-pr.yml passed.
+    #   0.x packages are excluded and keep their own PRs: a 0.y minor
+    #   counts as major for the auto-merge gate and would hold the whole
+    #   group open.
+    # - vitepress, dev-tooling (update-types major):
+    #   majors of these packages stay in one PR per group, open for review.
     groups:
+      npm-minor-and-patch:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "markdownlint-cli2"
+          - "sharp"
+          - "vitepress-plugin-rss"
+        update-types:
+          - "minor"
+          - "patch"
       vitepress:
         patterns:
           - "vitepress"
+        update-types:
+          - "major"
       dev-tooling:
         patterns:
           - "markdownlint-cli2"
@@ -53,3 +73,5 @@ updates:
           - "rimraf"
           - "husky"
           - "lint-staged"
+        update-types:
+          - "major"
